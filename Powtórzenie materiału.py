@@ -738,30 +738,50 @@
 
 # Teraz dodajemy podklasę kwadrat
 
-class Prostokąt:
-    def __init__(self, wyskość, szerokość):
-        self.wysokość = wyskość
-        self.szerokość = szerokość
+# class Prostokąt:
+#     def __init__(self, wyskość, szerokość):
+#         self.wysokość = wyskość
+#         self.szerokość = szerokość
+#
+#     def pole(self):
+#         return self.wysokość * self.szerokość
+#
+#     def obwod(self):
+#         return self.wysokość * 2 + self.szerokość * 2
+#
+#
+# ob1 = Prostokąt(4, 6)  # przykładowy prostokąt
+#
+# print(ob1.pole())
+# print(ob1.obwod())
+#
+#
+# class Kwadrat(Prostokąt):
+#     def __init__(self, bok):
+#         super().__init__(bok, bok)  # Przkazujemy klasie prostokąt wartości z klasy kwadrat, czyli "w" i "s" jako bok i bok
+#
+#
+# ob2 = Kwadrat(6)    # przykładowy kwadrat
+#
+# print(ob2.pole())
+# print(ob2.obwod())
 
-    def pole(self):
-        return self.wysokość * self.szerokość
+#=========================================================================
 
-    def obwod(self):
-        return self.wysokość * 2 + self.szerokość * 2
+# Hermetyzacja (enkapsulacja)
 
+# - Polega na tym, że szczegóły implementacji są ukryte. Dzięki temu obiekt nie może zmieniać stanu wewnętrznego
+#   innych obiektów w nieoczekiwany sposób. Tylko wewnętrzne metody danego obiektu są uprawnione do zmiany jego stanu.
+#   Każdy typ obiektów ma swój interfejs, który określa dopuszczalne metody współpracy.
 
-ob1 = Prostokąt(4, 6)  # przykładowy prostokąt
+# - Jesteśmy jakimś obiektem A. Widzimy drugi obiekt, B. Obiekt B wie o sobie wszystko, my wiemy o nim tylko tyle,
+#   ile on nam udostępnia. W szczególności nie mamy dostępu do wielu zmiennych tego obiektu,
+#   możemy natomiast go "poprosić" żeby coś zrobił z tymi zmiennymi, lub podał nam ich wartość,
+#   wywołując metodę, jaką obiekt nam udostępnia.
 
-print(ob1.pole())
-print(ob1.obwod())
+# - Przykład - Idziemy do apteki, chcemy kupić jakiś lek — nie bierzemy go z półki sami,
+#   tylko wywołujemy określoną metodę obiektu Apteka, prosząc Panią Sprzedawczynię, aby ten lek nam podała.
+#   Nie interesuje nas w jaki sposób ona to zrealizuje — tzn. czy będzie np. musiała poszukać go w magazynie,
+#   czy też wejść na stołek bo lek stoi na górnej półce. My tego sami robić nie musimy, to już nie nasz problem,
+#   a drugiego obiektu.
 
-
-class Kwadrat(Prostokąt):
-    def __init__(self, bok):
-        super().__init__(bok, bok)  # Przkazujemy klasie prostokąt wartości z klasy kwadrat, czyli "w" i "s" jako bok i bok
-
-
-ob2 = Kwadrat(6)    # przykładowy kwadrat
-
-print(ob2.pole())
-print(ob2.obwod())
