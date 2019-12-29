@@ -48,17 +48,17 @@
 # zmienna1 = "Maciej"
 # print(zmienna1)
 
-#Zadanie #oblicz pole powierzchni koła = pi* R kwadrat
+# Zadanie #oblicz pole powierzchni koła = pi* R kwadrat
 # r = float(input("Podaj długość promienia koła\n"))
 # pi = 3.14
 # print(r*pi*pi)
 
-#Zadanie wzór na pole trójkąta 1/2 a * h
+# Zadanie wzór na pole trójkąta 1/2 a * h
 # podstawa = float(input("Podaj długość podstawy trójkąta\n"))
 # wysokość = float(input("Podaj wyskość trójkąta\n"))
 # print(podstawa/2*wysokość)
 
-#Zadanie wzór na pole trapezu (a+b)h/2
+# Zadanie wzór na pole trapezu (a+b)h/2
 # a = float(input("Podaj długość podstawy trapezu\n"))
 # b = float(input("Podaj długośc góry trapezu\n"))
 # h = float(input("Podaj wysokość trapezu\n"))
@@ -162,7 +162,7 @@
 # print(3**3) # potęgowanie
 
 
-#dodaj 10 i 20 wynik podziel przez 2. Od wyniku odejmij 5, potem wynik pomnóz przez 5
+# dodaj 10 i 20 wynik podziel przez 2. Od wyniku odejmij 5, potem wynik pomnóz przez 5
 # print((((10+20)/2)-5)*3)
 
 # operatory porównania
@@ -210,7 +210,7 @@
 # print("python " * 3) # powielanie
 
 
-#znaki specjalne
+# znaki specjalne
 # print("jestem wesoły romek\nmam na przedmieściu domek") # \n znak nowej linii
 # print("jestem wesoły romek\t mam na przedmieściu domek") # \t tabulator przerwa
 # print("\"jestem wesoły romek\" mam na przedmieściu domek") # \" cudzysłów
@@ -232,8 +232,10 @@
 
 
 # Operacje na
-# napis = "phyton"
-# # print(napis.upper()) # uppnapis = input("Podaj słowo\n")er() zamienia na wielkie litery
+napis = "phyton"
+
+
+# print(napis.upper()) # uppnapis = input("Podaj słowo\n")er() zamienia na wielkie litery
 # print(napis.lower()) # lowwe() zmienia na małe litery
 # print(napis.swapcase()) # swapcase() zamienia litery duże na małe i odwrotnie
 # print(napis.capitalize()) # capitalize() robi pierwszą literę wielką
@@ -297,7 +299,6 @@
 #     print("źle podałeś punkty")
 
 
-
 # Program
 # pyt1 = input("Czy lubisz podróżować?\n")
 # if pyt1 == "nie":
@@ -338,7 +339,7 @@
 # #     print(liczba*-1)
 
 
-#drugi sposób
+# drugi sposób
 # number=int(input("wpisz liczbę\n"))
 # if number >= 0:
 #     print(number)
@@ -395,7 +396,6 @@
 # var1 = int(input("Podaj liczbę parzystą"))
 
 
-
 # number=int(float(input("podaj liczbę\n")))
 # if number %2 == 0:
 #     print("Podana liczba jest parzysta")
@@ -409,7 +409,6 @@
 #     print("Podana liczba jest parzysta")
 
 
-
 # number=int(input("podaj liczbę\n"))
 # while not number %2 == 0:
 #     print("podana liczba jest nieparzysta")
@@ -418,7 +417,7 @@
 # print("Ta liczba jest parzysta")
 
 
-#for
+# for
 # var = "dupa"   #for wyświetla po kolei elementy
 # var2 =""
 # for i in var:
@@ -458,7 +457,7 @@
 # print(var2)
 
 
-#zadanie 0
+# zadanie 0
 # var1 = input("Podaj skalę Celcjusz (c), kelwin (k)\n")
 # var2 = int(input("podaj temperaturę\n"))
 #
@@ -498,7 +497,7 @@
 # print(my_list)
 
 
-#Slicing - Szatkowanie
+# Slicing - Szatkowanie
 # list_1 = [1,2,3,4,5,6,7]
 # print(list_1)
 
@@ -550,7 +549,7 @@
 # print(nowa)
 
 
-#zadanie Utwórz listę siedmiu artykułów spoż. Wyświetl trzy pierwsze i trzy ostatnie
+# zadanie Utwórz listę siedmiu artykułów spoż. Wyświetl trzy pierwsze i trzy ostatnie
 
 # list_3 = list_1 + list_2 + ['marmolada'] # wykorzystałem już istniejące listy i dodałem jeden artykuł
 # print(list_3)
@@ -638,7 +637,7 @@
 # w Słowniku jak w zbiorze jego klucze musza być unikalne
 # Słownik tworzymy wpisując pary: klucz:wartość
 
-dict_1 = {"Eliza":30, "Maciej":34, "Tomasz":23, "Iwona":58}
+# dict_1 = {"Eliza":30, "Maciej":34, "Tomasz":23, "Iwona":58}
 #
 # print(dict_1["Eliza"]) # sprawdzam wiek elizy
 # dict_1['Tata'] = "nie pamiętam" # tak dodaejmy element do słownika
@@ -663,7 +662,6 @@ dict_1 = {"Eliza":30, "Maciej":34, "Tomasz":23, "Iwona":58}
 #     print("Twój miesiąc ma 28 lub 29 dni")
 # else:
 #     print("musisz podac miesiąc")
-
 
 
 # for
@@ -701,7 +699,7 @@ dict_1 = {"Eliza":30, "Maciej":34, "Tomasz":23, "Iwona":58}
 #
 # print(list(enumerate(var1)))
 
-#n.p.
+# n.p.
 # list1 = [32, 43, 5, 6, 87, 13, 9 ,64]
 # for idx, value in enumerate(list1): # idx to argument dla for, mógłby być inny
 #     print(idx, value)
@@ -743,9 +741,6 @@ dict_1 = {"Eliza":30, "Maciej":34, "Tomasz":23, "Iwona":58}
 # print(2*int(s))
 
 
-
-
-
 #
 # numbers = input("Podaj cyfry\n")
 # dict = {1:"jeden", 2:"dwa", 3:"trzy", 4:"cztery", 5:"pięć", 6:"sześć", 7:"siedem", 8:"osiem", 9:"dziwięć", 0:"zero"}
@@ -770,12 +765,6 @@ dict_1 = {"Eliza":30, "Maciej":34, "Tomasz":23, "Iwona":58}
 # print(dict.values())
 
 
-
-
-
-
-
-
 # var1 = input("podaj 1 słowo\n")
 # var2 = input("podaj 2 słowo\n")
 # var3 = input("podaj 3 słowo\n")
@@ -787,8 +776,8 @@ dict_1 = {"Eliza":30, "Maciej":34, "Tomasz":23, "Iwona":58}
 # max_count = 0 # zmienna o wartości 0
 # the_word = ""
 #
-# for i in range(5):
-#     print(len(my_list[i])) # i działa jak pierwszy obrót pętli czyli podstawia najpier var1
+# for i in range(5): # tu musi być 5 żeby kazac 5 tazy liczyć
+#     len(my_list[i]) # i działa jak pierwszy obrót pętli czyli podstawia najpier var1
 #     if len(my_list[i]) > max_count: # to jest ta zamienna o wartości 0
 #         the_word = "" # przy kolejnej pętli jesli słowo bylo krótsze ot zamieniamy je w puste
 #         the_word += my_list[i] + " " # jeżeli to słowo które jest sprawdzane jest większe od 0 to do pustej zmiennej wkleja to słowo
@@ -796,128 +785,1170 @@ dict_1 = {"Eliza":30, "Maciej":34, "Tomasz":23, "Iwona":58}
 #
 # print(the_word)
 
-#################################
+#
+
+# Stwórz listę zawierającą kilka liczb całkowitych, a następnie program,
+# który wskaże indeks najmniejszego z nich, iterując po nich.
+
+# lista = [5, 3, 8, 1, 9]
+# najmniejsza = lista[0]
+# indeks = 0
+# for elem in range(1, len(lista)):
+#     if lista[elem] < najmniejsza:
+#         najmniejsza = lista[elem]
+#         indeks = elem
+#
+# print(najmniejsza, indeks)
+
+
+# Napisz program, który policzy iloczyn elementów wybranej przez siebie
+# listy, iterując po nich.
+
+# lista = [1, 2, 3, 4, 5]
+# iloczyn = lista[0]
+# for elem in lista:
+#     iloczyn *= elem
+# print(iloczyn)
+#
+# var1 = [1, 2, 4, 4, 5]
+# cyfra = var1[0]
+# for i in var1:
+#     cyfra *= i
+# print(cyfra)
+#
+
+# list1 = [1, 2, 3, 4, 5]
+# newlist = list1[0]
+#
+# for elem in list1:
+#     newlist  *= elem
+# print(newlist)
+
+# DOdajmy razy 2
+
+# list1 = [1, 2, 3, 4, 5]
+# wynik = list1[0]
+#
+# for elem in list1:
+#     wynik *= elem*2
+#     print(wynik)
+
+# BMI
+
+# wzrost = float(input("podaj wzrost w metrach\n"))
+# waga = int(input("Podaj wagę w kg\n"))
+# bmi = waga/(wzrost*wzrost)
+# if bmi < 18.5:
+#     print("masz niedowagę")
+# elif 18.5 <= bmi <= 24.9:
+#     print("prawidłowa waga")
+# elif 25 <= bmi < 29.9:
+#     print("masz nadwagę")
+# elif bmi >= 30:
+#     print("jesteś otyły")
+
+# peron do hogwartu
+
+# imie = input("Jak się nazywasz czarodzieju?\n")
+# nazwisko = input("jak masz na anzwisko?\n")
+# peron = float(input("z jakiego peronu chcesz jechać?\n"))
+# if peron == 9.75:
+#     print("Carodzieju", imie, nazwisko, "Zapraszamy do hogwartu")
+# else:
+#     print("Mugolu", imie, nazwisko, "wracaj do domu")
+
+
+# lista1 = [4, 8, 3, 1, 10]
+# najmniejsza = lista1[0]
+# indeks = 0
+#
+# for elem in range(1, len(lista1)):
+#     if lista1[elem] < najmniejsza:
+#         najmniejsza = lista1[elem]
+#         indeks = elem
+# print(najmniejsza, indeks)
+#
+
+#
+# list1 = [4, 3, 9, 1, 10]
+# naj = list1[0]
+# indeks = 0
+# for elem in range(1, len(list1)):
+#     if list1[elem] < naj:
+#         naj = list1[elem]
+#         indeks = elem
+#
+# print(naj, indeks)
+#
+# list1 = [100, 8, 122, 12, 87, 250, 1164]
+# var = list1[0]
+# position = 0
+#
+# for i in range(1, len(list1)):
+#     if list1[i] < var:
+#         var = list1[i]
+#         position = i
+# print(var, position)
+
+# quote='''To jest wielolinijkowy tekst
+# zawierający cytat
+# "Always code as if the guy who ends up maintaining your code will be a
+# violent psychopath who knows where you live"
+# -John Wood'''
+# print(quote)
+
+# !!!!!!!!!!!!!!!!!
+# print("{} ma {}".format("Ala", "kota"))
+# print("{1} ma {0}".format("Ala", "kota"))
+
+# Napisz skrypt, który, który obliczy stan konta za kilka lat. Program pyta użytkownika o:
+#
+# stan początkowy konta,
+# stopę oprocentowania rocznego (zwróć uwagę, że odsetki podlegają miesięcznej kapitalizacji)
+# liczbę lat na lokacie.
+# Wynik wyświetl jako zdanie używając dowolnego sposobu formatowania tekstu. Wypisz np. takie zdanie:
+# Twoje *stan_początkowy* zł przez *czas* lata na lokacie *oprocentowanie* % urośnie do *wynik*.
+#
+# stan_p = float(input("podaj stan poczatkwy konta\n"))
+# procent = float(input("podaj oprocentowanie\n"))
+# okres = int(input("ile lat będziez trzymał środki\n"))
+# pytanie = input("Co jaki okres występuje kapitalizacja?\n")
+#
+# miesiąc = okres*12
+# procent_m = procent/12
+#
+# dzień = okres*365
+# procent_d = procent/365
+#
+# if pytanie == "miesiąc" or pytanie == "miesięcznie":
+#     wynik = stan_p * ((1 + (procent_m / 100)) ** miesiąc)
+#     print(wynik)
+# elif pytanie == "rok" or pytanie == "rocznie":
+#     wynik = stan_p * ((1 + (procent / 100)) ** okres)
+#     print(wynik)
+# elif pytanie == "dzień" or pytanie =="dziennie":
+#     wynik = stan_p * ((1 + (procent_d / 100)) ** dzień)
+#     print(wynik)
+
+
+# stan_p = float(input("podaj stan poczatkwy konta\n"))
+# procent = float(input("podaj oprocentowanie\n"))
+# okres = int(input("ile lat będziez trzymał środki\n"))
+# pytanie = input("Co jaki okres występuje kapitalizacja?\n")
+#
+# if pytanie = "dzień":
+#
+# miesiąc = okres * 12
+# procent_m = procent / 12
+#
+# wynik = stan_p * ((1 + (procent_m / 100)) ** miesiąc)
+# print(wynik)
+
+# licznik = 0
+
+
+# Zadanie program który wyświetli 6 losowych niepotwrzających się liczb od 1 do 50
+
+
+# from random import randint
+# lista = []
+# while len(lista) < 6:
+#     liczba = randint(1, 50)
+#     if liczba in lista:
+#         continue
+#     lista.append(liczba)
+# print(lista)
+
+
+# from random import randint
+# lista = []
+# while len(lista) < 6: # ma przerwać kiedy będzie miał 6 elementów
+#     liczba = randint(1, 50)  # zakres liczb losowych
+#     if liczba in lista: # żeby się nie powtarzały
+#         continue
+#     lista.append(liczba)
+# print(lista)
+
+# from random import randint
+# zbiór = []
+# while len(zbiór) < 6:
+#     liczba = randint(1, 50)
+#     if liczba in zbiór:
+#         continue
+#     zbiór.append(liczba)
+# print(zbiór)
+
+
+# from random import randint
+# list1 = []
+# while len(list1) < 10:
+#     number = randint(1, 50)
+#     if number in list1:
+#         continue
+#     list1.append(number)
+#
+# print(list1)
+
 
 # Zadanie
+# Napisz program, który generuje losową liczbę z zakresu [0; 10] i każe ci ją
+# odgadnąć. Masz trzy próby. Inaczej „Hasta la vista, baby”, sorry.
+
+# import random
+#
+# number = random.randint(1, 10)
+# print(number)
+#
+# licznik = 0
+# while licznik < 3:
+#     user_number = int(input("podaj liczbę od 1 do 10\n"))
+#     if number == user_number:
+#         licznik += 1
+#         print("Brawo zgadłeś za", licznik, "razem!")
+#         break
+#     if licznik < 2:
+#         print("spróbuj jeszcze raz")
+#     licznik += 1
+# if licznik == 3:
+#     print("hasta la vista Baby!")
+
+
+# from random import randint
+# wylosowana_liczba = randint(0,10)
+# proba = 0
+# while proba < 3:
+#     liczba = int(input("POdaj liczbę\n"))
+#     if liczba == wylosowana_liczba:
+#         print("zgadłeś")
+#         break
+#     if proba < 2:
+#         print("dawaj jeszcze raz")
+#     proba += 1
+# if proba == 3:
+#     print("Hasta la vista baby")
+
+#
+# var1 = input("wpisz liczbę\n")
+# var2 = {1:"jeden", 2:"dwa", 3:"trzy", 4:"cztery", 5:"pięć", 6:"sześć", 7:"siedem", 8:"osiem", 9:"dziwieć", 0:"zero"}
+# var3 = ""
+#
+# for i in var1: # rozbija var1 na pojedyńcze znaki
+#     var3 += var2[int(i)] + " " # dodaje do zbioru var3 liczbę ze słownika
+#
+# print(var3)
+
+
+# dict = var2 = {1:"jeden", 2:"dwa", 3:"trzy", 4:"cztery", 5:"pięć", 6:"sześć", 7:"siedem", 8:"osiem", 9:"dziewieć", 0:"zero"}
+# var1 = input("wpisz liczbę")
+# var2 = ""
+#
+# for i in var1:
+#     var2 += dict[int(i)]
+#
+# print(var2)
+
+# var1 = input("Podaj jakąś liczbę\n")
+# cyfra = var1[0] # tworzymy nową zmienną
+# print(cyfra)
+# for i in var1:
+#     cyfra *= i
+# print(cyfra)
+
+
+# var0 = input("podaj liczbę\n")
+# var1 = 1
+# for elem in var0:
+#     var1 = var1 * int(elem)
+# print(var1)
+
+
+# var0 = input("podaj liczbę\n")
+# var1 = 1
+# for i in var0:
+#     var1 = var1 * int(i) # tu zmieniamy "i" na intiger
+# print(var1)
+
+#
+# var1 = input("podaj 1 słowo\n")
+# var2 = input("podaj 2 słowo\n")
+# var3 = input("podaj 3 słowo\n")
+# var4 = input("podaj 4 słowo\n")
+# var5 = input("podaj 5 słowo\n")
+#
+# var6 = (var1, var2, var3, var4, var5)
+# print(var6)
+# licznik = 0
+# slowo = ""
+#
+# for i in range[5]:
+#     len(var6[i])
+#     if len(var6[i]) > licznik:
+
+
+# a = "Dupa"
+# b = 45
+# c = 3.14
+# d = True
+# e = 1, 3 ,5
+# f = (1, 2, "dupa")
+# g = [1, 5, 6, "dupa"]
+# h = {"ja":1, "ty":2, "my": 3}
+# i = (1, 2, "dupa")
+#
+#
+# print(type(a))
+# print(type(b))
+# print(type(c))
+# print(type(d))
+# print(type(e))
+# print(type(f))
+# print(type(g))
+# print(type(h))
+# print(type(i))
+
+
+# Zadanie
+# Napisz program, który wczyta od użytkownika liczbę całkowitą i wyświetli
+# informację czy jest parzysta, czy też nie.
+
+# var1 = input("Podaj cyfrę\n")
+#
+# # letters = [a,ą,b,c,ć,d,e,ę,f,g,h,i,j,k,l,ł,m,n,ń,q,o,p,r,s,t,u,w,x,y,z,ź,ż]
+#
+# if int(var1) % 2 == 0:
+#     print("Twoja liczba jest parzysta")
+# else:
+#     print("twoja liczba jest nieparzysta")
+
+
+# Zadanie
+# Napisz program, który sprawdzi, czy podana przez użytkownika wartość
+# mieści się w przedziale od 0 do 9 (włącznie)
+
+# var1 = int(input("wpidz jakąś liczbę\n"))
+#
+# if   0 >= var1 < 10:
+#     print("ta liczba jest jednocyfrowa")
+# else:
+#     print("ta liczba nie jest jednocyfrowa")
+
+
+# Zadanie
+# Napisz program, który zwróci wartość bezwzględną danej liczby
+
+# var1 = int(input("podaj liczbę"))
+# if var1 < 0:
+#     print(var1*-1)
+# else:
+#     print(var1)
+
+
+# Zadanie
+# Utwórz listę zawierającą siedem artykułów spożywczych. Wyświetl na
+# ekranie pierwszy i trzy ostatnie elementy listy
+
+# list = ["oko", "ucho", "nos", "dupa", "głowa", "kolano", "stopa"]
+# print(list[0], list[-3:])
+
+
+# Zadanie
+# Utwórz listę pięciu liczb naturalnych. Następnie dodaj dwie nowe na jej
+# koniec. Usuń trzeci element.
+# Na końcu posortuj listę
+
+# list = [7, 5, 11, 12, 3]
+# list.append(17)
+# list.append(13)
+# print(list)
+# list.pop(2)
+# print(list)
+# list.sort()
+# print(list)
+
+
+# Zadanie 7.                 DZIAłA!
+# Napisz program, który obliczy liczbę małych i wielkich liter w ciągu.
+# np : 'The quick Brown Fox'
+# oczekiwany wynik :
+# No. of Upper case characters : 3
+# No. of Lower case Characters : 12
+
+# var1 = "The quick Brown Fox"
+# upper = "A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,Q,P,R,S,T,U,W,X,Y,Z"
+# lower = upper.lower()
+# lowcount = []
+# uppercount = []
+#
+# for elem in var1:
+#     if elem in upper:
+#         uppercount += elem
+#     if elem in lower:
+#         lowcount += elem
+#
+# print(len(lowcount))
+# print(len(uppercount))
+
+
+# Zadanie 2.                        DZIAłA
+# Napisz funkcję, która sprawdzi, czy podany jako argument napis jest
+# pangramem (tj. zawiera każdą literę alfabetu co najmniej raz, np. „The
+# quick brown fox jumps over the lazy dog”).
+
+# lower = "a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,q,p,r,s,t,u,w,x,y,z"
+# var1 = str(input("Podaj zdanie\n"))
+# var2 = {1}
+# var2.clear()
+#
+# for i in var1:
+#     if i in lower:
+#         var2.add(i)
+# lower = set(lower)
+# if var2 >= lower:
+#     print("twoje zdanie to pangram")
+# else:
+#     print("twoje zdanie nie jest pangramem")
+
+
+# Zadanie 6.
+# Napisz funkcję, która sprawdzi, czy rok podany jako argument jest
+# przestępny.
+
+
+# def rok_przestępny(a):      #DZIAłA
+#     rok = a
+#     if rok % 4 == 0 and rok % 100 != 0:
+#         return print("twoj rok jest przestępny")
+#     elif rok % 400 == 0:
+#         return print("twoj rok jest przestępny")
+#     else:
+#         return print("twoj rok nie jest przestępny")
+#
+# rok_przestępny(2020)
+
+
+# Zadanie
+# Napisz program, który wyświetli 6 losowych i niepowtarzających się liczb
+# całkowitych od 1 do 50.
+
+# from random import randint
+# var1 = []
+# while len(var1) < 6: # ma przerwać kiedy będzie miał 6 elementów
+#     liczba = randint(1, 50)  # zakres liczb losowych
+#     if not liczba in var1: # żeby się nie powtarzały
+#         var1.append(liczba)
+# print(var1)
+
+
+# from random import randint
+# var1 = []
+# while len(var1) < 6:
+#     var2 = randint(1, 50)
+#     if var2 not in var1:
+#         var1.append(var2)
+#
+# print(var1)
+
+
+# Zadanie
+# Napisz program, który generuje losową liczbę z zakresu [0; 10] i każe ci ją
+# odgadnąć. Masz trzy próby. Inaczej „Hasta la vista, baby”, sorry.
+
+# from random import randint
+#
+# var2 = randint(1, 10)
+# counter = 0
+# print(var2)
+#
+# while counter < 3:
+#     var1 = int(input("Podaj liczbę od 0 do 10\n"))
+#     counter += 1
+#     if var1 == var2:
+#         print("brawo zgadłeś za", counter,"razem")
+#         break
+#     if counter < 3:
+#         counter += 1
+#         var1 = int(input("spróbuj jeszcze raz\n"))
+# if counter == 3:
+#     print("hasta la vista baby")
+
+
+# from random import randint
+#
+# var2 = randint(1, 10)
+# counter = 0
+# print(var2)
+# var1 = int(input("Podaj liczbę od 0 do 10\n"))
+# while True:
+#
+#     if var1 == var2:
+#         counter += 1
+#         print("brawo zgadleś za", counter, "razem")
+#         break
+#     if counter == 2:
+#         print("hasta la vista baby!")
+#         break
+#     else:
+#         counter +=1
+#         var1 = int(input("Spróbuj jeszcze raz\n"))
+
+
+# import math
+#
+# def pole_koła(r):
+#     var1 = math.pi * r**2
+#     return var1
+#
+# print(pole_koła(33))
+
+# def palindrom(pal):
+#     if pal == reversed(pal):
+#         return print("twój wyraz jest palindromem")
+#     else:
+#         return print("twója wyraz nie jest palindromem")
+#
+# print(palindrom("abcdcba"))
+
+# def palindrom(var1):
+#     pal = list(var1.lstrip())
+#     pal2 = list(reversed(pal))
+#
+#     if pal == pal2 :
+#         return print("twój wyraz to palindrom")
+#     else:
+#         return print("twój wyraz nie jest palindromem")
+#
+# palindrom(var1 = "kobyłamamałybok")
+
+
+# Zadanie Napisz funkcję która przymujuje paramter n i zwraca n liczb parzystych od 1
+
+
+# def parzyste(n):
+#     var1 = []
+#     i = 1
+#     while len(var1) < n:
+#         if i % 2 == 0:
+#             var1.append(i)
+#         i += 1
+#     return var1
+#
+#
+# print(parzyste(10))
+
+
+# lower = "aąbcćdeęfghijklłmnńopqrstóuwxyzźż"
+# upper = lower.upper()
+# digits = "01234567890"
+# specials = "!@$%^&*"
+# totatlcounter = set()
+#
+# password = input("Wpisz swoje hasło\n")
+#
+# for i in password:
+#     if i in lower:
+#         totatlcounter.add("l")
+#     if i in upper:
+#         totatlcounter.add("u")
+#     if i in digits:
+#         totatlcounter.add("d")
+#     if i in specials:
+#         totatlcounter.add("s")
+# print(totatlcounter)
+# while len(password) > 12 or len(password) < 6 and "l" not in totatlcounter or "u" not in totatlcounter or "d" not in totatlcounter or "s" not in totatlcounter:
+#     print("Twoje hasło powinno mieć od 6 do 12 znaków, oraz zawierać Jedną wielką literę, jedną małą, cyfrę i jeden znak specjalny\n")
+#     totatlcounter.clear()
+#     password = input("Wpisz swoje hasło\n")
+#     for i in password:
+#         if i in lower:
+#             totatlcounter.add("l")
+#         if i in upper:
+#             totatlcounter.add("u")
+#         if i in digits:
+#             totatlcounter.add("d")
+#         if i in specials:
+#             totatlcounter.add("s")
+# print(totatlcounter)
+#
+#         if "l" in totatlcounter or "u" in totatlcounter or "d" in totatlcounter or "s" in totatlcounter and 6 >= len(password) < 13:
+#             break
+# print("Hasło zostało zmienione")
+
+
+# def haslo(password):
+#     lower = "aąbcćdeęfghijklłmnńopqrstóuwxyzźż"
+#     upper = lower.upper()
+#     digits = "01234567890"
+#     specials = "!@$%^&*"
+#     totatlcounter = set()
+#
+#     while len(password) > 12 or len(password) < 6:
+#         return print("Twoje hasło powinno mieć od 6 do 12 znaków\n")
+#
+#     for i in password:
+#         if i in lower:
+#             totatlcounter.add("l")
+#         elif i in upper:
+#             totatlcounter.add("u")
+#         elif i in digits:
+#             totatlcounter.add("d")
+#         elif i in specials:
+#             totatlcounter.add("s")
+#
+#     while "l" not in totatlcounter or "u" not in totatlcounter or "d" not in totatlcounter or "s" not in totatlcounter:
+#         return print("Twoje hasło nie spełnia wymagań\n")
+#
+#     if "l" in totatlcounter or "u" in totatlcounter or "d" in totatlcounter or "s" in totatlcounter:
+#         return print("Hasło zostało zmienione")
+#
+# haslo1 = input("podaj hasło\n")
+#
+# haslo(haslo1)
+
+
+# Zadanie 5.
+# Napisz program, który policzy iloczyn elementów wybranej przez siebie
+# listy, iterując po nich.
+
+
+# var1 = [1, 2, 3, 4, 5]
+# var2 = var1[0]
+#
+# for i in var1:
+#     var2 *= i
+# print(var2)
+
+
+# lower = "aąbcćdeęfghijklłmnńopqrstóuwxyzźż"
+# upper = lower.upper()
+# digits = "01234567890"
+# specials = "!@$%^&*"
+# totatlcounter = set()
+#
+# password = input("Wpisz swoje hasło\n")
+#
+# for i in password:
+#     if i in lower:
+#         totatlcounter.add("l")
+#     if i in upper:
+#         totatlcounter.add("u")
+#     if i in digits:
+#         totatlcounter.add("d")
+#     if i in specials:
+#         totatlcounter.add("s")
+#
+# while "l" not in totatlcounter or "u" not in totatlcounter or "d" not in totatlcounter or "s" not in totatlcounter or len(password) > 12 or len(password) < 6:
+#     totatlcounter = set()
+#     print("Twoje hasło nie spełnia wymagań\n")
+#     password = input("Wpisz jeszcze raz hasło\n")
+#     for i in password:
+#         if i in lower:
+#             totatlcounter.add("l")
+#         if i in upper:
+#             totatlcounter.add("u")
+#         if i in digits:
+#             totatlcounter.add("d")
+#         if i in specials:
+#             totatlcounter.add("s")
+#
+# print("Hasło zostało zmienione")
+#
+#
+# lower = "aąbcćdeęfghijklłmnńopqrstóuwxyzźż"
+# upper = lower.upper()
+# digits = "01234567890"
+# specials = "!@$%^&*"
+# totatlcounter = set()
+#
+# def petla(password):
+#
+#     for i in password:
+#         if i in lower:
+#             totatlcounter.add("l")
+#         elif i in upper:
+#             totatlcounter.add("u")
+#         elif i in digits:
+#             totatlcounter.add("d")
+#         elif i in specials:
+#             totatlcounter.add("s")
+#
+#     return totatlcounter
+#
+# password = input("Wpisz jeszcze raz hasło\n")
+# petla(password)
+# print(totatlcounter)
+# while "l" not in totatlcounter or "u" not in totatlcounter or "d" not in totatlcounter or "s" not in totatlcounter or len(password) > 12 or len(password) < 6:
+#     totatlcounter.clear()
+#     print("Twoje hasło nie spełnia wymagań\n")
+#     password = input("Wpisz jeszcze raz hasło\n")
+#     petla(password)
+#
+#
+# print("Hasło zostało zmienione")
+#
+#
+#
+# lower = "aąbcćdeęfghijklłmnńopqrstóuwxyzźż"
+# upper = lower.upper()
+# digits = "01234567890"
+# specials = "!@$%^&*"
+# totatlcounter = ""
+#
+# def petla(password):
+#     totatlcounter = ""
+#     for i in password:
+#         if i in lower:
+#             totatlcounter += "l"
+#         elif i in upper:
+#             totatlcounter += "u"
+#         elif i in digits:
+#             totatlcounter += "d"
+#         elif i in specials:
+#             totatlcounter += "s"
+#     return totatlcounter
+#
+# password = input("Witamy w systemie bankowości elektronicznej.\n \nWpisz nowe hasło. Hasło musi mieć od 6 do 12 "
+#                  "znaków. \nHasło musi zawierać przynajmniej jedną wielką, jedną mała litere, cyfrę i znak "
+#                  "specjalny\n")
+# petla(password)
+# totatlcounter = petla(password)
+#
+# while "l" not in totatlcounter or "u" not in totatlcounter or "d" not in totatlcounter or "s" not in totatlcounter or len(password) > 12 or len(password) < 6:
+#     totatlcounter = ""
+#     print("Twoje hasło nie spełnia wymagań\n")
+#     password = input("Wpisz jeszcze raz hasło\n")
+#     petla(password)
+#     totatlcounter = petla(password)
+#
+#
+# print("Hasło zostało zmienione\n")
+#
+# #
+#
+# import sys
+# ask1 = ''
+#
+# while ask1 != "t" or ask1 != "n":
+#     ask1 = input("czy chcesz się teraz zalogowaćC? \n tak(t), nie (n)?\n")
+#     if ask1 == "t" or ask1 == "n":
+#         break
+# if ask1 == "n":
+#     print("Dziękujemy za skorzystanie z naszego systemu logowania\n")
+#     sys.exit(0)
+# elif ask1 == "t":
+#     ownerpassword = input("podaj swoje hasło\n")
+#
+# if ownerpassword != password:
+#     print("Podałeś błedne hasło")
+# else:
+#     print("Witamy w systemie bankowosci elektronicznej")
+#
+# #
+#
+# program = ''
+# while program != "k" or program != "e" or program != "b":
+#     program = input("Z jakiej funkcji chcesz skorzystać?\nKalkulator oprocentowania: (k)\nKalkulator Brutto - Netto ("
+#                     "b)\nWyjście z systemu bankowości: (e)\n")
+#     if program == "k":
+#         stan_p = float(input("podaj stan poczatkwy konta\n"))
+#         procent = float(input("podaj oprocentowanie\n"))
+#         okres = float(input("ile lat będziez trzymał środki\n"))
+#         pytanie = input("Co jaki okres występuje kapitalizacja?\n Dziennie (d), miesiąc (m), rok (r)\n")
+#         pytanie = pytanie.lower()
+#         while not pytanie in ["m", "d", "r"]:
+#             print("Wybierz zdefiniowaną odpowedź: d - dzień, m - miesiąc, r - rok")
+#             pytanie = input("Co jaki okres występuje kapitalizacja?\n Dziennie (d), miesiąc (m), rok (r)\n")
+#
+#         miesiąc = okres * 12
+#         procent_m = procent / 12
+#
+#         dzień = okres * 365
+#         procent_d = procent / 365
+#
+#         if pytanie == "m":
+#             wynik = stan_p * ((1 + (procent_m / 100)) ** miesiąc)
+#             print("Twój kapitał po wskaznym okresie, wyniesie:", wynik, "\n")
+#
+#         elif pytanie == "r":
+#             wynik = stan_p * ((1 + (procent / 100)) ** okres)
+#             print("Twój kapitał po wskaznym okresie, wyniesie:", wynik, "\n")
+#
+#         elif pytanie == "d":
+#             wynik = stan_p * ((1 + (procent_d / 100)) ** dzień)
+#             print("Twój kapitał po wskaznym okresie, wyniesie:", wynik, "\n")
+#     elif program == "b":
+#         podaj = ''
+#         while podaj != "b" or podaj != "n" or podaj != "e" or podaj != "r":
+#             podaj = input("Co chcesz obliczyć? Brutto (b) czy netto (n)?\nPowrót do menu (r)\nZakończ program (e)\n ")
+#             if podaj == "b":
+#                 kwota = float(input("Podaj wysokść wynagrrodzenia netto\n"))
+#                 wynagrodzenie = kwota * 140.26 / 100
+#                 print("twoja kwota brutto to:", wynagrodzenie)
+#             elif podaj == "n":
+#                 kwota = float(input("Podaj wysokść wynagrrodzenia brutto\n"))
+#                 wynagrodzenie = kwota * 71.3 / 100
+#                 print("twoja kwota netto to:", wynagrodzenie)
+#             elif podaj == "e":
+#                 print("Dziękujemy za skorzystanie z naszego systemu bankowości\n")
+#                 sys.exit(0)
+#             elif podaj == "r":
+#                 break
+#
+#
+#     elif program == "e":
+#         print("Dziękujemy za skorzystanie z naszego systemu bankowości\n")
+#         sys.exit(0)
+
+
+# Zaimplementujmy odliczanie oparte na pętli while.
+#  Odliczamy w dół od zadanej liczby aż do
+# zera
+
+# Zadanie
+# Wyświetl kwadraty liczb od 3 do 9
+
+# list1 = []
+# # list2 = []
+# # for i in range(3, 10):
+# #     list1.append(i)
+# #
+# # for i in list1:
+# #     list2.append(i * i)
+# #
+# # print(list2)
+
+
+# Stwórz listę zawierającą parzyste liczby naturalne mniejsze od 99.
+
+# list1 = []
+# for i in range(0, 100):
+#     if i % 2 == 0:
+#         list1.append(i)
+#
+# print(list1)
+
+
+# Stwórz listę zawierającą kilka liczb całkowitych, a następnie program, który policzy sumę jej elementów, iterując po nich.
+
+# list1 = [4, 7, 11, 45, 67]
+# sum = 0
+# for i in list1:
+#     sum += i
+# print(sum)
+
+
+# Zmodyfikuj program, aby policzyć średnią po wszystkich elementach
+
+# list1 = [4, 7, 11, 45, 67]
+# sum = 0
+# aver = 0
+# for i in list1:
+#     sum += i
+#     aver = sum / len(list1)
+# print(sum)
+# print(aver)
+
+# Znajdź indeks elementu największego na liście.
+
+# list1 = [4, 7, 11, 45, 67]
+# index = list1[0]
+#
+# for i in range(1, len(list1)):
+#     if list1[i] > index:
+#         index = list1[i]
+#         index_id = i
+# print(index, index_id)
+
+# Jeszcze raz
+
+# lst = [3, 133, 25, 822, 77, 699]
+# najw = lst[0]
+#
+# for i in range(1, len(lst)):
+#     if lst[i] > najw:
+#         najw = lst[i]
+#         index = i
+#
+# print(najw, index)
+
+
+# Dla n = 0, 1, …, 20 wypisz wartości określone wzorem:
+# x(n) =n2+1
+
+# lst = []
+# lst2 = []
+# for i in range(1, 21):
+#     lst.append(i)
+# for i in lst:
+#     lst2.append(i*i + 1)
+#
+# print(lst2)
+
+
 # Napisz program, który wyświetli listę cyfr od 0 do 10 z pominięciem tych
 # podzielnych przez 3.
 
-# list1 = []
-# list2 = []
+# lst = []
 # for i in range(1, 11):
 #     if i % 3 != 0:
-#         list1.append(i)
-# print(list1)
-
-
-# z while
-
-# list1 = []
-# idx = -1
-# while idx < 10:
-#     idx += 1
-#     if idx % 3 == 0:
-#         continue
-#     list1.append(idx)
-# print(list1)
-
-# od 20 do 40 podzielne przez 2
-
-
-# napisz program, który będzie robić kwadrat jakiejś liczby aż dojdzie do 1000
+#         lst.append(i)
 #
-# liczba = 3
-# potęga = []
-# lista = []
-# while True:
-#     lista.append(liczba ** 2)
-#     lista = liczba ** 2
-#     for i in lista:
-#
-#         break
-# print(lista)
+# print(lst)
 
+# Zadanie
+# Napisz program, który wyświetli 6 losowych i niepowtarzających się liczb
+# całkowitych od 1 do 50.
 
-
-
-# lista = []
-# liczba = 3
-# while True:
-#     lista.append(liczba ** 2)
-#     liczba +=1
-#     if liczba == 10:
-#         break
-# print(lista)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# lista = []
-# idx = -1
-# while idx <10:
-#     idx += 1
-#     if idx % 3 == 0:
-#         continue
-#     lista.append(idx)
-# print(lista)
-
-
-
-
-
-#albo dla 20
-
+# from random import randint
 # var1 = []
-# for i in range(1,21):
-#     if i % 3 != 0:
-#         var1.append(i)
+# var1 = set(var1)
+# while len(var1) < 6:
+#     var1.add(randint(1, 50))
+# var1 = list(var1)
 # print(var1)
 
-# liczby od  20 do 40 których suma nie przekorczy 50
+# Albo z continue
 
-# list1 = []
-# for i in range(20, 41):
-#     if i + i < 50:
-#         list1.append(i)
-# print(list1)
-
-
-# Napisz program, który zamieni wprowadzony przez użytkownika ciąg cyfr
-# na formę tekstową, np.:
-# 112 - > „jeden jeden dwa”
-
-# dict1 = {1:"jeden", 2:"dwa", 3:"trzy", 4:"cztery", 5:"pięć", 6:"sześć", 7:"siedem", 8:"osiem", 9:"dziwieć", 0:"zero"}
-# list1 = int(input("wpisz jakąś iczbę"))
-# var1 = " "
-# for i in list1: # rozbijamy listę na elementy
-#     var1 += dict1(int[i])
-# print = var1
-
-# zakres liczb 0 do 200 w których reszta z dzielenie przez 3 daje 2
+# from random import randint
 #
-# liczby = []
-# liczby_poprawnie =[]
-# for i in range(3, 200):
-#     if i % 3 == 2:
-#         liczby_poprawnie.append(i)
-# print(liczby_poprawnie)
-
-from 07.12.  import wieksze5
-print(wieksze5([2, 5, 7, 9]))
-
+# var1 = []
+# while len(var1) < 6:
+#     var2 = randint(1, 50)
+#     if var2 in var1:
+#         continue
+#     var1.append(var2)
+#
+# print(var1)
 
 
+# Napisz program, który generuje losową liczbę z zakresu [0; 10] i każe ci ją
+# odgadnąć. Masz trzy próby. Inaczej „Hasta la vista, baby”, sorry.
+
+# from random import randint
+# rand = randint(1,10)
+# print(rand)
+# counter = 0
+# anticounter = 3
+#
+#
+# while anticounter > 0:
+#     print("Masz", anticounter, "podejścia.")
+#     num = int(input("Zgadnij liczbe z zakresu od 1 d0 10\n"))
+#     if counter != 3:
+#         if num == rand:
+#             anticounter -= 1
+#             counter += 1
+#             print("Brawo zgadłes za", counter, "razem.")
+#             break
+#         else:
+#             anticounter -= 1
+#             counter += 1
+#             if counter < 3:
+#                 print("nie zgadłeś spróbuj jeszcze raz")
+#             else:
+#                 print("Hasta la vista Baby!")
+
+# Zadanie
+# Napisz funkcję, która policzy i zwróci wartość pola powierzchni trójkąta
+
+# def pole_tr(a, h):
+#     pole = a * h * 0.5
+#     return pole
+#
+# print(pole_tr(5, 2))
+
+# Napisz funkcję, która przyjmuje parametr n i zwraca n liczb parzystych od 1.
+
+# def parametr(n):
+#     lista = []
+#     i = 1
+#     while len(lista) < n:
+#         if i % 2 == 0:
+#             lista.append(i)
+#         i += 1
+#     return lista
+#
+# print(parametr(10))
+
+# Napisz funkcję, która przyjmuje jako argument liczbę lat Twojego psa, a
+# zwraca jego wiek w odniesieniu do wieku człowieka mnożąc logarytm
+# naturalny wieku psa przez 16, a następnie dodając 31.
+
+# from math import log
+#
+# def wiek_psa(dage):
+#     return log(dage)*16 + 31
+#
+# print(wiek_psa(18))
+
+# Zadanie
+# Napisz funkcję is_ten(), która przyjmuje dwa argumenty, a na wyjściu
+# zwraca True, jeśli którykolwiek z nich jest równy 10. To samo w
+# przypadku, gdy ich suma jest równa 10.
+
+# def is_ten(a, b):
+#     if a == 10 or b == 10 or a + b == 10:
+#         return True
+#     else:
+#         return False
+#
+#
+# print(is_ten(10, 2))
+
+# Zadanie
+# Napisz funkcję is_vowel(), która sprawdza, czy litera podana jako
+# argument jest samogłoską.
 
 
+# def is_vowel(x):
+#     vow = ["a", "ą", "e", "ę", "i", "o", "u"]
+#     if x in vow:
+#         return True
+#     else:
+#         return False
+#
+# print(is_vowel("e"))
+
+# Zadanie
+# Napisz funkcję, która dla podanego napisu zwróci informację, która litera
+# ile razy w nim wystąpiła (duże i małe litery traktujemy tak samo).
+
+# def ile_razy(word):
+#     dict1 = {}
+#     for i in word.lower():
+#         if i not in dict1:
+#             dict1[i] = 1
+#         else:
+#             dict1[i] += 1
+#             return dict1
+# print(ile_razy("Dupaa"))
 
 
+# Zadanie
+# Napisz funkcję, która jako argumenty będzie przyjmowała listę i parametr
+# n z domyślną wartością równą 5. Funkcja ma zwrócić sumę wszystkich
+# elementów listy większych od n
+
+# def funkcja(lista, n = 5):
+#     suma = 0
+#     for i in lista:
+#         if i > n:
+#             suma += i
+#     return suma
+#
+# print(funkcja([4, 6, 8, 9]))
+
+
+# Zadanie
+# Napisz funkcję, która sprawdzi, czy podana liczba jest pierwsza.
+
+# def pierwsza(n):
+#
+#     for i in range(2, n):
+#         if n % i != 0:
+#             return True
+#         else:
+#             return False
+#
+# print(pierwsza(6))
+
+# Albo
+
+# def pierwsza(n):
+#     czy = True
+#     for i in range(2, n):
+#         if n % i == 0:
+#             czy = False
+#     return czy
+#
+# print(pierwsza(6))
+
+# Zadanie
+# Napisz funkcję o zmiennej liczbie parametrów zwracającą średnią
+# przekazanych liczb.
+
+# def zlp(*liczby):
+#     suma = 0
+#     for i in liczby:
+#         suma += i
+#     return suma / len(liczby)
+#
+# print(zlp(6,9,12))
+
+# albo
+
+# def zlp(*liczby):
+#     suma = 0
+#     for i in range(0, len(liczby)):
+#         suma += liczby[i]
+#     return suma / len(liczby)
+#
+#
+# print(zlp(6,9,12))
+
+# Zadanie
+# Napisz funkcję, która dla danego argumentu n policzy wartość n!
+# wzór
+# dla n = 0
+# dla n*(n-1)!
+
+# def silnia_rek(n):
+#     if n == 0:
+#         return 1
+#     else:
+#         return n * silnia_rek(n-1)
+# print(silnia_rek(4))
+
+# def silnia_iteracyjnie(n):
+#     silnia = 1
+#     for i in range(1, n+1):
+#         silnia *= i
+#     return silnia
+#
+# print(silnia_iteracyjnie(5))
+
+# Stwórz klasę człowiek
+#
+# class Człowiek:
+#     def __init__(self, imię, nazwisko, wzrost, waga):
+#         self.imię = imię
+#         self.nazwisko = nazwisko
+#         self.wzrost = wzrost
+#         self.waga = waga
+#
+# marek = Człowiek("Marek", "Klepczarek", 187, 82)
+# janina = Człowiek("Janina", "Kowalska", 164, 72)
+# grzegorz = Człowiek("Grzegorz", "Wolski", 178, 89)
+#
+# print(marek.imię, marek.wzrost)
+
+
+# Dodaj BMI
+
+class Człowiek:
+    def __init__(self, imię, nazwisko, wzrost, waga):
+        self.imię = imię
+        self.nazwisko = nazwisko
+        self.wzrost = wzrost
+        self.waga = waga
+
+    def bmi(self):                  # określamy metodę
+        bmi = self.waga / self.wzrost ** 2
+        if bmi < 18.5:
+            return "niedowaga"
+        elif bmi <25:
+            return "Optimum"
+        elif bmi < 30:
+            return "nadwaga"
+        else:
+            return "otyłość"
+
+    def __str__(self):          # tu definiujemy co ma zostac zwróconę
+        return f"{self.imię} {self.nazwisko}, ma wskaźnik BMI na poziomie: {self.bmi()}"    # musi być ()
+
+marek = Człowiek("Marek", "Klepczarek", 1.87, 82)
+janina = Człowiek("Janina", "Kowalska", 1.64, 72)
+grzegorz = Człowiek("Grzegorz", "Wolski", 1.78, 89)
+
+print(marek)
+print(janina)
+print(grzegorz)
