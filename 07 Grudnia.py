@@ -275,32 +275,32 @@
 
 # Klasy
 
-# class Prostokąt:
-#     def __init__ (self, bok_a, bok_b):
-#         self.bok_a = bok_a
-#         self.bok_b = bok_b
-#
-#     def pole(self):
-#         return self.bok_a * self.bok_b
-#
-#     def obwod(self):
-#         return 2 * (self.bok_a + self.bok_b)
-#
-# p1 = Prostokąt(5, 7)
-# p2 = Prostokąt(4, 5)
-#
-# # print(p1.obwod())
-# # # print(p1.pole())
-#
-# class Kwadrat(Prostokąt):  # dodajemy nową klasę
-#     def __init__(self, bok):
-#         super().__init__(bok, bok) # Przkazujemy klasie prostokąt wartości z klasy kwadrat
-#
-#
-# k1 = Kwadrat(6)
-#
-# print(k1.pole())
-# print(k1.obwod())
+class Prostokąt:
+    def __init__ (self, bok_a, bok_b):
+        self.bok_a = bok_a
+        self.bok_b = bok_b
+
+    def pole(self):
+        return self.bok_a * self.bok_b
+
+    def obwod(self):
+        return 2 * (self.bok_a + self.bok_b)
+
+p1 = Prostokąt(5, 7)
+p2 = Prostokąt(4, 5)
+
+print(p1.obwod())
+print(p1.pole())
+
+class Kwadrat(Prostokąt):  # dodajemy nową klasę
+    def __init__(self, bok):
+        super().__init__(bok, bok) # Przkazujemy klasie prostokąt wartości z klasy kwadrat
+
+
+k1 = Kwadrat(6)
+
+print(k1.pole())
+print(k1.obwod())
 
 
 # Dodatki
@@ -477,5 +477,5 @@
 # print(filter_words(["ala", "ma", "kota", "i", "psa"],banned_words))
 
 # ile ma tysięcy ta liczba? (6)
-liczba = 56475
-print((liczba // 1000) %10)
+# liczba = 56475
+# print((liczba // 1000) %10)
