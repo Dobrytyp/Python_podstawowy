@@ -611,19 +611,75 @@
 
 # METODY
 
-class Dog:
+# class Dog:
+#     def __init__(self, name, age):          # Tu mamy informacje jakie parametry definiują psa
+#         self.name = name
+#         self.age = age
+#
+#     def descritpion(self):                  # określamy metodę
+#         return f"{self.name}, {self.age}"
+#
+#     def make_sound(self, number):           # tu kolejna metoda
+#         return "Hau! " *number
+#
+# azor = Dog("Azor", 6)
+# burek = Dog("Burek", 4)
+#
+# print(azor.descritpion())
+# print(burek.make_sound(4))
+
+#-------------------------------------------------------------
+
+# # METODA specjalna __str__
+#
+# class Dog:
+#     def __init__(self, name, age):          # Tu mamy informacje jakie parametry definiują psa
+#         self.name = name
+#         self.age = age
+#
+#     def descritpion(self):                  # określamy metodę
+#         return f"{self.name}, {self.age}"
+#
+#     def make_sound(self, number):           # tu kolejna metoda
+#         return "Hau! " *number
+#
+#     def __str__(self):                      # tu określamy co ma zostac zwrócone
+#         return f"{self.name}, ma {self.age} lat."
+#
+# azor = Dog("Azor", 6)
+# burek = Dog("Burek", 4)
+#
+# print(azor)
+# print(burek)
+
+#====================================================================================
+
+# DZIEDZICZENIE
+
+# - mimo że na pewnym poziomie abstrakcji obiekty zachowują się tak samo, to mogą się też różnić na innym poziomie,
+#   np. każdy pies ma swoje imię i wiek, ale każda rasa ma swoje specyficzne własności
+# - aby móc to zamodelować możemy wykorzystać dziedziczenie, rozwijając klasę bazową
+
+class Dog():
     def __init__(self, name, age):
         self.name = name
         self.age = age
 
-    def descritpion(self):                  # określamy metodę
-        return f"{self.name}, {self.age}"
+    def __str__(self):              # To po to, żeby zwracało info po wpisaniu psa linia 681 i 683
+        return f"{self.name} is a dog, {self.age} year old."
 
-    def make_sound(self, number):           # tu kolejna metoda
-        return "Hau! " *number
+class Labrador(Dog):                # Tworzymy podklasę
+    def make_sound(self):
+        return "WHOOF!"
 
-azor = Dog("Azor", 6)
-burek = Dog("Burek", 4)
+class York(Dog):                    # Druga podklasa
+    def make_sound(self):
+        return "Hau!"
 
-print(azor.descritpion())
-print(burek.make_sound(4))
+lucky_dog = Labrador("Lucky", 6)
+coco_dog = York("Coco", 4)
+print(lucky_dog)
+print(lucky_dog.make_sound())
+print(coco_dog)
+print(coco_dog.make_sound())
+
