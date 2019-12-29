@@ -631,6 +631,7 @@
 #-------------------------------------------------------------
 
 # # METODA specjalna __str__
+# Wywoływana przez wbudowaną funkcję str() oraz instrukcję print celem wygenerowania napisu zawierającego "informacyjną" reprezentację obiektu
 #
 # class Dog:
 #     def __init__(self, name, age):          # Tu mamy informacje jakie parametry definiują psa
@@ -660,26 +661,57 @@
 #   np. każdy pies ma swoje imię i wiek, ale każda rasa ma swoje specyficzne własności
 # - aby móc to zamodelować możemy wykorzystać dziedziczenie, rozwijając klasę bazową
 
-class Dog():
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
+# class Dog():
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
+#
+#     def __str__(self):              # To po to, żeby zwracało info po wpisaniu psa linia 681 i 683
+#         return f"{self.name} is a dog, {self.age} year old."
+#
+# class Labrador(Dog):                # Tworzymy podklasę
+#     def make_sound(self):
+#         return "WHOOF!"
+#
+# class York(Dog):                    # Druga podklasa
+#     def make_sound(self):
+#         return "Hau!"
+#
+# lucky_dog = Labrador("Lucky", 6)
+# coco_dog = York("Coco", 4)
+# print(lucky_dog)
+# print(lucky_dog.make_sound())
+# print(coco_dog)
+# print(coco_dog.make_sound())
 
-    def __str__(self):              # To po to, żeby zwracało info po wpisaniu psa linia 681 i 683
-        return f"{self.name} is a dog, {self.age} year old."
+#=========================================================================
 
-class Labrador(Dog):                # Tworzymy podklasę
-    def make_sound(self):
-        return "WHOOF!"
+# FUNKCJA SUPER()
 
-class York(Dog):                    # Druga podklasa
-    def make_sound(self):
-        return "Hau!"
+# class Dog:
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
+#
+#     def __str__(self):
+#         return f"{self.name} is a dog. {self.age} years old."
+#
+# class Labrador(Dog):
+#     def __init__(self, name, age):
+#         super().__init__(name, age)                 # Umożliwia zaciągnięcie z klasy nadrzędnej Dog
+#         self.size = "big"
+#
+#     def make_sound(self):
+#         return "WOOOOOF!"
+#
+# class York(Dog):
+#     def __init__(self, name, age, size="small"):
+#         super().__init__(name, age)
+#         self.size = size
+#
+#     def make_sound(self):
+#         return "hau"
+#
+# dog1 = York("baron", 12, "small")
 
-lucky_dog = Labrador("Lucky", 6)
-coco_dog = York("Coco", 4)
-print(lucky_dog)
-print(lucky_dog.make_sound())
-print(coco_dog)
-print(coco_dog.make_sound())
 
