@@ -1958,44 +1958,69 @@ napis = "phyton"
 # w miesiącu. Pamiętaj, że chcemy mieć możliwość informowania
 # pracownika o jego kondycji na podstawie BMI.
 
-class Człowiek:
-    def __init__(self, imię, nazwisko, wzrost, waga):
-        self.imię = imię
-        self.nazwisko = nazwisko
-        self.wzrost = wzrost
-        self.waga = waga
+# class Człowiek:
+#     def __init__(self, imię, nazwisko, wzrost, waga):
+#         self.imię = imię
+#         self.nazwisko = nazwisko
+#         self.wzrost = wzrost
+#         self.waga = waga
+#
+#     def bmi(self):                  # określamy metodę
+#         bmi = self.waga / (self.wzrost/100) ** 2
+#         if bmi < 18.5:
+#             return "niedowaga"
+#         elif bmi <25:
+#             return "Optimum"
+#         elif bmi < 30:
+#             return "nadwaga"
+#         else:
+#             return "otyłość"
+#
+#     def __str__(self):          # tu definiujemy co ma zostac zwróconę
+#         return f"{self.imię} {self.nazwisko}, ma wskaźnik BMI na poziomie: {self.bmi()}"    # musi być ()
+#
+# class Pracownik(Człowiek):
+#     def __init__(self, imię, nazwisko, wzrost, waga, stawka, godziny):
+#         super().__init__(imię, nazwisko, wzrost, waga)
+#         self.stawka = stawka
+#         self.godziny = godziny
+#     def __str__(self):          # tu definiujemy co ma zostac zwróconę
+#         return f"{self.imię} {self.nazwisko}, ma wskaźnik BMI na poziomie: {self.bmi()}, zarabia {self.stawka} złotych. Przeprcował/a {self.godziny} godzin w tym miesiącu. Zarobiła więc {self.stawka * self.godziny}"    # musi być ()
+#
+#
+# marek = Człowiek("Marek", "Klepczarek", 187, 82)
+# janina = Człowiek("Janina", "Kowalska", 164, 72)
+# grzegorz = Człowiek("Grzegorz", "Wolski", 178, 89)
+#
+# halina = Pracownik("Halina", "Białek", 168, 62, 25, 160)
+#
+# print(marek)
+# print(janina)
+# print(grzegorz)
+#
+# print(halina)
 
-    def bmi(self):                  # określamy metodę
-        bmi = self.waga / (self.wzrost/100) ** 2
-        if bmi < 18.5:
-            return "niedowaga"
-        elif bmi <25:
-            return "Optimum"
-        elif bmi < 30:
-            return "nadwaga"
-        else:
-            return "otyłość"
+# Zadanie
+# Stwórz klasę Prostokąt, której atrybutami będą wysokość i szerokość
+# figury. Zaimplementuj metody do mierzenia obwodu i pola prostokąta.
 
-    def __str__(self):          # tu definiujemy co ma zostac zwróconę
-        return f"{self.imię} {self.nazwisko}, ma wskaźnik BMI na poziomie: {self.bmi()}"    # musi być ()
+class Prostokąt:
+    def __init__(self, wyskość, szerokość):
+        self.wysokość = wyskość
+        self.szerokość = szerokość
 
-class Pracownik(Człowiek):
-    def __init__(self, imię, nazwisko, wzrost, waga, stawka, godziny):
-        super().__init__(imię, nazwisko, wzrost, waga)
-        self.stawka = stawka
-        self.godziny = godziny
-    def __str__(self):          # tu definiujemy co ma zostac zwróconę
-        return f"{self.imię} {self.nazwisko}, ma wskaźnik BMI na poziomie: {self.bmi()}, zarabia {self.stawka} złotych. Przeprcował/a {self.godziny} godzin w tym miesiącu. Zarobiła więc {self.stawka * self.godziny}"    # musi być ()
+    def pole(self):
+        pole = self.wysokość * self.szerokość
+        return pole
+
+    def obwod(self):
+        obwod = self.wysokość * 2 + self.szerokość * 2
+        return obwod
 
 
-marek = Człowiek("Marek", "Klepczarek", 187, 82)
-janina = Człowiek("Janina", "Kowalska", 164, 72)
-grzegorz = Człowiek("Grzegorz", "Wolski", 178, 89)
 
-halina = Pracownik("Halina", "Białek", 168, 62, 25, 160)
+ob1 = Prostokąt(4, 6)
 
-print(marek)
-print(janina)
-print(grzegorz)
+print(ob1.pole(), ob1.obwod())
 
-print(halina)
+

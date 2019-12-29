@@ -714,4 +714,24 @@
 #
 # dog1 = York("baron", 12, "small")
 
+#=====================================================================================
 
+# Tworzymy klasę Prostokąt, której atrybutami będą wysokość i szerokość. Zaimplementujemy metody do mierzenia obwodu i pola.
+
+class Prostokąt:
+    def __init__(self, wyskość, szerokość):
+        self.wysokość = wyskość                         # tu zawsze jest self.
+        self.szerokość = szerokość
+
+    def pole(self):                                     # tu jest metoda na pole
+        pole = self.wysokość * self.szerokość
+        return pole
+
+    def obwod(self):                                    # tu jest metoda na obwód
+        obwod = self.wysokość * 2 + self.szerokość * 2
+        return obwod
+
+
+ob1 = Prostokąt(4, 6)                                   # przykładowy obiekt
+
+print(ob1.pole(), ob1.obwod())
