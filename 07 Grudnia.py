@@ -338,17 +338,17 @@
 
 # ale....
 
-a = [1, 2, 3]
-b = a
-b.append(5)
-print(a, b)
-
-# rowiązanie:
-
-c = [1, 2, 3]
-d = c.copy()
-d.append(5)
-print(c, d)
+# a = [1, 2, 3]
+# b = a
+# b.append(5)
+# print(a, b)
+#
+# # rowiązanie:
+# 
+# c = [1, 2, 3]
+# d = c.copy()
+# d.append(5)
+# print(c, d)
 
 #albo
 
