@@ -785,3 +785,35 @@
 #   czy też wejść na stołek bo lek stoi na górnej półce. My tego sami robić nie musimy, to już nie nasz problem,
 #   a drugiego obiektu.
 
+#==========================================================================
+
+# Przekazywanie argumentów przez referencję
+
+# Zadanie - policz sumę obiektów listy
+
+# Można zrobić to iteracyjnie:
+
+# def list_iter(lst):
+#     suma = 0                            # tworzymy pustą listę
+#     for elem in lst:                    # dla każdego elementu:
+#         suma += elem                    # dodajemy go do pustej listy
+#     return suma                         # zwracamy sumę
+#
+# lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+#
+# print(list_iter(lista))                 # dostajemy listę wplecioną w funkcję
+
+# Ale można też rekurencyjnie
+
+def list_rek(lst):
+    if len(lst) == 1:
+        return lst[0]
+    else:
+        elem = lst.pop()               # .pop() usuwa wybrany element z listy
+        return elem + list_rek(lst)
+
+lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+print(list_rek(lista))
+
+

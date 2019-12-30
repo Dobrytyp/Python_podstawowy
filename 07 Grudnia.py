@@ -275,32 +275,32 @@
 
 # Klasy
 
-class Prostokąt:
-    def __init__ (self, bok_a, bok_b):
-        self.bok_a = bok_a
-        self.bok_b = bok_b
-
-    def pole(self):
-        return self.bok_a * self.bok_b
-
-    def obwod(self):
-        return 2 * (self.bok_a + self.bok_b)
-
-p1 = Prostokąt(5, 7)
-p2 = Prostokąt(4, 5)
-
-print(p1.obwod())
-print(p1.pole())
-
-class Kwadrat(Prostokąt):  # dodajemy nową klasę
-    def __init__(self, bok):
-        super().__init__(bok, bok) # Przkazujemy klasie prostokąt wartości z klasy kwadrat
-
-
-k1 = Kwadrat(6)
-
-print(k1.pole())
-print(k1.obwod())
+# class Prostokąt:
+#     def __init__ (self, bok_a, bok_b):
+#         self.bok_a = bok_a
+#         self.bok_b = bok_b
+#
+#     def pole(self):
+#         return self.bok_a * self.bok_b
+#
+#     def obwod(self):
+#         return 2 * (self.bok_a + self.bok_b)
+#
+# p1 = Prostokąt(5, 7)
+# p2 = Prostokąt(4, 5)
+#
+# print(p1.obwod())
+# print(p1.pole())
+#
+# class Kwadrat(Prostokąt):  # dodajemy nową klasę
+#     def __init__(self, bok):
+#         super().__init__(bok, bok) # Przkazujemy klasie prostokąt wartości z klasy kwadrat
+#
+#
+# k1 = Kwadrat(6)
+#
+# print(k1.pole())
+# print(k1.obwod())
 
 
 # Dodatki
@@ -323,7 +323,7 @@ print(k1.obwod())
 #         return lst[0]
 #     else:
 #         elem = lst.pop()
-#         return  elem + suma_rek(lst)
+#         return elem + suma_rek(lst)
 #
 # lista = [2, 2, 2, 5, 3, 6, 3]
 # print(lista)
@@ -338,17 +338,17 @@ print(k1.obwod())
 
 # ale....
 
-# a = [1, 2, 3]
-# b = a
-# b.append(5)
-# print(a, b)
+a = [1, 2, 3]
+b = a
+b.append(5)
+print(a, b)
 
 # rowiązanie:
 
-# a = [1, 2, 3]
-# b = a.copy()
-# b.append(5)
-# print(a, b)
+c = [1, 2, 3]
+d = c.copy()
+d.append(5)
+print(c, d)
 
 #albo
 

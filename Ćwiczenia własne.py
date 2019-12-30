@@ -2004,23 +2004,23 @@ napis = "phyton"
 # Stwórz klasę Prostokąt, której atrybutami będą wysokość i szerokość
 # figury. Zaimplementuj metody do mierzenia obwodu i pola prostokąta.
 
-class Prostokąt:
-    def __init__(self, wyskość, szerokość):
-        self.wysokość = wyskość
-        self.szerokość = szerokość
-
-    def pole(self):
-        pole = self.wysokość * self.szerokość
-        return pole
-
-    def obwod(self):
-        obwod = self.wysokość * 2 + self.szerokość * 2
-        return obwod
-
-
-
-ob1 = Prostokąt(4, 6)
-
-print(ob1.pole(), ob1.obwod())
+# class Prostokąt:
+#     def __init__(self, wyskość, szerokość):
+#         self.wysokość = wyskość
+#         self.szerokość = szerokość
+#
+#     def pole(self):
+#         pole = self.wysokość * self.szerokość
+#         return pole
+#
+#     def obwod(self):
+#         obwod = self.wysokość * 2 + self.szerokość * 2
+#         return obwod
+#
+#
+#
+# ob1 = Prostokąt(4, 6)
+#
+# print(ob1.pole(), ob1.obwod())
 
 
