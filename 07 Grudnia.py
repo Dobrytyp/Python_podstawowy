@@ -344,7 +344,7 @@
 # print(a, b)
 #
 # # rowiązanie:
-# 
+#
 # c = [1, 2, 3]
 # d = c.copy()
 # d.append(5)

@@ -2024,3 +2024,159 @@ napis = "phyton"
 # print(ob1.pole(), ob1.obwod())
 
 
+# Zadanie 2.
+# Napisz program sprawdzający, czy podane przez użytkownika hasło jest
+# poprawne. Poprawne hasło definiuje się w tym przypadku w ten sposób:
+# posiada rzynajmniej jedną dużą literę,
+# posiada przynajmniej jedną cyfrę,
+# ● Posiada przynajmniej jeden znak specjalny [@, $, #],
+# ● Jest minimalnie długości 6 znaków, a maksymalnie 15.
+
+# password = input("podja hasło\n")
+#
+# lower ="abcdefghijklmnoprstuwyz"
+# upper = lower.upper()
+# digits ="1234567890"
+# specials = "!@$#"
+#
+# check = []
+#
+# for i in password:
+#     if i in lower:
+#         check.append("l")
+#     elif i in upper:
+#         check.append("u")
+#     elif i in digits:
+#         check.append("d")
+#     elif i in specials:
+#         check.append("s")
+#
+# print(check)
+#
+# if "l" in check and "u" in check and "s" in check and "d" in check and 5 < len(check) < 16:
+#     print("brawo zjebie")
+# else:
+#     print("zjebałeś")
+
+# Zadanie 3.
+# Napisz program, który zamieni wprowadzony przez użytkownika ciąg cyfr
+# na formę tekstową, np.:
+# 112 - > „jeden jeden dwa”
+
+# cyfry = input("podaj liczbę\n")
+# dict = {1:"jeden", 2:"dwa", 3:"trzy", 4:"cztery", 5:"pięć", 6:"sześć", 7:"siedem", 8:"osiem", 9:"dziewieć", 0:"zero"}
+# var2 = ''
+# for i in cyfry:
+#     var2 += dict[int(i)] + " "
+#
+# print(var2)
+
+# Zadanie 4.
+# Stwórz listę zawierającą kilka liczb całkowitych, a następnie program,
+# który wskaże indeks najmniejszego z nich, iterując po nich.
+
+# lista = [1, 3, 5, 8,]
+# naj = lista[0]
+# position = 1
+#
+# for i in range(1, len(lista)):
+#     if lista[i] > naj:
+#         naj = lista[i]
+#         position = i
+# print(naj, position)
+
+
+# Napisz funkcję, która pobiera uporządkowaną listę liczb (listę, w której elementy są uporządkowane od najmniejszej do największej) i inną liczbę.
+# Funkcja decyduje, czy podana liczba znajduje się na liście, i zwraca (a następnie drukuje) odpowiednią wartość logiczną.
+
+# def czy_liczba(lista, a):
+#     lista.sort()
+#     if a in lista:
+#         return True, print(lista)
+#     else:
+#         return False, #print(lista)
+#
+# print(czy_liczba([2,6,9,2], 6))
+
+
+# Ćwiczenie 1 (i rozwiązanie)
+# Utwórz program, który prosi użytkownika o podanie imienia i nazwiska oraz wieku. Wydrukuj zaadresowaną do nich wiadomość, która mówi im, kiedy skończą 100 lat.
+
+# name = input("podaj imie\n")
+# surname = input("podaj naziwsko\n")
+# age = int(input("podaj swój wiek\n"))
+#
+# count = 2019 - age + 100
+#
+# print(name, surname, "Skończysz 100 lat w roku:", count)
+
+
+# Ćwiczenie 2 (i rozwiązanie)
+# Poproś użytkownika o numer. W zależności od tego, czy numer jest parzysty czy nieparzysty, wydrukuj odpowiednią wiadomość dla użytkownika.
+# Jeśli liczba jest wielokrotnością liczby 4, wydrukuj inną wiadomość.
+
+# number = int(input("podaj jakś liczbę"))
+#
+#
+# if number % 4 == 0:
+#     print("twoja liczba jest wielokrotnością cyfry 4")
+# elif number % 2 == 0:
+#     print("twoja liczba jest parzysta")
+# else:
+#     print("twoja liczba jest nieparzysta")
+
+# Take a list, say for example this one:
+
+  # a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+# and write a program that prints out all the elements of the list that are less than 5.
+
+# Extras:
+
+# Instead of printing the elements one by one, make a new list that has all the elements less than 5 from this list in it and print out this new list.
+# Write this in one line of Python.
+# Ask the user for a number and return a list that contains only elements from the original list a that are smaller than that number given by the user.
+
+
+# c = int(input("podjal iczbę\n"))
+# a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+# b = []
+# for i in a:
+#     if i < c:
+#         b.append(i)
+# print(b)
+
+
+# Exercise 4 (and Solution)
+# Create a program that asks the user for a number and then prints out a list of all the divisors of that number. (If you don’t know what a divisor is, it is a number that divides evenly into another number. For example, 13 is a divisor of 26 because 26 / 13 has no remainder.)
+
+# Discussion
+# The topics that you need for this exercise combine lists, conditionals, and user input. There is a new concept of creating lists.
+
+# There is an easy way to programmatically create lists of numbers in Python.
+
+# number = int(input("podjal iczbę\n"))
+# list1 = []
+# list1.append(number)
+#
+# for i in range(1, max(list1)):
+#     list1.append(i)
+# list1.sort()
+#
+# dzielniki = []
+# for i in list1:
+#     if number % i == 0:
+#         dzielniki.append(i)
+#
+# print(dzielniki)
+
+
+# Weź dwie listy, powiedz na przykład te dwie:
+
+#   a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+#   b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+# i napisz program, który zwraca listę zawierającą tylko elementy wspólne dla list (bez duplikatów). Upewnij się, że twój program działa na dwóch listach o różnych rozmiarach.
+
+# Dodatki:
+
+# Wygeneruj losowo dwie listy, aby to przetestować
+# Napisz to w jednym wierszu Pythona (nie martw się, jeśli nie możesz tego rozgryźć w tym momencie - wkrótce to zrobimy)
