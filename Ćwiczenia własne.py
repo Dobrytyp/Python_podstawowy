@@ -2240,9 +2240,56 @@ napis = "phyton"
 # Stwórz grę Rock Paper Scissors dla dwóch graczy. (Wskazówka: Poproś o grę gracza (za pomocą danych wejściowych), porównaj je,
 # wydrukuj wiadomość z gratulacjami dla zwycięzcy i zapytaj, czy gracze chcą rozpocząć nową grę)
 
-print("zagrajmy w grę: Papier, nożyczki, kamień")
-var1 = input("Co wybierasz?\n Papier - p, Nożyczki - n, Kamień - k\n")
-while var1 :
-    var1 = input("Co wybierasz?\n Papier - p, Nożyczki - n, Kamień - k\n")
-    if var1 == 'p' or var1 == "n" or var1 == "k":
-        continue
+# import sys
+#
+# print("zagrajmy w grę: Papier, nożyce, kamień")
+# game = True
+# while game is True:
+#     var1 = ''
+#     while "p" not in var1 or "n" not in var1 or "k" not in var1:
+#         var1 = input("Co wybierasz?\n Papier - p, Nożyczki - n, Kamień - k\n")
+#         if "p" in var1 or "n" in var1 or "k" in var1:
+#             break
+#
+#     import random
+#     var2 = random.randint(1, 3)
+#
+#     var3 = ''
+#     if var2 == 1:
+#         var3 += "p"
+#     elif var2 == 2:
+#         var3 += "n"
+#     elif var2 == 3:
+#         var3 += "k"
+#
+#     humwin = 0
+#     compwin = 0
+#     draw = 0
+#
+#     if var1 == "p" and var3 == "n":
+#         compwin = 1
+#     elif var1 == "n" and var3 == "k":
+#         compwin = 1
+#     elif var1 == "k" and var3 == "p":
+#         compwin = 1
+#     elif var1 == "p" and var3 == "k":
+#         humwin = 1
+#     elif var1 == "n" and var3 == "p":
+#         humwin = 1
+#     elif var1 == "k" and var3 == "n":
+#         humwin = 1
+#     else:
+#         draw = 1
+#
+#     if humwin == 1:
+#         print("wygrałeś!")
+#     elif compwin == 1:
+#         print("przegrałeś!")
+#     elif draw == 1:
+#         print("remis!")
+#
+#     repeat = input("Czy chcesz zgrac jeszcze raz?\n Nie - n, Tak - Enter\n")
+#     if repeat == "n":
+#         print("Dziękujemy za wspólną grę.")
+#         sys.exit()
+
