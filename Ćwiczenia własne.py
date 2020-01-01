@@ -2293,3 +2293,115 @@ napis = "phyton"
 #         print("Dziękujemy za wspólną grę.")
 #         sys.exit()
 
+# Wygeneruj losową liczbę między 1 a 9 (w tym 1 i 9). Poproś użytkownika o odgadnięcie numeru, a następnie powiedz mu,
+# czy zgadł za nisko, za wysoko lub dokładnie dokładnie. (Wskazówka: pamiętaj, aby korzystać z lekcji wprowadzania od pierwszego ćwiczenia)
+#
+#
+# Kontynuuj grę, dopóki użytkownik nie wpisze „exit”
+# Śledź, ile domysłów podjął użytkownik, a kiedy gra się skończy, wydrukuj to.
+
+# import sys
+# import random
+#
+# count = 0
+# newgame = 0
+#
+# while newgame == 0:
+#     rnum = random.randint(1, 9)
+#     print(rnum)
+#     while newgame == 0:
+#         unum = int(input("podja liczbę od 1 do 9\n"))
+#         if unum == rnum:
+#             count += 1
+#             print("brawo!, zgadłeś za", count, "razem.")
+#             quitgame = input("Czy chcesz zagrac jeszcze raz?\n Tak - t, Nie - n\n")
+#             if quitgame == "n":
+#                 print("dziękujemy za wspólną grę.")
+#                 sys.exit()
+#             elif quitgame != "n":
+#                 newgame = 0
+#                 count = 0
+#                 rnum = random.randint(1, 9)
+#         elif unum > rnum:
+#             count += 1
+#             print("Twoja liczba jest za duża")
+#         elif unum < rnum:
+#             count += 1
+#             print("twoja cyfra jest za mała")
+
+
+# W tym tygodniu ćwiczenie powróci do starego ćwiczenia (patrz Ćwiczenie 5), z tym wyjątkiem, że wymaga rozwiązania w inny sposób.
+# i napisz program, który zwraca listę zawierającą tylko elementy wspólne dla list (bez duplikatów). Upewnij się,
+# że twój program działa na dwóch listach o różnych rozmiarach. Napisz to w jednym wierszu Pythona,
+# używając co najmniej jednego zrozumienia listy. (Wskazówka: Zapamiętaj listę ze zrozumieniem z ćwiczenia 7).
+
+# import random
+#
+# a = []
+# b = []
+# c = set()
+#
+# for i in range (0, 10):
+#     a.append(random.randint(1, 50))
+#
+# for i in range (0, 12):
+#     b.append(random.randint(1, 50))
+#
+# for elem in a:
+#     if elem  in b:
+#         c.add(elem)
+# c = list(c)
+# print(c)
+
+# Poproś użytkownika o numer i ustal, czy jest on liczbą pierwszą, czy nie. (Dla tych, którzy zapomnieli, liczba pierwsza jest liczbą,
+# która nie ma dzielników). Możesz (i powinieneś!) Skorzystać z odpowiedzi do ćwiczenia 4, aby ci pomóc. Skorzystaj z okazji,
+# aby poćwiczyć korzystanie z funkcji opisanych poniżej.
+
+# DO ZROBIENIA
+
+# number = int(input("podaj jakąś liczbę\n"))
+# for i in range(1, number-1):
+#     if number == 0 or number == 1:
+#         print("jedynka i zero są nieokreślone")
+#     elif number % i == 0:
+#         print("nie jest pierwszą")
+#     else:
+#         print("jest pierwszą")
+
+
+
+# Napisz program, który pobiera listę liczb (na przykład a = [5, 10, 15, 20, 25]) i tworzy nową listę
+# tylko z pierwszego i ostatniego elementu danej listy. Aby ćwiczyć, napisz ten kod w funkcji.
+
+import random
+# a = []
+# b = []
+# for i in range(1, 6):
+#     a.append(random.randint(1, 50))
+#
+# print(a)
+# b.append(a[0])
+# b.append(a[-1])
+# print(b)
+
+# i to samo z funkcją
+
+# import random
+# a = []
+# b = []
+# for i in range(1, 6):
+#     a.append(random.randint(1, 50))
+#
+# def list_ends(a_list):
+#     return [a_list[0], a_list[len(a_list)-1]]
+#
+# print(list_ends(a))
+
+# apisz program, który zapyta użytkownika, ile liczb Fibonnaci ma wygenerować, a następnie je wygeneruje. Skorzystaj z okazji,
+# aby pomyśleć o tym, jak korzystać z funkcji. Pamiętaj, aby poprosić użytkownika o podanie liczby liczb w sekwencji,
+# która ma zostać wygenerowana. (Wskazówka: Sekwencja Fibonnaci jest sekwencją liczb, w której następny numer w sekwencji
+# jest sumą dwóch poprzednich liczb w sekwencji. Sekwencja wygląda następująco: 1, 1, 2, 3, 5, 8, 13,…)
+
+var1 = int(input("ile liczb fibonacciego mam wygenerować?\n"))
+
+for i in range
