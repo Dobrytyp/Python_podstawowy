@@ -232,6 +232,8 @@
 
 
 # Operacje na
+from random import randint
+
 napis = "phyton"
 
 
@@ -2178,5 +2180,69 @@ napis = "phyton"
 
 # Dodatki:
 
+# Stwórz listę z elementami wspólnymi obu list
 # Wygeneruj losowo dwie listy, aby to przetestować
 # Napisz to w jednym wierszu Pythona (nie martw się, jeśli nie możesz tego rozgryźć w tym momencie - wkrótce to zrobimy)
+
+# import random
+#
+# a = []
+# b = []
+# c = []
+#
+# while len(a) < 10:
+#     number = random.randint(1, 20)
+#     if number not in a:
+#         a.append(number)
+#
+# while len(b) < 10:
+#     number = random.randint(1, 20)
+#     if number not in b:
+#         b.append(number)
+#
+# for elem in a:
+#     if elem in b:
+#         c.append(elem)
+#
+# print(c)
+
+
+# Poproś użytkownika o ciąg i wydrukuj, czy ten ciąg jest palindromem, czy nie. (Palindrom to ciąg znaków, który czyta to samo do przodu i do tyłu.)
+
+# var1 = input("Podah sentencje\n")
+# var1 = var1.lower()
+# var1 = var1.replace(" ", "")
+# list1 = []
+# for elem in var1:
+#     list1.append(elem)
+#
+# list2 = list(reversed(list1))
+#
+# if list1 == list2:
+#     print("twója sentencja do palindrom")
+# else:
+#     print("twója sentencja nie jest palindromem")
+
+
+
+# Powiedzmy, że podaję listę zapisaną w zmiennej: a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]. Napisz jedną linię Pythona,
+# która pobiera tę listę a i tworzy nową listę, która zawiera tylko parzyste elementy tej listy.
+
+# a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+# b = []
+#
+# for elem in a:
+#     if elem % 2 == 0:
+#         b.append(elem)
+#
+# print(b)
+
+# Stwórz grę Rock Paper Scissors dla dwóch graczy. (Wskazówka: Poproś o grę gracza (za pomocą danych wejściowych), porównaj je,
+# wydrukuj wiadomość z gratulacjami dla zwycięzcy i zapytaj, czy gracze chcą rozpocząć nową grę)
+
+print("zagrajmy w grę: Papier, nożyczki, kamień")
+var1 = input("Co wybierasz?\n Papier - p, Nożyczki - n, Kamień - k\n")
+while var1 :
+    var1 = input("Co wybierasz?\n Papier - p, Nożyczki - n, Kamień - k\n")
+    if var1 == 'p' or var1 == "n" or var1 == "k":
+        continue

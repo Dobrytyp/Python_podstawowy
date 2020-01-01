@@ -77,13 +77,13 @@
 
 # zadanie 2 6 losowych niepowtarzających się cyfr od 1 do 50
 
-# from random import randint
-# lista = []
-# while len(lista) < 6: # ma przerwać kiedy będzie miał 6 elementów
-#     liczba = randint(1, 50)  # zakres liczb losowych
-#     if not liczba in lista: # żeby się nie powtarzały
-#         lista.append(liczba)
-# print(lista)
+from random import randint
+lista = []
+while len(lista) < 6: # ma przerwać kiedy będzie miał 6 elementów
+    liczba = randint(1, 50)  # zakres liczb losowych
+    if not liczba in lista: # żeby się nie powtarzały
+        lista.append(liczba)
+print(lista)
 
 # Albo z Continue zamiast not
 
@@ -326,16 +326,16 @@
 
 # Zadanie która litera ile razy wystąpiła
 
-def count_letters(napis):
-    count = {} # tworzymy pusty słownik można zrobić dict()
-    for znak in napis.lower():
-        if znak not in count:
-            count[znak] = 1
-        else:
-            count[znak] += 1
-            return count
-
-print(count_letters("Python is cool"))
+# def count_letters(napis):
+#     count = {} # tworzymy pusty słownik można zrobić dict()
+#     for znak in napis.lower():
+#         if znak not in count:
+#             count[znak] = 1
+#         else:
+#             count[znak] += 1
+#             return count
+#
+# print(count_letters("Python is cool"))
 
 # albo
 
