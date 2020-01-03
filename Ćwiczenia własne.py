@@ -2402,6 +2402,95 @@ import random
 # która ma zostać wygenerowana. (Wskazówka: Sekwencja Fibonnaci jest sekwencją liczb, w której następny numer w sekwencji
 # jest sumą dwóch poprzednich liczb w sekwencji. Sekwencja wygląda następująco: 1, 1, 2, 3, 5, 8, 13,…)
 
-var1 = int(input("ile liczb fibonacciego mam wygenerować?\n"))
+# Tego nie umiem
 
-for i in range
+# def fibonacci():
+#     num = int(input("How many numbers that generates?:"))
+#     i = 1
+#     if num == 0:
+#         fib = []
+#     elif num == 1:
+#         fib = [1]
+#     elif num == 2:
+#         fib = [1,1]
+#     elif num > 2:
+#         fib = [1,1]
+#         while i < (num - 1):
+#             fib.append(fib[i] + fib[i-1])
+#             i += 1
+#     return fib
+# print(fibonacci())
+# input()
+
+# Napisz program (funkcja!), Który pobiera listę i zwraca nową listę, która zawiera wszystkie elementy pierwszej listy minus wszystkie duplikaty.
+#
+# Napisz dwie różne funkcje, aby to zrobić - jedną za pomocą pętli i konstruowania listy, a drugą za pomocą zestawów.
+# Wróć i wykonaj ćwiczenie 5, używając zestawów, i napisz rozwiązanie tego w innej funkcji.
+
+# b = [1, 2, 2, 6, 8, 9, 9]
+
+# def no_dupli(a):
+#     set1 = set(a)
+#     return set1
+#
+# print(no_dupli(b))
+
+#albo
+
+# def no_dupli2(a):
+#     c = []
+#     for elem in a:
+#         if elem not in c:
+#             c.append(elem)
+#
+#     return c
+#
+# print(no_dupli2(b))
+
+# Napisz program (korzystający z funkcji!), Który prosi użytkownika o długi ciąg znaków zawierający wiele słów. Wydrukuj użytkownikowi ten sam ciąg znaków, oprócz słów w odwrotnej kolejności. Powiedzmy na przykład, że wpisuję ciąg:
+#
+#    Mam na imię Maciek
+# Potem zobaczyłbym ciąg:
+#
+#    Maciek imie na Mam
+# pokazane mi z powrotem.
+
+# var1 = input("Wpisz jakieś zdanie\n")
+# res = list(var1.split(' '))
+#
+# res2 = list(reversed(res))
+# res3 = repr(res2)
+# res3 = res3.replace(",", "")
+# res3 = res3.replace("'", "")
+# res3 = res3.replace("[", "")
+# res3 = res3.replace("]", "")
+#
+# print(res3)
+
+# Generuj losowo 4-cyfrowy numer. Poproś użytkownika o odgadnięcie 4-cyfrowego numeru. Na każdą cyfrę, którą użytkownik poprawnie odgadł w odpowiednim miejscu,
+# ma „krowę”. Każda cyfra poprawnie odgadnięta przez użytkownika w niewłaściwym miejscu to „byk”. Za każdym razem, gdy użytkownik zgaduje, powiedz mu,
+# ile ma „krów” i „byków”. Gdy użytkownik odgadnie prawidłowy numer, gra się kończy. Śledź liczbę domysłów użytkownika podczas gry i powiedz użytkownikowi na końcu.
+
+
+# Do zrobienie
+
+# import random
+#
+# def bulls_and_cows(ran_num, user_num):
+#     cowbull = [0, 0]  # cows, then bulls
+#     for i in range(len(ran_num)):
+#         if ran_num[i] == user_num[i]:
+#             cowbull[1] += 1
+#         else:
+#             cowbull[0] += 1
+#         return cowbull
+#
+# num = random.randint(1000, 9999)
+# ran_num = list(map(int, str(num)))
+# print(num)
+#
+# guess = int(input("Zgadnij liczbę od 1000 do 9999\n"))
+# user_num = list(map(int, str(guess)))
+
+
+

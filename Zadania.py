@@ -131,3 +131,121 @@
 # else:
 #     print("twoje słowo nie jest ideogramem")
 #
+
+
+# PYTANIE REKRUTACYJNE Sprawdź co się się dzieje
+
+# def dodaj_do_listy(element, lista=[]):
+#     lista.append(element)
+#     return lista
+#
+# lista = [1, 2, 3]
+# lista2 = dodaj_do_listy(5, lista)
+# print(lista)
+#
+# lista2 = dodaj_do_listy(5)
+# print(lista2)
+# lista3 = dodaj_do_listy(8)
+# print(lista3)
+
+# ========  Teraz jest ok bo zmienna dodaj_do_listy bedzie czyszczona
+
+# def dodaj_do_listy(element, lista=None):
+#     if lista == None:
+#         lista = []
+#     lista.append(element)
+#     return lista
+#
+# print(dodaj_do_listy(5, [1, 2, 3]))
+# print(dodaj_do_listy(5))
+# print(dodaj_do_listy(8))
+
+# ZADANIA 3
+
+# Zadanie 1
+
+# def swap(a,b):
+#     a = a + b
+#     b = a - b
+#     a = a - b
+#     return a, b
+#
+# print(swap(3,5))
+
+# Zadanie 2
+
+# print("zagrajmy w grę: Papier, nożyce, kamień")
+# game = True
+# while game is True:
+#     var1 = ''
+#     while "p" not in var1 or "n" not in var1 or "k" not in var1:
+#         var1 = input("Co wybierasz?\n Papier - p, Nożyczki - n, Kamień - k\n")
+#         if "p" in var1 or "n" in var1 or "k" in var1:
+#             break
+#
+#     import random
+#     var2 = random.randint(1, 3)
+#
+#     var3 = ''
+#     if var2 == 1:
+#         var3 += "p"
+#     elif var2 == 2:
+#         var3 += "n"
+#     elif var2 == 3:
+#         var3 += "k"
+#
+#     humwin = 0
+#     compwin = 0
+#     draw = 0
+#
+#     if var1 == "p" and var3 == "n":
+#         compwin = 1
+#     elif var1 == "n" and var3 == "k":
+#         compwin = 1
+#     elif var1 == "k" and var3 == "p":
+#         compwin = 1
+#     elif var1 == "p" and var3 == "k":
+#         humwin = 1
+#     elif var1 == "n" and var3 == "p":
+#         humwin = 1
+#     elif var1 == "k" and var3 == "n":
+#         humwin = 1
+#     else:
+#         draw = 1
+#
+#     if humwin == 1:
+#         print("wygrałeś!")
+#     elif compwin == 1:
+#         print("przegrałeś!")
+#     elif draw == 1:
+#         print("remis!")
+#
+#     repeat = input("Czy chcesz zgrac jeszcze raz?\n Nie - n, Tak - Enter\n")
+#     if repeat == "n":
+#         print("Dziękujemy za wspólną grę.")
+#         break
+
+# Zadanie 3
+
+# Napisz funkcję która policzy sumę cyfr liczby, nie zamieniając jej na
+# stringa, ani listę. Rekurencyjnie oraz iteracyjnie.
+# np. 123 → 1+2+3 = 6
+
+# def suma_iter(lst):
+#     lista = []
+#     for i in range(1, lst + 1):
+#         lista.append(i)
+#     suma = sum(lista)
+#     return suma
+#
+# print(suma_iter(3))
+
+# Rekurencyjnie ni umiem
+
+# def suma_rek(lst):
+#     if len(lst) == 1:
+#         return lst[0]
+#     else:
+#         elem = lst.pop()
+#         return elem + suma_rek(lst)
+
