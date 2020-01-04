@@ -236,7 +236,6 @@ from random import randint
 
 napis = "phyton"
 
-
 # print(napis.upper()) # uppnapis = input("Podaj słowo\n")er() zamienia na wielkie litery
 # print(napis.lower()) # lowwe() zmienia na małe litery
 # print(napis.swapcase()) # swapcase() zamienia litery duże na małe i odwrotnie
@@ -2129,7 +2128,7 @@ napis = "phyton"
 
 # Take a list, say for example this one:
 
-  # a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+# a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
 # and write a program that prints out all the elements of the list that are less than 5.
 
 # Extras:
@@ -2222,7 +2221,6 @@ napis = "phyton"
 #     print("twója sentencja do palindrom")
 # else:
 #     print("twója sentencja nie jest palindromem")
-
 
 
 # Powiedzmy, że podaję listę zapisaną w zmiennej: a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]. Napisz jedną linię Pythona,
@@ -2369,11 +2367,12 @@ napis = "phyton"
 #         print("jest pierwszą")
 
 
-
 # Napisz program, który pobiera listę liczb (na przykład a = [5, 10, 15, 20, 25]) i tworzy nową listę
 # tylko z pierwszego i ostatniego elementu danej listy. Aby ćwiczyć, napisz ten kod w funkcji.
 
 import random
+
+
 # a = []
 # b = []
 # for i in range(1, 6):
@@ -2435,7 +2434,7 @@ import random
 #
 # print(no_dupli(b))
 
-#albo
+# albo
 
 # def no_dupli2(a):
 #     c = []
@@ -2493,4 +2492,370 @@ import random
 # user_num = list(map(int, str(guess)))
 
 
+# Weź int n, zwróć bezwzględną różnicę między n a 21 (czyli odegłośc na osi liczbowej), jeśli n jest większe niż 21 zwróć podwójną róznicę
+
+# def absolute_difference(n):
+#     score = 21 - n
+#     if n <= 21:
+#         return score
+#     elif n > 21:
+#         return score*-2
+#
+# print(absolute_difference(26))
+
+
+# Weż int n, zwróć True, jeśli jest w zakresie od 10 do 100 lub 200. Uwaga: abs (num) oblicza wartość bezwzględną liczby.
+
+# def near_hundred(n):
+#     diference = 0
+#     if n < 150:
+#         diference = 100 - n
+#     else:
+#         diference = 200 - n
+#
+#     if abs(diference) <= 10:
+#         return True
+#     else:
+#         return False
+#
+# print(near_hundred(211))
+
+# Albo
+
+# def near_hundred(n):
+#   return ((abs(100 - n) <= 10) or (abs(200 - n) <= 10))
+#
+# print(near_hundred(211)
+
+# Weź niepusty string i int n, zwróć nowy ciąg, w którym znak o indeksie n został usunięty. Wartość n będzie poprawnym indeksem znaku w oryginalnym ciągu (tj. N będzie w zakresie 0..len (str) -1 włącznie)
+
+# def missing_char(str, n):
+#     front = str[:n]   # tu mamy początek ciągu
+#     back = str[n+1:]  # n+1 a tu koniec ciągu
+#     return front + back
+#
+# print(missing_char("Pizda",2))
+
+
+# Given two int values, return their sum. Unless the two values are the same, then return double their sum.
+
+# def sum_double(a, b):
+#     if a == b:
+#         return (a+b)*2
+#     else:
+#         return a+b
+#
+# print(sum_double(2,3))
+
+
+# Given 2 ints, a and b, return True if one if them is 10 or if their sum is 10.
+
+# def makes10(a, b):
+#   if a+b == 10:
+#     return True
+#   elif a == 10 or b == 10:
+#     return True
+#   else:
+#     return False
+
+# Albo
+
+# def makes10(a, b):
+#   return (a == 10 or b == 10 or a+b == 10)
+#
+# print(makes10(4,10))
+
+# Given a string, return a new string where "not " has been added to the front. However, if the string already begins with "not", return the string unchanged.
+
+# def not_string(str):
+#     if "not" in str and str[:3] == "not": # po and jest po by dodawał jeśli not znajduje się dlaej niż na początku
+#         return str
+#     else:
+#         str = "not "+str
+#         return str
+#
+# print(not_string("not is not"))
+
+# "Given a string, we'll say that the front is the first 3 chars of the string. If the string length is less than 3, the front is whatever is there. Return a new string which is 3 copies of the front"
+
+# def front3(str):
+#     str = str[0:3]
+#     return str * 3
+#
+# print(front3("Głowa"))
+
+# Albo
+
+# def front3(str):
+#     # Figure the end of the front
+#     front_end = 3
+#     if len(str) < front_end:
+#         front_end = len(str)
+#     front = str[:front_end]
+#     return front + front + front
+#
+# print(front3("Głowa"))
+
+    # Could omit the if logic, and write simply front = str[:3]
+    # since the slice is silent about out-of-bounds conditions. I TO WŁAŚNIE KURWA ZROBIŁEM! XD
+
+# Given a string, return a new string where the first and last chars have been exchanged.
+
+# def front_back(str):
+#     if len(str) <= 1:
+#         return str
+#     f = str[0]
+#     e = str[-1]
+#     m = str[1:-1]
+#     n_str = e+m+f
+#     return n_str
+#
+# print(front_back("ABC"))
+
+# Albo
+
+# def front_back(str):
+#     if len(str) <= 1:
+#         return str
+#
+#     mid = str[1:len(str) - 1]  # can be written as str[1:-1]
+#
+#     # last + mid + first
+#     return str[len(str) - 1] + mid + str[0]
+#
+# print(front_back("ABC"))
+
+
+# Given 2 int values, return True if one is negative and one is positive. Except if the parameter "negative" is True, then return True only if both are negative.
+
+
+# def pos_neg(a, b, negative):
+#   if negative:
+#     return (a < 0 and b < 0)
+#   else:
+#     return ((a < 0 and b > 0) or (a > 0 and b < 0))
+#
+# print(pos_neg(-5, -5, True))
+
+
+# We have a loud talking parrot. The "hour" parameter is the current hour time in the range 0..23.
+# We are in trouble if the parrot is talking and the hour is before 7 or after 20. Return True if we are in trouble.
+
+# def parrot_trouble(talking, hour):
+#     if False == talking:
+#         return False
+#     else:
+#         if hour < 7 or hour > 20:
+#             return True
+#         else:
+#             return False
+#
+# print(parrot_trouble(True, 6))
+#
+# # Albo
+#
+# def parrot_trouble(talking, hour):
+#   return (talking and (hour < 7 or hour > 20))
+#   # Need extra parenthesis around the or clause
+#   # since and binds more tightly than or.
+#   # and is like arithmetic *, or is like arithmetic +
+
+
+# We have two monkeys, a and b, and the parameters a_smile and b_smile indicate if each is smiling. We are in trouble if they are both smiling or if neither of them is smiling. Return True if we are in trouble.
+
+# def monkey_trouble(a_smile, b_smile):
+#     if True == a_smile and True == b_smile:
+#         return True
+#     elif False == a_smile and False == b_smile:
+#         return True
+#     else:
+#         return False
+
+# Albo
+
+# def monkey_trouble(a_smile, b_smile):
+#   if a_smile and b_smile:
+#     return True
+#   if not a_smile and not b_smile:
+#     return True
+#   return False
+
+
+# Given a string and a non-negative int n, return a larger string that is n copies of the original string.
+# string_times('Hi', 2) → 'HiHi'
+# string_times('Hi', 3) → 'HiHiHi'
+# string_times('Hi', 1) → 'Hi'
+
+# def string_times(str, n):
+#     return str * n
+#
+# print(string_times("Głowa", 5))
+
+
+
+# Given a non-empty string like "Code" return a string like "CCoCodCode".
+# string_splosion('Code') → 'CCoCodCode'
+# string_splosion('abc') → 'aababc'
+# string_splosion('ab') → 'aab
+
+# def string_splosion(str):
+#     wynik = ''
+#     for i in range(len(str)): # On each iteration, add the substring of the chars 0..i
+#         wynik = wynik + str[:i+1]
+#     return wynik
+
+# Biorąc pod uwagę tablicę liczb całkowitych, zwróć True, jeśli jeden z pierwszych 4 elementów w tablicy ma wartość 9. Długość tablicy może być mniejsza niż 4.
+# array_front9 ([1, 2, 9, 3, 4]) → Prawda
+# array_front9 ([1, 2, 3, 4, 9]) → False
+# array_front9 ([1, 2, 3, 4, 5]) → False
+
+# def array_front9(nums):
+#     len1 = 3
+#     for i in range(len1):
+#         if i in nums == 9:
+#             return True
+#         else:
+#             return False
+#
+# print(array_front9([1,5,9,3,7,8]))
+#
+#
+# def array_front9(nums):
+#     end = len(nums)
+#     if end > 4:
+#         end = 4
+#
+#     for i in range(end):  # loop over index [0, 1, 2, 3]
+#         if nums[i] == 9:
+#             return True
+#     return False
+
+
+# def array_front9(nums):
+#     end = 4
+#     for i in range(0, 4):  # loop over index [0, 1, 2, 3]
+#         if nums[i] == 9:
+#             return True
+#     return False
+#
+# print(array_front9([0,5,8,9,7,9]))
+
+# Albo tu nie kumam dlaczeog bo u mnie działa
+
+# def array_front9(nums):
+#     # First figure the end for the loop
+#     end = len(nums)
+#     if end > 4:
+#         end = 4
+#
+#     for i in range(end):  # loop over index [0, 1, 2, 3]
+#         if nums[i] == 9:
+#             return True
+#     return False
+
+
+# Given a string and a non-negative int n, we'll say that the front of the string is the first 3 chars, or whatever is there if the string is less than length 3. Return n copies of the front;
+# front_times('Chocolate', 2) → 'ChoCho'
+# front_times('Chocolate', 3) → 'ChoChoCho'
+# front_times('Abc', 3) → 'AbcAbcAbc'
+
+# def front_times(str, n):
+#     return str[0:3] * n
+#
+# print(front_times("abcabcabcdde", 3))
+
+# Albo
+
+# def front_times(str, n):
+#     front_len = 3
+#     if front_len > len(str):
+#         front_len = len(str)
+#     front = str[:front_len]
+#
+#     result = ""
+#     for i in range(n):
+#         result = result + front
+#     return result
+
+
+# Given an array of ints, return True if the sequence of numbers 1, 2, 3 appears in the array somewhere.
+# array123([1, 1, 2, 3, 1]) → True
+# array123([1, 1, 2, 4, 1]) → False
+# array123([1, 1, 2, 1, 2, 3]) → True
+
+# def array123(nums):
+#     if 1 in nums and 2 in nums and 3 in nums:
+#         return True
+#     else:
+#         return False
+#
+# print(array123([1,1,2,3,1]))
+
+# albo
+
+# def array123(nums):
+#   # Note: iterate with length-2, so can use i+1 and i+2 in the loop
+#   for i in range(len(nums)-2):
+#     if nums[i]==1 and nums[i+1]==2 and nums[i+2]==3:
+#       return True
+#   return False
+#
+# print(array123([1,1,2,3,1]))
+
+
+# Given a string, return a new string made of every other char starting with the first, so "Hello" yields "Hlo".
+# Czyli zwracamy co drugi znak
+#
+# string_bits('Hello') → 'Hlo'
+# string_bits('Hi') → 'H'
+# string_bits('Heeololeo') → 'Hello'
+
+# def string_bits(str):
+#     str2 = str[::2]
+#     return str2
+#
+# print(string_bits("Dupa"))
+
+#Albo
+
+# def string_bits(str):
+#   result = ""
+#   # Many ways to do this. This uses the standard loop of i on every char,
+#   # and inside the loop skips the odd index values.
+#   for i in range(len(str)):
+#     if i % 2 == 0:
+#       result = result + str[i]
+#   return result
+
+# Given an array of ints, return the number of 9's in the array.
+# array_count9([1, 2, 9]) → 1
+# array_count9([1, 9, 9]) → 2
+# array_count9([1, 9, 9, 3, 9]) → 3
+#
+# def array_count9(nums):
+#     wynik = 0
+#     for i in nums:
+#         if i == 9:
+#             wynik += 1
+#     return wynik
+#
+# print(array_count9([1, 9, 9, 3, 9]))
+
+
+# Biorąc pod uwagę 2 ciągi, a i b, zwracają liczbę pozycji, w których zawierają podciąg o tej samej długości.
+# Zatem „xxcaazz” i „xxbaaz” dają 3, ponieważ „xx”, „aa” i „az” pojawiają się w tym samym miejscu w obu ciągach.
+
+# def string_match(a, b):
+#     shorter = min(len(a), len(b)) # skracamy dłuży string do długości krótszego
+#     licznik = 0
+#
+#     for i in range(shorter-1):
+#         a_sub = a[i:i + 2]
+#         b_sub = b[i:i + 2]
+#         if a_sub == b_sub:
+#             licznik = licznik + 1
+#
+#     return licznik
+#
+# print(string_match("Dupa","Duża"))
 

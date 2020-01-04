@@ -234,13 +234,13 @@
 # def suma_iter(lst):
 #     lista = []
 #     for i in range(1, lst + 1):
-#         lista.append(i)
+#         lista.append(ils)
 #     suma = sum(lista)
 #     return suma
-#
-# print(suma_iter(3))
+# #
+# print(suma_iter(10))
 
-# Rekurencyjnie ni umiem
+# Rekurencyjnie nie umiem
 
 # def suma_rek(lst):
 #     if len(lst) == 1:
@@ -248,4 +248,6 @@
 #     else:
 #         elem = lst.pop()
 #         return elem + suma_rek(lst)
+
+
 
