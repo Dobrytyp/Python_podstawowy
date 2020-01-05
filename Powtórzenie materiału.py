@@ -40,6 +40,10 @@
 #
 # var2 = var1[3:7:2]  # ty tworzymy nową zmienną z konkretnych elementów
 
+# str1 = "Przykład"
+# var2 = str1[:len(str1) // 2]    # Tym dzielmy zapis na pół i tworzymy zmienną z pierwszej połowy
+# print(var2)
+
 # ======================================================================
 
 # ZADANIA NA ZMIENNYCH
@@ -805,15 +809,15 @@
 
 # Ale można też rekurencyjnie
 
-def list_rek(lst):
-    if len(lst) == 1:
-        return lst[0]
-    else:
-        elem = lst.pop()               # .pop() usuwa wybrany element z listy
-        return elem + list_rek(lst)
-
-lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-
-print(list_rek(lista))
+# def list_rek(lst):
+#     if len(lst) == 1:
+#         return lst[0]
+#     else:
+#         elem = lst.pop()               # .pop() usuwa wybrany element z listy
+#         return elem + list_rek(lst)
+#
+# lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+#
+# print(list_rek(lista))
 
 
