@@ -174,6 +174,8 @@
 
 # Zadanie 2
 
+# import random
+#
 # print("zagrajmy w grę: Papier, nożyce, kamień")
 # game = True
 # while game is True:
@@ -183,7 +185,6 @@
 #         if "p" in var1 or "n" in var1 or "k" in var1:
 #             break
 #
-#     import random
 #     var2 = random.randint(1, 3)
 #
 #     var3 = ''
@@ -231,14 +232,16 @@
 # stringa, ani listę. Rekurencyjnie oraz iteracyjnie.
 # np. 123 → 1+2+3 = 6
 
-# def suma_iter(lst):
-#     lista = []
-#     for i in range(1, lst + 1):
-#         lista.append(ils)
-#     suma = sum(lista)
-#     return suma
-# #
-# print(suma_iter(10))
+
+def sum_digits(n):              # Spytaj o to
+    s = 0
+    while n:
+        s += n % 10     # reszta z dzielenia przez 10, chodzi o to żeby brał pojedyńczą cyfrę, a ta jest mniejsza od 10
+        n //= 10        # // ozancza dzielenie całkowite bez reszty
+    return s
+
+print(sum_digits(1230))
+
 
 # Rekurencyjnie nie umiem
 
@@ -250,4 +253,60 @@
 #         return elem + suma_rek(lst)
 
 
+# Zadanie  ZROBIONE
+# Napisz funkcję która sprawdzi, czy dana liczba jest liczbą narcystyczną
+# (n-cyfrowa liczba naturalna która jest sumą swoich cyfr podniesionych do
+# potęgi n)
+# np.
+# 153 = 1^3 + 5^3 + 3^3
+# 9474 = 9^4 + 4^4 + 7^4 + 4^4
 
+# print(1*1*1 + 5*5*5 + 3*3*3)
+
+# def narcistic(a):
+#     resault = 0
+#     list1 = list(map(int, str(a)))  # zamieniam int na listę
+#     len_list1 = len(list1)          # wyciągam długość listy
+#
+#     for i in list1:
+#         resault += i ** len_list1
+#     return resault == a
+#
+# print(narcistic(9474))
+
+
+# Zadanie
+# Napisz funkcję pow(a, b), która będzie podnosiła a do b-tej potęgi. (Nie
+# używając poznanego operatora ** i zewnętrznych bibliotek).
+# Rekurencyjnie i teracyjnie.
+
+# (2, 3) -> 2*2*2 = 8
+
+# Iteracyjnie
+
+# def pow(a,b):
+#     result = 1                  # Żeby później mnożenie nie było przez 0 dajemy cyfrę 1
+#     list1 = []
+#     for i in range(b):
+#         list1.append(a)
+#     for i in list1:
+#         result = i * result     # Daltego daliśmy 1 w result
+#     return result
+# print(pow(2,8))
+
+# Rekurencyjnie NIE ZROBIONE
+
+# def pow_rek(a,b):
+
+# Zadanie               NIEZROBIONE
+# Stwórz funkcję do znajdowania największego wspólnego dzielnika dwóch liczb.
+# (algorytm Euklidesa)
+
+# def nwd(a,b):
+#     if a % b == 0:
+#         return b
+#     else:
+#         a = b
+#         b =
+
+#jeżeli reszta ?0, to przypisujemy liczbie a wartość liczby b, liczbie b wartość otrzymanej reszty, a następnie wykonujemy ponownie punkt 1.
