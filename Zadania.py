@@ -233,14 +233,14 @@
 # np. 123 → 1+2+3 = 6
 
 
-def sum_digits(n):              # Spytaj o to
-    s = 0
-    while n:
-        s += n % 10     # reszta z dzielenia przez 10, chodzi o to żeby brał pojedyńczą cyfrę, a ta jest mniejsza od 10
-        n //= 10        # // ozancza dzielenie całkowite bez reszty
-    return s
-
-print(sum_digits(1230))
+# def sum_digits(n):              # Spytaj o to
+#     s = 0
+#     while n:
+#         s += n % 10     # reszta z dzielenia przez 10, chodzi o to żeby brał pojedyńczą cyfrę, a ta jest mniejsza od 10
+#         n //= 10        # // ozancza dzielenie całkowite bez reszty
+#     return s
+#
+# print(sum_digits(1230))
 
 
 # Rekurencyjnie nie umiem
@@ -264,15 +264,16 @@ print(sum_digits(1230))
 # print(1*1*1 + 5*5*5 + 3*3*3)
 
 # def narcistic(a):
-#     resault = 0
+#     result = 0
 #     list1 = list(map(int, str(a)))  # zamieniam int na listę
 #     len_list1 = len(list1)          # wyciągam długość listy
 #
 #     for i in list1:
-#         resault += i ** len_list1
-#     return resault == a
+#         result += i ** len_list1
+#     return result == a
 #
 # print(narcistic(9474))
+
 
 
 # Zadanie

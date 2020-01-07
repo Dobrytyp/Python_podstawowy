@@ -2372,6 +2372,7 @@ napis = "phyton"
 
 import random
 
+
 # a = []
 # b = []
 # for i in range(1, 6):
@@ -2932,7 +2933,6 @@ import random
 # print(non_start('hello','There'))
 
 
-
 # Given a string, return a "rotated left 2" version where the first 2 chars are moved to the end. The string length will be at least 2.
 # left2('Hello') → 'lloHe'
 # left2('java') → 'vaja'
@@ -2964,7 +2964,6 @@ import random
 #     return str[-2:]*3
 #
 # print(extra_end("Du"))
-
 
 
 # Given a string, return the string made of its first two chars, so the String "Hello" yields "He". If the string is shorter than length 2, return whatever there is, so "X" yields "X", and the empty string "" yields the empty string "".
@@ -3011,7 +3010,6 @@ import random
 #   return (nums[0]==6 or nums[-1]== 6)
 
 
-
 # Given an array of ints, return True if the array is length 1 or more, and the first element and the last element are equal.
 # same_first_last([1, 2, 3]) → False
 # same_first_last([1, 2, 3, 1]) → True
@@ -3056,7 +3054,6 @@ import random
 #     return sum(nums)
 
 
-
 # Given an array of ints length 3, return an array with the elements "rotated left" so {1, 2, 3} yields {2, 3, 1}.
 # rotate_left3([1, 2, 3]) → [2, 3, 1]
 # rotate_left3([5, 11, 9]) → [11, 9, 5]
@@ -3069,14 +3066,12 @@ import random
 # print(rotate_left3([1,2,3]))
 
 
-
 # Given an array of ints length 3, return a new array with the elements in reverse order, so {1, 2, 3} becomes {3, 2, 1}.
 
 # def reverse3(nums):
 #   return list(reversed(nums))
 #
 # print(reverse3([1,2,3]))
-
 
 
 # Given an array of ints length 3, figure out which is larger, the first or last element in the array, and set all the other elements to be that value. Return the changed array.
@@ -3129,7 +3124,6 @@ import random
 #     return var1
 #
 # print(middle_way([1,2,3], [4,5,6]))
-
 
 
 # Given an array of ints, return a new array length 2 containing the first and last elements from the original array. The original array will be length 1 or more.
@@ -3249,3 +3243,177 @@ import random
 #     else:
 #         return sum
 
+
+# Given a day of the week encoded as 0=Sun, 1=Mon, 2=Tue, ...6=Sat, and a boolean indicating if we are on vacation,
+# return a string of the form "7:00" indicating when the alarm clock should ring. Weekdays, the alarm should be "7:00" and on the weekend it should be "10:00".
+# Unless we are on vacation -- then on weekdays it should be "10:00" and weekends it should be "off".
+# alarm_clock(1, False) → '7:00'
+# alarm_clock(5, False) → '7:00'
+# alarm_clock(0, False) → '10:00'
+
+# def alarm_clock(day, vacation):
+#     if vacation is True:
+#         if day == 1 or day == 2 or day == 3 or day == 4 or day == 5:
+#             return "10:00"
+#         elif day == 6 or day == 0:
+#             return "off"
+#     if vacation is False:
+#         if day == 1 or day == 2 or day == 3 or day == 4 or day == 5:
+#             return "7:00"
+#         elif day == 6 or day == 0:
+#             return "10:00"
+
+
+# The number 6 is a truly great number. Given two int values, a and b, return True if either one is 6.
+# Or if their sum or difference is 6. Note: the function abs(num) computes the absolute value of a number.
+
+# def love6(a, b):
+#     if a == 6 or b == 6:
+#         return True
+#     elif a + b == 6:
+#         return True
+#     elif a - b == 6:
+#         return True
+#     elif b - a == 6:
+#         return True
+#     else:
+#         return False
+
+
+# Given a number n, return True if n is in the range 1..10, inclusive.
+# Unless outside_mode is True, in which case return True if the number is less or equal to 1, or greater or equal to 10.
+# in1to10(5, False) → True
+# in1to10(11, False) → False
+# in1to10(11, True) → True
+
+# def in1to10(n, outside_mode):
+#     if outside_mode is False:
+#         if 0 < n < 11:
+#             return True
+#         else:
+#             return False
+#     else:
+#         if n <= 1 or n >= 10:
+#             return True
+#         else:
+#             return False
+
+
+# Given a non-negative number "num", return True if num is within 2 of a multiple of 10.
+# Note: (a % b) is the remainder of dividing a by b, so (7 % 5) is 2. See also: Introduction to Mod
+# near_ten(12) → True
+# near_ten(17) → False
+# near_ten(19) → True
+
+# def near_ten(num):
+#     if num % 10 <= 2:
+#         return True
+#     elif num % 10 == 9 or num % 10 == 8:
+#         return True
+#     else:
+#         return False
+
+
+# Given 3 int values, a b c, return their sum. However, if one of the values is the same as another of the values, it does not count towards the sum.
+# lone_sum(1, 2, 3) → 6
+# lone_sum(3, 2, 3) → 2
+# lone_sum(3, 3, 3) → 0
+
+# def lone_sum(a, b, c):
+#     sum1 = 0
+#     if a != b and a != c:
+#         sum1 += a
+#     if b != a and b != c:
+#         sum1 += b
+#     if c != a and c != b:
+#         sum1 += c
+#     return sum1
+#
+# print(lone_sum(3,2,3))
+
+
+# Given 3 int values, a b c, return their sum. However, if one of the values is 13 then it does not count towards the sum and values to its right do not count.
+# So for example, if b is 13, then both b and c do not count.
+# lucky_sum(1, 2, 3) → 6
+# lucky_sum(1, 2, 13) → 3
+# lucky_sum(1, 13, 3) → 1
+
+# def lucky_sum(a, b, c):
+#     sum1 = 0
+#     if a == 13:
+#         return sum1
+#     else:
+#         sum1 += a
+#         if b == 13:
+#             return sum1
+#         else:
+#             sum1 += b
+#             if c == 13:
+#                 return sum1
+#             else:
+#                 sum1 += c
+#                 return sum1
+#
+# print(lucky_sum(4, 13, 1))
+
+
+# Given 3 int values, a b c, return their sum. However, if any of the values is a teen -- in the range 13..19 inclusive
+# # -- then that value counts as 0, except 15 and 16 do not count as a teens.
+# # Write a separate helper "def fix_teen(n):"that takes in an int value and returns that value fixed for the teen rule.
+# # In this way, you avoid repeating the teen code 3 times (i.e. "decomposition"). Define the helper below and at the same indent level as the main no_teen_sum().
+# # no_teen_sum(1, 2, 3) → 6
+# # no_teen_sum(2, 13, 1) → 3
+# # no_teen_sum(2, 1, 14) → 3
+
+
+# Given a string, return a string where for every char in the original, there are two chars.
+# double_char('The') → 'TThhee'
+# double_char('AAbb') → 'AAAAbbbb'
+# double_char('Hi-There') → 'HHii--TThheerree
+
+# def double_char(str):
+#     nstr = ''
+#     for i in str:
+#         nstr += i*2
+#     return nstr
+#
+# print(double_char("Kocham cię"))
+
+
+# Return the number of times that the string "hi" appears anywhere in the given string.
+# count_hi('abc hi ho') → 1
+# count_hi('ABChi hi') → 2
+# count_hi('hihi') → 2
+
+# def count_hi(str):
+#     count = 0
+#     for i in range(len(str)-1):                 # tu musi być: range(len(str)-1)
+#         if str[i] == "h" and str[i+1] == "i":
+#             count += 1
+#     return count
+#
+# print(count_hi('abc hi ho'))
+
+
+# Return True if the string "cat" and "dog" appear the same number of times in the given string.
+# cat_dog('catdog') → True
+# cat_dog('catcat') → False
+# cat_dog('1cat1cadodog') → True
+
+def cat_dog(str):
+    count1 = 0
+    count2 = 0
+
+    if 'dog' not in str and 'cat' not in str: # <= kindall pointed this out
+        return True
+
+    for i in range(len(str)-1):
+        if str[i:i+3] == 'cat':
+            count1 += 1
+        if str[i:i+3] == 'dog':
+            count2 += 1
+
+    if count1 == count2:  # <= These shouldn't be part of the for loop
+        return True
+    else:
+        return False
