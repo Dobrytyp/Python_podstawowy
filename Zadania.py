@@ -311,8 +311,8 @@
 #         else:
 #             b = b - a
 #     return a
-
-# print(nwd(20,20))
+#
+# print(nwd(120,22))
 
 
 # Napisz program (rekurencyjnie i iteracyjnie), który wyświetli n kolejnych
@@ -373,9 +373,28 @@
 
 
 # Zadanie
-# an=a1+(n−1)⋅r
-# n.p. a5 = a1+ 4*r
-# n.p. a5 = 3 + 4*2 czyli a5 = 11
+# Korzystając z paradygmatu obiektowego zamodeluj swoje konto bankowe: chcemy móc otworzyć rachunek, zamknąć go, dowiedzieć się,
+# ile pieniędzy mamy na koncie oraz wpłacić i wypłacić jakąś kwotę.
+# (podpowiedź, klasa będzie miała dwa atrybuty, jeden przechowujący stan konta (otwarte, zamknięte), a drugi zdeponowaną kwotę)
+
+# class Konto:
+#     def __init__(self, status, amount):
+#         self.status = status
+#         self.amount = amount
+#
+#     def income(self):
+#         inc = ''
+#         return self.amount + inc
+#
+#     def outcome(self):
+#         out = ''
+#         return self.amount - out
+#
+#
+# karol_maj = Konto(True, 1000)
+# maria_walewska = Konto(True, 2000)
+
+
 
 
 

@@ -3432,12 +3432,11 @@ import random
 #
 # print(countdown(10))
 
-a = 10
-b = 5
 
-a = a+b
-b = a-b
-a = a-b
+class MojaKlasa:
+    zmienna = "blah"
+    def funkcja(self):
+        print("to jest wiadomość wewnątrz klasy")
 
-print(a)
-print(b)
+mojobiekt = MojaKlasa()
+

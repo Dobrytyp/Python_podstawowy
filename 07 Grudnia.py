@@ -285,7 +285,7 @@
 #
 #     def obwod(self):
 #         return 2 * (self.bok_a + self.bok_b)
-#
+
 # p1 = Prostokąt(5, 7)
 # p2 = Prostokąt(4, 5)
 #
