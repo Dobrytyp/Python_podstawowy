@@ -3399,21 +3399,45 @@ import random
 # cat_dog('catdog') → True
 # cat_dog('catcat') → False
 # cat_dog('1cat1cadodog') → True
+#
+# def cat_dog(str):
+#     count1 = 0
+#     count2 = 0
+#
+#     if 'dog' not in str and 'cat' not in str: # <= kindall pointed this out
+#         return True
+#
+#     for i in range(len(str)-1):
+#         if str[i:i+3] == 'cat':
+#             count1 += 1
+#         if str[i:i+3] == 'dog':
+#             count2 += 1
+#
+#     if count1 == count2:  # <= These shouldn't be part of the for loop
+#         return True
+#     else:
+#         return False
 
-def cat_dog(str):
-    count1 = 0
-    count2 = 0
+# JAK DZIAŁA REKURENCJA
 
-    if 'dog' not in str and 'cat' not in str: # <= kindall pointed this out
-        return True
+# import sys                # To nie jest Konieczne
+#
+# def countdown(n):
+#     if n != 0:            # Jeśli liczba nie jest 0
+#         print(n)          # pokaż liczbę w odliczaniu
+#         countdown(n - 1)  # A cały argument funkcji obniż o 1
+#     else:
+#         print("Start!")   # jak dojdzie do 0 to zwróć "Start"
+#         sys.exit()        # A to jest po to żeby ładnie wyjść z funkcji bez "none"
+#
+# print(countdown(10))
 
-    for i in range(len(str)-1):
-        if str[i:i+3] == 'cat':
-            count1 += 1
-        if str[i:i+3] == 'dog':
-            count2 += 1
+a = 10
+b = 5
 
-    if count1 == count2:  # <= These shouldn't be part of the for loop
-        return True
-    else:
-        return False
+a = a+b
+b = a-b
+a = a-b
+
+print(a)
+print(b)

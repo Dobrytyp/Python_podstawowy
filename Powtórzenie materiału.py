@@ -793,7 +793,7 @@
 
 # Przekazywanie argumentów przez referencję
 
-# Zadanie - policz sumę obiektów listy
+# ZADANIE - POLICZ SUMĘ OBIEKTÓW LISTY
 
 # Można zrobić to iteracyjnie:
 
@@ -820,4 +820,23 @@
 #
 # print(list_rek(lista))
 
+# JAK DZIAŁA REKURENCJA
+
+# Funkcje umożliwiają organizowanie i ponowne wykorzystanie części naszego kodu.
+# Funkcję można też zdefiniować za pomocą innych funkcji. Co więcej funkcja może być zdefiniowana przez samą siebie!
+# To bardzo użyteczne podejście nosi nazwę rekurencji (rekursji).
+# Legenda głosi, że "aby zrozumieć rekurencję, musisz najpierw zrozumieć rekurencję".
+
+
+# import sys                # To nie jest Konieczne
+#
+# def countdown(n):
+#     if n != 0:            # Jeśli liczba nie jest 0
+#         print(n)          # pokaż liczbę w odliczaniu
+#         countdown(n - 1)  # A cały argument funkcji obniż o 1
+#     else:
+#         print("Start!")   # jak dojdzie do 0 to zwróć "Start"
+#         sys.exit()        # A to jest po to żeby ładnie wyjść z funkcji bez "none"
+#
+# print(countdown(10))
 

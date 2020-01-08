@@ -240,7 +240,7 @@
 #         n //= 10        # // ozancza dzielenie całkowite bez reszty
 #     return s
 #
-# print(sum_digits(1230))
+# print(sum_digits(1234))
 
 
 # Rekurencyjnie nie umiem
@@ -287,9 +287,9 @@
 
 # def pow(a,b):
 #     result = 1                  # Żeby później mnożenie nie było przez 0 dajemy cyfrę 1
-#     list1 = []
-#     for i in range(b):
-#         list1.append(a)
+#     list1 = []                  # Pusta lista
+#     for i in range(b):          # Dla elementów w zasięgu b
+#         list1.append(a)         # do pustej listy dodajemy a
 #     for i in list1:
 #         result = i * result     # Daltego daliśmy 1 w result
 #     return result
@@ -299,15 +299,84 @@
 
 # def pow_rek(a,b):
 
-# Zadanie               NIEZROBIONE
+# Zadanie               częsciowo zrobione
 # Stwórz funkcję do znajdowania największego wspólnego dzielnika dwóch liczb.
 # (algorytm Euklidesa)
 
-# def nwd(a,b):
-#     if a % b == 0:
-#         return b
-#     else:
-#         a = b
-#         b =
 
-#jeżeli reszta ?0, to przypisujemy liczbie a wartość liczby b, liczbie b wartość otrzymanej reszty, a następnie wykonujemy ponownie punkt 1.
+# def nwd(a,b):
+#     while a != b:
+#         if a > b:
+#             a = a - b
+#         else:
+#             b = b - a
+#     return a
+
+# print(nwd(20,20))
+
+
+# Napisz program (rekurencyjnie i iteracyjnie), który wyświetli n kolejnych
+# wyrazów ciągu zdefiniowego następująco:
+#         2, dla n=1
+# an =    an-1 * 2 dla n nieparzystego
+#         an-1 + 2 dla n parzystego
+
+# def wyrazy_ciagu(a, n):
+#     ciag = []
+#     if n == 1:
+#         ciag = a
+#         return ciag
+#     elif n % 2 != 0:
+#         for i in range(1, n):
+#             ciag.append(a * (n-1) * 2)
+#             n -= 1
+#         ciag.append(a)
+#         ciag.sort()
+#         return ciag
+#     elif n % 2 == 0:
+#         for i in range(1, n):
+#             ciag.append(a * (n-1) + 2)
+#             n -= 1
+#         ciag.append(a)
+#         ciag.sort()
+#         return ciag
+#
+# print(wyrazy_ciagu(2,4))
+
+# Zadanie       Zrobione
+# Napisz funkcję, która przyjmuje dwa stringi i sprawdza, czy są swoimi anagramami.Np.
+# „army” i „Mary”,
+# „dzielenia” i „niedziela”,
+# „Quid est veritas?” i „Vir est qui adest”,
+# „Jim Morrison” i „Mr Mojo Risin”
+# „Tom Marvolo Riddle” i „I am Lord Voldemort”
+
+# def anagram(a, b):
+#     a = a.lower()
+#     b = b.lower()
+#     a_list = []
+#     b_list = []
+#     for i in a :
+#         if i != " " and i != "!" and i != "?" and i != ":" and i != ";":
+#             a_list += i
+#     for i in b :
+#         if i != " " and i != "!" and i != "?" and i != ":" and i != ";":
+#             b_list += i
+#     a_list.sort()
+#     b_list.sort()
+#     if a_list == b_list:
+#         return True
+#     else:
+#         return False
+#
+# print(anagram("Tom Marvolo Riddle", "I am Lord Voldemort!"))
+
+
+# Zadanie
+# an=a1+(n−1)⋅r
+# n.p. a5 = a1+ 4*r
+# n.p. a5 = 3 + 4*2 czyli a5 = 11
+
+
+
+

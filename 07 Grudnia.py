@@ -374,15 +374,15 @@
 
 
 # import os
-
+#
 # a = os.system("dir")
 # print(a)
 # print(type(a))
-
-
-
-#!!!!!!!!!!!!!!!
-
+#
+#
+#
+# # !!!!!!!!!!!!!!!
+#
 # from subprocess import Popen, PIPE # Co to kurwa jest?
 #
 # a = Popen(["dir"], stdout=PIPE, stderr=PIPE).communicate()
