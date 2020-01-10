@@ -3472,7 +3472,45 @@ import random
 
 
 
-a = int(input())
-x = str(a)
-y = x[-1]
-print(y)
+# # a = int(input())
+# # x = str(a)
+# # y = x[-1]
+# # print(y)
+#
+# x = int(input())
+# y = str(x)
+# if len(y) > 1:
+#     print(y[-2])
+# else:
+#     print(0)
+#
+# # ALBO
+#
+# n = int(input())
+# print(n // 10 % 10)
+
+# x = int(input())
+
+# s = int(input())
+# n = 0
+# while n:
+#     s += n % 10
+#     n //= 10
+#
+# print(n)
+
+# x = float(input())
+# z = (x - int(x))
+# a = z // 0.1
+# b = int(a)
+# print(b)
+
+# A car can cover distance of N kilometers per day. How many days will it take to cover a route of length M kilometers? The program gets two numbers: N and M.
+N = int(input())
+M = int(input())
+if M % N != 0:
+    D = M // N + 1
+    print(D)
+else:
+    D = M // N
+    print(D)
