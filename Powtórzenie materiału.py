@@ -42,6 +42,7 @@
 
 # str1 = "Przykład"
 # var2 = str1[:len(str1) // 2]    # Tym dzielmy zapis na pół i tworzymy zmienną z pierwszej połowy
+# print(type(var2))
 # print(var2)
 
 # ======================================================================

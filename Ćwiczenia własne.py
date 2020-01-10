@@ -3433,10 +3433,46 @@ import random
 # print(countdown(10))
 
 
-class MojaKlasa:
-    zmienna = "blah"
-    def funkcja(self):
-        print("to jest wiadomość wewnątrz klasy")
+# Biorąc pod uwagę trzy liczby całkowite, a b c, zwróć wartość True, jeśli jeden z b lub c jest „blisko” (różniący się od a maksymalnie o 1),
+# podczas gdy druga jest „daleka”, różni się od obu pozostałych wartości o 2 lub więcej. Uwaga: abs (liczba) oblicza wartość bezwzględną liczby.
+# close_far (1, 2, 10) → Prawda
+# close_far (1, 2, 3) → Fałsz
+# close_far (4, 1, 3) → Prawda
 
-mojobiekt = MojaKlasa()
+# class Osoba:
+#     def __init__(self, imie, nazwisko, wiek):
+#         self.imie = imie
+#         self.nazwisko = nazwisko
+#         self.wiek = wiek
+#
+#     def przedstaw_sie(self):
+#         print(f"Jestem {self.imie} {self.nazwisko} mam {self.wiek} lata")
+#
+#     def urodziny(self):
+#         wiek_przed = self.wiek
+#         self.wiek += 1
+#         return wiek_przed
+#
+# Jan = Osoba("Jan", "Nowak", 48)
+# Adam = Osoba("Adam", "Mickiewicz", 220)
+#
+# Jan.przedstaw_sie()
+# Adam.przedstaw_sie()
 
+# def nazwa(liczba, kolor="zielony", *args, **kwargs):
+#     print(liczba*kolor)
+#     print("args:", args)
+#     print("kwargs:", kwargs)
+#
+# nazwa(2, "czerwony", 42, 7, wyraz="hej")
+#
+# def funkcja():
+#     print("Jestem Funkcją")
+
+
+
+
+a = int(input())
+x = str(a)
+y = x[-1]
+print(y)

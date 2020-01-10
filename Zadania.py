@@ -236,7 +236,7 @@
 # def sum_digits(n):              # Spytaj o to
 #     s = 0
 #     while n:
-#         s += n % 10     # reszta z dzielenia przez 10, chodzi o to żeby brał pojedyńczą cyfrę, a ta jest mniejsza od 10
+#         s += n % 10     # reszta z dziel. przez 10, chodzi o to żeby brał pojedyńczą cyfrę, a ta jest mniejsza od 10
 #         n //= 10        # // ozancza dzielenie całkowite bez reszty
 #     return s
 #
@@ -245,12 +245,14 @@
 
 # Rekurencyjnie nie umiem
 
-# def suma_rek(lst):
-#     if len(lst) == 1:
-#         return lst[0]
-#     else:
-#         elem = lst.pop()
-#         return elem + suma_rek(lst)
+def suma_rek(n):
+    if n == 0:
+        return n[0]
+    else:
+        elem = n.pop()
+        return elem + suma_rek(n)
+
+print(suma_rek(1234))
 
 
 # Zadanie  ZROBIONE
