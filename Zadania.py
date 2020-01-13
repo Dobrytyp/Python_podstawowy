@@ -234,25 +234,24 @@
 
 
 # def sum_digits(n):              # Spytaj o to
-#     s = 0
+#     suma = 0
 #     while n:
-#         s += n % 10     # reszta z dziel. przez 10, chodzi o to żeby brał pojedyńczą cyfrę, a ta jest mniejsza od 10
+#         suma += n % 10     # reszta z dziel. przez 10, chodzi o to żeby brał pojedyńczą cyfrę, a ta jest mniejsza od 10
 #         n //= 10        # // ozancza dzielenie całkowite bez reszty
-#     return s
+#     return suma
 #
 # print(sum_digits(1234))
 
 
-# Rekurencyjnie nie umiem
+# Rekurencyjnie
 
-def suma_rek(n):
-    if n == 0:
-        return n[0]
-    else:
-        elem = n.pop()
-        return elem + suma_rek(n)
-
-print(suma_rek(1234))
+# def suma_rek(liczba):
+#     if liczba < 10:
+#         return liczba
+#     else:
+#         return suma_rek(liczba // 10) + liczba % 10
+#
+# print(suma_rek(1234))
 
 
 # Zadanie  ZROBIONE
@@ -276,6 +275,10 @@ print(suma_rek(1234))
 #
 # print(narcistic(9474))
 
+#Albo
+
+
+
 
 
 # Zadanie
@@ -296,10 +299,24 @@ print(suma_rek(1234))
 #         result = i * result     # Daltego daliśmy 1 w result
 #     return result
 # print(pow(2,8))
+#
+# def pow(a,b):
+#     result = 1
+#     for i in range(b):
+#         result *= a
+#     return result
 
-# Rekurencyjnie NIE ZROBIONE
+#Ablo
 
-# def pow_rek(a,b):
+# Rekurencyjnie
+# def pow(a,b):
+#     if b == 0:
+#         return 1
+#
+#     return a * pow(a, b-1)
+#
+#
+# print(pow(4,3))
 
 # Zadanie               częsciowo zrobione
 # Stwórz funkcję do znajdowania największego wspólnego dzielnika dwóch liczb.
@@ -315,6 +332,28 @@ print(suma_rek(1234))
 #     return a
 #
 # print(nwd(120,22))
+
+# Rekurencja
+
+# def nwd_rek(a, b):
+#     if a == b:
+#         return a
+#     elif a > b:
+#         return nwd_rek(a-b, b)
+#     else:
+#         return nwd_rek(b-a, a)
+#
+# print(nwd_rek(120,22))
+
+# Albo
+
+# def nwd_rek2(a, b):
+#     x = a % b
+#     if x == 0:
+#         return b
+#     return nwd_rek2(b, x)
+#
+# print(nwd_rek2(25, 5))
 
 
 # Napisz program (rekurencyjnie i iteracyjnie), który wyświetli n kolejnych
@@ -345,6 +384,21 @@ print(suma_rek(1234))
 #
 # print(wyrazy_ciagu(2,4))
 
+# def ciag_iter(n):
+#     lista = []
+#     for i in range(1, n+1):
+#         if i  == 1:
+#             lista.append(2)
+#         elif i % 2 == 0:
+#             lista.append((lista[-1]+ 2))
+#         else:
+#             lista.append((lista[-1] +2 ))
+#     return lista
+#
+# print(ciag_iter(5))
+
+
+
 # Zadanie       Zrobione
 # Napisz funkcję, która przyjmuje dwa stringi i sprawdza, czy są swoimi anagramami.Np.
 # „army” i „Mary”,
@@ -352,7 +406,7 @@ print(suma_rek(1234))
 # „Quid est veritas?” i „Vir est qui adest”,
 # „Jim Morrison” i „Mr Mojo Risin”
 # „Tom Marvolo Riddle” i „I am Lord Voldemort”
-
+#
 # def anagram(a, b):
 #     a = a.lower()
 #     b = b.lower()
@@ -366,13 +420,18 @@ print(suma_rek(1234))
 #             b_list += i
 #     a_list.sort()
 #     b_list.sort()
-#     if a_list == b_list:
-#         return True
-#     else:
-#         return False
+#     return a_list == b_list
 #
 # print(anagram("Tom Marvolo Riddle", "I am Lord Voldemort!"))
 
+# Albo
+
+# def anagram(napis1, napis2):
+#     napis1 = napis1.lower().replace(" ", '')
+#     napis2 = napis2.lower().replace(" ", '')
+#     return sorted(napis1) == sorted(napis2)
+#
+# print(anagram("Tom Marvolo Riddle", "I am Lord Voldemort!"))
 
 # Zadanie
 # Korzystając z paradygmatu obiektowego zamodeluj swoje konto bankowe: chcemy móc otworzyć rachunek, zamknąć go, dowiedzieć się,
@@ -380,13 +439,15 @@ print(suma_rek(1234))
 # (podpowiedź, klasa będzie miała dwa atrybuty, jeden przechowujący stan konta (otwarte, zamknięte), a drugi zdeponowaną kwotę)
 
 # class Konto:
-#     def __init__(self, status, amount):
-#         self.status = status
-#         self.amount = amount
+#     def __init__(self):
+#         self.status = False
+#         self.stan = 0
 #
-#     def income(self):
-#         inc = ''
-#         return self.amount + inc
+#     def otworz_konto(self):\
+#         self.status = True
+#
+#     def zwroc_saldo(self):
+#         if
 #
 #     def outcome(self):
 #         out = ''
@@ -396,8 +457,15 @@ print(suma_rek(1234))
 # karol_maj = Konto(True, 1000)
 # maria_walewska = Konto(True, 2000)
 
+# Zadanie 10
 
+import math
 
-
+# class Punkt:
+#     def __init__(self, x, y):
+#         self.x = x
+#         self.y = y
+#     def __str__(self):
+#         return f"Współrzędne to: ({self.x}, {self.y}"
 
 
