@@ -3542,29 +3542,128 @@ import random
 # print(D, C)
 
 # H hours, M minutes and S seconds are passed since the midnight (0 ≤ H < 12, 0 ≤ M < 60, 0 ≤ S < 60). Determine the angle (in degrees) of the hour hand on the clock face right now.
-sekundy = 60 * 60 * 24          # Doba ma 86400
-kat = sekundy / 360             # Jeden kąt to 240 sekund (4 minuty)
-print(sekundy)
+# sekundy = 60 * 60 * 24          # Doba ma 86400
+# kat = sekundy / 360             # Jeden kąt to 240 sekund (4 minuty)
+# print(sekundy)
+#
+# H = 1
+# M = 2
+# S = 60
+#
+# wynik = H*3600 + M*60 + S
+# kat = (wynik/240) *2               #  * 2 jest dlatego, że zegar ma tylko 12 godzin fizycznie a nie 24
+#
+# print(kat+30)
+#
+#
+#
+# a = int(input("Amount: "))
+# # Math
+#
+# mins=(a%60)
+# angle=(360/60)
+# alpha=(mins*angle)
+#
+# X = "%s" % alpha
+#
+# Z = float(X)
+# print(Z*2)
 
-H = 1
-M = 2
-S = 60
+# x = int(input())
+# y = int(input())
+# z = int(input())
+# set1 = []
+# set1 = set(set1)
+#
+# set1.add(x)
+# set1.add(y)
+# set1.add(z)
+#
+# if len(set1) == 1:
+#     print(3)
+# elif len(set1) == 2:
+#     print(2)
+# else:
+#     print(0)
 
-wynik = H*3600 + M*60 + S
-kat = (wynik/240) *2               #  * 2 jest dlatego, że zegar ma tylko 12 godzin fizycznie a nie 24
-
-print(kat+30)
 
 
+# Czekolada ma kształt prostokąta podzielonego na porcje n × m. Batonik czekoladowy można podzielić na dwie prostokątne części,
+# łamiąc go wzdłuż wybranej linii prostej na jego wzorze. Ustal, czy można go podzielić, aby jedna z części miała dokładnie k kwadratów.
+# Program odczytuje trzy liczby całkowite: n, m oraz k. Powinien być wydrukowany TAK lub NIE.
 
-a = int(input("Amount: "))
-# Math
 
-mins=(a%60)
-angle=(360/60)
-alpha=(mins*angle)
 
-X = "%s" % alpha
 
-Z = float(X)
-print(Z*2)
+#---------------------------------------------------------------
+
+# import sys
+#
+# ask_var = True
+# while ask_var:
+#     ask = input("Czy chcesz sprawdzić czu dany rok jest rokiem przestępnym?\n Tak - t\n Nie - n\n")
+#     if ask.lower() == "t" or ask.lower() == "n":
+#         ask_var = False
+#
+#
+# def leap_common(ask_year):
+#     if ask_year % 400 == 0 or (ask_year % 4 == 0 and ask_year % 100 != 0):
+#         print("Podany rok jest rokiem przęstępnym")
+#     else:
+#         print("Podany rok nie jest rokiem przęstępnym")
+#
+#
+# if ask.lower() == "t":
+#     ask_year = int(input("podaj rok który chcesz sprawdzić:\n"))
+#     print(leap_common(ask_year))
+# elif ask.lower() == "n":
+#     sys.exit(0)
+
+#-------------------------------------------------------------------------
+
+# Zadanie
+# Napisz funkcję, która zwraca listę wszystkich niepodzielnych przez 3 liczb z zakresu [1, 20]. Trzema sposobami.
+
+def dzielniki(lista):
+    lista = []
+    for i in range(1, 20):
+        if i % 3 != 0:
+            lista.append(i)
+    return lista
+
+print(dzielniki([]))
+
+def dzielniki_comp(lista):
+    return [i for i in range(1, 20) if i % 3 !=0]
+
+print(dzielniki_comp([]))
+
+dzielniki_lambda = list(filter(lambda x: x % 3, range(1, 20)))
+
+print(dzielniki_lambda)
+
+
+# Zadanie
+# Napisz funkcję, która przyjmuje dwa parametry: jednym jest lista, a drugim liczba całkowita z domyślną wartością równą 5.
+# Powinna zwracać listę tych elementów, które nie przekroczyły wartości tego parametru. Trzema sposobami.
+
+lista = [4, 6, 3, 12, 20, 7]
+
+def czy_przekracza(lista, x = 5):
+    n_lista = []
+    for i in lista:
+        if i <= x:
+            n_lista.append(i)
+    return n_lista
+
+print(czy_przekracza(lista))
+
+def czy_przekracza_comp(lista, x = 5):
+    return [i for i in lista if i <= x]
+
+print(czy_przekracza_comp(lista))
+
+def czy_przekracza_lambda(lista, x = 5):
+    return list(filter(lambda i: i <= x, lista))
+
+print(czy_przekracza_lambda(lista))

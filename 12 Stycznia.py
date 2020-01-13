@@ -1,5 +1,5 @@
 # Tak jest z błędem
-
+from inspect import v
 from random import randint
 
 # for i in range(10):
@@ -12,14 +12,14 @@ from random import randint
 # Fix it
 
 # from random import randint
-# # for i in range(10):
-# #     a = randint(0, 10)
-# #     b = randint(0, 2)
-# #     try:
-# #         wynik = a / b
-# #     except ZeroDivisionError:
-# #         wynik = 100
-# #     print(i, a ,b, wynik)
+# for i in range(10):
+#     a = randint(0, 10)
+#     b = randint(0, 2)
+#     try:
+#         wynik = a / b
+#     except ZeroDivisionError:
+#         wynik = 0
+#     print(i, a ,b, wynik)
 
 
 
@@ -43,9 +43,9 @@ from random import randint
 # być idiotoodporny.
 
 # try:
-#     rok = input("Podaj rok swojego urodzenia\n")
+#     rok = int(input("Podaj rok swojego urodzenia\n"))
 #     if 2020 - rok < 18:
-#         print("nie jesteś pełnletni")
+#         print("nie jesteś pełnoletni")
 #     else:
 #         print("Jesteś pełnoletni")
 # except ValueError:
@@ -266,28 +266,28 @@ from random import randint
 # #==========================================
 
 # Zadanie
-# Napisz funkcję, która zwraca listę wszystkich niepodzielnych przez 3 liczb z zakresu [1, 100]. Trzema sposobami.
+# Napisz funkcję, która zwraca listę wszystkich niepodzielnych przez 3 liczb z zakresu [1, 20]. Trzema sposobami.
 
-# def dzielniki_tradycyjnie(list1):
-# #     list1 = []
-# #     for i in range(1, 100):
-# #         if i % 3 != 0:
-# #             list1.append(i)
-# #     return list1
-# #
-# # print(dzielniki_tradycyjnie([]))
-# # #-----------------------------------
-# #
-# # def dzielniki_compr():
-# #     return [x for x in range(1, 100) if x % 3]
-# #
-# # print(dzielniki_compr())
-# #
-# # #-----------------------------------
-# #
-# # niepodzielne_lambda = list(filter(lambda x: x % 3, range (1, 101)))
-# #
-# # print(niepodzielne_lambda)
+# def dzielniki_tradycyjnie(list1):               # Program robi 58 kroków
+#     list1 = []
+#     for i in range(1, 20):
+#         if i % 3 != 0:
+#             list1.append(i)
+#     return list1
+#
+# print(dzielniki_tradycyjnie([]))
+# #-----------------------------------
+#
+# def dzielniki_compr():                          # Program robi 28 kroków
+#     return [x for x in range(1, 20) if x % 3]
+#
+# print(dzielniki_compr())
+#
+# #-----------------------------------
+#
+# dzielniki_lambda = list(filter(lambda x: x % 3, range(1, 20)))  # Program robi 29 kroków
+#
+# print(dzielniki_lambda)
 
 #===============================================================================
 
@@ -295,26 +295,26 @@ from random import randint
 # Napisz funkcję, która przyjmuje dwa parametry: jednym jest lista, a drugim liczba całkowita z domyślną wartością równą 5.
 # Powinna zwracać listę tych elementów, które nie przekroczyły wartości tego parametru. Trzema sposobami.
 
-# lst = [12, 4, 8, 88]
-# # #
-# # # def czy5_tradycyjny(lista, x = 5):
-# # #     lista1 = []
-# # #     for i in lista:
-# # #         if i <= x:
-# # #             lista1.append(i)
-# # #     return lista1
-# # #
-# # # print(czy5_tradycyjny(lst))
-# # #
-# # # def czy5_compr(lista, x = 5):
-# # #     return [i for i in lista if i <= x]
-# # #
-# # # print(czy5_compr(lst))
-# # #
-# # # def czy5_lambda(lista, a = 5):
-# # #     return list(filter(lambda x: x <= a, lista))
-# # #
-# # # print(czy5_lambda(lst))
+# lst = [12, 4, 8, 88, 2]
+#
+# def czy5_tradycyjny(lista, x = 5):
+#     lista1 = []
+#     for i in lista:
+#         if i <= x:
+#             lista1.append(i)
+#     return lista1
+#
+# print(czy5_tradycyjny(lst))
+#
+# def czy5_compr(lista, x = 5):
+#     return [i for i in lista if i <= x]
+#
+# print(czy5_compr(lst))
+#
+# def czy5_lambda(lista, a = 5):
+#     return list(filter(lambda x: x <= a, lista))
+
+# print(czy5_lambda(lst))
 
 # Zadanie
 # Napisz funkcję, która przyjmuje listę i zwraca ją w zmienionej formie: tam, gdzie liczba była parzysta teraz mamy napis „Parzysta”,
@@ -377,8 +377,8 @@ from random import randint
 # Stwórz listę z 10 losowymi wartościami z przedziału [-10; 10], a następnie
 # posortuj ją rosnąco pod względem kwadratów elementów
 
-from random import randint
-
-lista = [randint(-10, 10) for i in range(10)]
-print(lista)
-print(sorted(lista, key=lambda x: x ** 2))
+# from random import randint
+#
+# lista = [randint(-10, 10) for i in range(10)]
+# print(lista)
+# print(sorted(lista, key=lambda x: x ** 2))
