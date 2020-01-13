@@ -3506,11 +3506,65 @@ import random
 # print(b)
 
 # A car can cover distance of N kilometers per day. How many days will it take to cover a route of length M kilometers? The program gets two numbers: N and M.
-N = int(input())
-M = int(input())
-if M % N != 0:
-    D = M // N + 1
-    print(D)
-else:
-    D = M // N
-    print(D)
+# N = int(input())
+# M = int(input())
+# if M % N != 0:
+#     D = M // N + 1
+#     print(D)
+# else:
+#     D = M // N
+#     print(D)
+
+
+
+# Biorąc pod uwagę liczbę całkowitą N - liczbę minut, które upłynęły od północy - ile godzin i minut jest wyświetlanych na 24-godzinnym zegarze cyfrowym?
+# Program powinien wypisać dwie liczby: liczbę godzin (od 0 do 23) i liczbę minut (od 0 do 59).
+#
+# Na przykład, jeśli N = 150, minęło 150 minut od północy - tj. Teraz jest 2:30 rano. Więc program powinien wydrukować 2 30.
+
+# n = int(input())
+# h = n // 60
+# m = n % 60
+# print(h)
+# print(h, m)
+
+# A cupcake costs A dollars and B cents. Determine, how many dollars and cents should one pay for N cupcakes.
+# A program gets three numbers: A, B, N. It should print two numbers: total cost in dollars and cents.
+
+# A = int(input())
+# B = int(input())
+# N = int(input())
+#
+# Cena = N * (A * 100 + B)
+# D = Cena // 100
+# C = Cena % 100
+#
+# print(D, C)
+
+# H hours, M minutes and S seconds are passed since the midnight (0 ≤ H < 12, 0 ≤ M < 60, 0 ≤ S < 60). Determine the angle (in degrees) of the hour hand on the clock face right now.
+sekundy = 60 * 60 * 24          # Doba ma 86400
+kat = sekundy / 360             # Jeden kąt to 240 sekund (4 minuty)
+print(sekundy)
+
+H = 1
+M = 2
+S = 60
+
+wynik = H*3600 + M*60 + S
+kat = (wynik/240) *2               #  * 2 jest dlatego, że zegar ma tylko 12 godzin fizycznie a nie 24
+
+print(kat+30)
+
+
+
+a = int(input("Amount: "))
+# Math
+
+mins=(a%60)
+angle=(360/60)
+alpha=(mins*angle)
+
+X = "%s" % alpha
+
+Z = float(X)
+print(Z*2)
