@@ -3668,19 +3668,59 @@ import random
 #
 # print(czy_przekracza_lambda(lista))
 
-from random import randint
+# from random import randint
+#
+# def dzielenie():
+#     lista = []
+#     dziel = []
+#     for i in range(10):
+#         lista.append(randint(0, 10))
+#     try:
+#         for i in lista:
+#             dziel.append(i/randint(0,2))
+#     except: ZeroDivisionError
+#     return dziel
+#
+#
+# print(dzielenie())
+#
+# try:
+#     birth = int(input("Ppdaj swój rok urodzenia\n"))
+#     if 2020 - birth > 17:
+#         print("Jesteś Pełnoletni")
+#     else:
+#         print("Jesteś niepełnoletni")
+# except ValueError:
+#     print("Debil")
 
-def dzielenie():
-    lista = []
-    dziel = []
-    for i in range(10):
-        lista.append(randint(0, 10))
-    try:
-        for i in lista:
-            dziel.append(i/randint(0,2))
-    except: ZeroDivisionError
-    return dziel
+#------------------------
 
+months = {
+    "styczeń" : 31,
+    "luty" : 29,
+    "marzec" : 31,
+    "kweicień" : 30,
+    "maj" : 31,
+    "czerwiec" : 30,
+    "lipiec" : 31,
+    "sierpień" : 31,
+    "wrzesień" : 30,
+    "pażdziernik" : 31,
+    "listopad" : 30,
+    "grudzień" : 31
+}
 
-print(dzielenie())
+import sys
 
+def month(month):
+    correct = True
+    while correct:
+        month = month.lower()
+        try:
+            print(f"{month} ma {months[month]} dni")
+            correct = False
+            sys.exit()
+        except KeyError:
+            print("jeszcze raz")
+
+print(month("luty"))
