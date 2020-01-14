@@ -841,3 +841,47 @@
 #
 # print(countdown(10))
 
+#=================================================================================
+#=================================================================================
+
+# WYJĄTKI
+
+# Może zdarzyć się sytuacja, że podczas próby wykonania naszego kodu wystąpi błąd i uniemożliwi wykonanie programu do końca.
+
+# Przykład:
+
+# from random import randint
+#
+# for i in range(10):
+#     a = randint(0,10)
+#     b = randint(0, 2)
+#     wynik = a/b
+#
+# print(i, a, b, wynik)
+
+# Ten program wyrzuca błąd o dzielniu przez zero
+
+# from random import randint
+#
+# for i in range(10):
+#     a = randint(0,10)
+#     b = randint(0, 2)
+#     wynik = a/b
+#
+# print(i, a, b, wynik)
+
+# Teraz go poprawiliśmy
+
+# from random import randint
+#
+# for i in range(10):
+#     a = randint(0,10)
+#     b = randint(0, 2)
+#     try:                        # tu dajemy try: żeby pokazać że chcemy ominąć jakiś bład
+#         wynik = a/b
+#     except ZeroDivisionError:   # Tu piszemy o jaki bład chodzi
+#         wynik = 100             # a tu mówimy co w razie błędu ma się pojawić
+# print(i, a, b, wynik)
+
+
+

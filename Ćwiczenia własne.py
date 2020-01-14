@@ -3624,46 +3624,63 @@ import random
 # Zadanie
 # Napisz funkcję, która zwraca listę wszystkich niepodzielnych przez 3 liczb z zakresu [1, 20]. Trzema sposobami.
 
-def dzielniki(lista):
-    lista = []
-    for i in range(1, 20):
-        if i % 3 != 0:
-            lista.append(i)
-    return lista
-
-print(dzielniki([]))
-
-def dzielniki_comp(lista):
-    return [i for i in range(1, 20) if i % 3 !=0]
-
-print(dzielniki_comp([]))
-
-dzielniki_lambda = list(filter(lambda x: x % 3, range(1, 20)))
-
-print(dzielniki_lambda)
+# def dzielniki(lista):
+#     lista = []
+#     for i in range(1, 20):
+#         if i % 3 != 0:
+#             lista.append(i)
+#     return lista
+#
+# print(dzielniki([]))
+#
+# def dzielniki_comp(lista):
+#     return [i for i in range(1, 20) if i % 3 !=0]
+#
+# print(dzielniki_comp([]))
+#
+# dzielniki_lambda = list(filter(lambda x: x % 3, range(1, 20)))
+#
+# print(dzielniki_lambda)
 
 
 # Zadanie
 # Napisz funkcję, która przyjmuje dwa parametry: jednym jest lista, a drugim liczba całkowita z domyślną wartością równą 5.
 # Powinna zwracać listę tych elementów, które nie przekroczyły wartości tego parametru. Trzema sposobami.
 
-lista = [4, 6, 3, 12, 20, 7]
+# lista = [4, 6, 3, 12, 20, 7]
 
-def czy_przekracza(lista, x = 5):
-    n_lista = []
-    for i in lista:
-        if i <= x:
-            n_lista.append(i)
-    return n_lista
+# def czy_przekracza(lista, x = 5):
+#     n_lista = []
+#     for i in lista:
+#         if i <= x:
+#             n_lista.append(i)
+#     return n_lista
+#
+# print(czy_przekracza(lista))
+#
+# def czy_przekracza_comp(lista, x = 5):
+#     return [i for i in lista if i <= x]
+#
+# print(czy_przekracza_comp(lista))
+#
+# def czy_przekracza_lambda(lista, x = 5):
+#     return list(filter(lambda i: i <= x, lista))
+#
+# print(czy_przekracza_lambda(lista))
 
-print(czy_przekracza(lista))
+from random import randint
 
-def czy_przekracza_comp(lista, x = 5):
-    return [i for i in lista if i <= x]
+def dzielenie():
+    lista = []
+    dziel = []
+    for i in range(10):
+        lista.append(randint(0, 10))
+    try:
+        for i in lista:
+            dziel.append(i/randint(0,2))
+    except: ZeroDivisionError
+    return dziel
 
-print(czy_przekracza_comp(lista))
 
-def czy_przekracza_lambda(lista, x = 5):
-    return list(filter(lambda i: i <= x, lista))
+print(dzielenie())
 
-print(czy_przekracza_lambda(lista))
