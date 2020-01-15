@@ -884,4 +884,19 @@
 # print(i, a, b, wynik)
 
 
+# Mamy również możliwość rzucania wyjątków w kodzie, gdy chcemy
+# zasygnalizować, że pewne zachowanie jest błędem.
+# Służy do tego słowo kluczowe raise
+
+# from random import randint
+#
+# for i in range(10):
+#     a = randint(0, 10)
+#     b = randint(0, 2)
+#     if b == 0:
+#         raise ValueError("Dzielnik nie może być równy zeru")    # to ma zwrócić uwagę ze tu jte błąd
+#     wynik = a /b
+#
+# print(i ,a ,b, wynik)
+
 

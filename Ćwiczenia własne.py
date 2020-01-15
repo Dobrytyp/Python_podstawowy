@@ -3695,32 +3695,63 @@ import random
 
 #------------------------
 
-months = {
-    "styczeń" : 31,
-    "luty" : 29,
-    "marzec" : 31,
-    "kweicień" : 30,
-    "maj" : 31,
-    "czerwiec" : 30,
-    "lipiec" : 31,
-    "sierpień" : 31,
-    "wrzesień" : 30,
-    "pażdziernik" : 31,
-    "listopad" : 30,
-    "grudzień" : 31
-}
+# months = {
+#     "styczeń" : 31,
+#     "luty" : 29,
+#     "marzec" : 31,
+#     "kweicień" : 30,
+#     "maj" : 31,
+#     "czerwiec" : 30,
+#     "lipiec" : 31,
+#     "sierpień" : 31,
+#     "wrzesień" : 30,
+#     "pażdziernik" : 31,
+#     "listopad" : 30,
+#     "grudzień" : 31
+# }
+#
+# import sys
+# month = input("podaj nazwe miesiąca\n")
+#
+#
+# def miesiace(month):
+#     correct = True
+#     while correct:
+#         month = month.lower()
+#         try:
+#             print(f"{month} ma {months[month]} dni")
+#             correct = False
+#             sys.exit()
+#         except KeyError:
+#             print("jeszcze raz")
+#             month = input("podaj nazwe miesiąca\n")
+#
+# miesiace(month)
 
-import sys
+# Zadanie
+# Napisz program, który zwróci wartość bezwzględną liczby pobranej od
+# użytkownika. Program powinien pytać o tę liczbę tak długo, aż nie
+# zostanie ona poprawnie podana.
 
-def month(month):
-    correct = True
-    while correct:
-        month = month.lower()
-        try:
-            print(f"{month} ma {months[month]} dni")
-            correct = False
-            sys.exit()
-        except KeyError:
-            print("jeszcze raz")
 
-print(month("luty"))
+# correct = True
+# while correct:
+#     try:
+#         ask = int(input("podaj liczbę całkowitą\n"))
+#         if ask > 0:
+#             correct = False
+#             print(ask)
+#         else:
+#             correct = False
+#             print(ask*-1)
+#     except ValueError:
+#         None
+
+from random import randint
+
+# def try_raise(a, b):
+#     if b == 0:
+#         raise ValueError("Dzielnik nie może być równy zeru")    # to ma zwrócić uwagę ze tu jest błąd
+#     return a /b
+#
+# print(try_raise(10, 0))
