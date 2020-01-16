@@ -3747,11 +3747,13 @@ import random
 #     except ValueError:
 #         None
 
-from random import randint
-
+# from random import randint
+#
 # def try_raise(a, b):
 #     if b == 0:
 #         raise ValueError("Dzielnik nie może być równy zeru")    # to ma zwrócić uwagę ze tu jest błąd
 #     return a /b
 #
 # print(try_raise(10, 0))
+
+

@@ -285,7 +285,7 @@ from random import randint
 #
 # #-----------------------------------
 #
-# dzielniki_lambda = list(filter(lambda x: x % 3, range(1, 20)))  # Program robi 29 kroków
+# dzielniki_lambda = list(filter(lambda x: x % 3, range(1, 20)))  # Program robi 59 kroków
 #
 # print(dzielniki_lambda)
 
