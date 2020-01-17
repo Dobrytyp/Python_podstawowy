@@ -126,18 +126,18 @@ from random import randint
 # te liczby są dodatnie.
 
 
-# class MojWlasnyWyjatek(Exception):
-#     pass
-#
-# def pole_trojkata(a, h):
-#     if a < 0 or h < 0:
-#         raise MojWlasnyWyjatek("Długość i wysokość Trójkąta muszą mieć wartość dodatnią")
-#     return 0.5 * a * h
-#
-# x = float(input("podaj długość podstawy \n"))
-# y = float(input("podaj długość podstawy \n"))
-#
-# print(pole_trojkata(x, y))
+class MojWlasnyWyjatek(Exception):
+    pass
+
+def pole_trojkata(a, h):
+    if a < 0 or h < 0:
+        raise MojWlasnyWyjatek("Długość i wysokość Trójkąta muszą mieć wartość dodatnią")
+    return 0.5 * a * h
+
+x = float(input("podaj długość podstawy \n"))
+y = float(input("podaj długość podstawy \n"))
+
+print(pole_trojkata(x, y))
 
 #===========================================================
 

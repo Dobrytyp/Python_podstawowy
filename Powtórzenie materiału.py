@@ -846,7 +846,8 @@
 
 # WYJĄTKI
 
-# Może zdarzyć się sytuacja, że podczas próby wykonania naszego kodu wystąpi błąd i uniemożliwi wykonanie programu do końca.
+# Może zdarzyć się sytuacja, że podczas próby wykonania naszego kodu wystąpi błąd i uniemożliwi wykonanie programu do końca
+
 
 # Przykład:
 
@@ -892,11 +893,25 @@
 #
 # for i in range(10):
 #     a = randint(0, 10)
-#     b = randint(0, 2)
+#     b = 0
 #     if b == 0:
 #         raise ValueError("Dzielnik nie może być równy zeru")    # to ma zwrócić uwagę ze tu jte błąd
 #     wynik = a /b
 #
 # print(i ,a ,b, wynik)
+
+
+# Możemy też tworzyć własne klasy wyjątków:
+
+# class MojWlasnyWyjatek(Exception):
+#     pass
+#
+# from random import randint
+#
+# a = randint(0, 1)
+# if a == 0:
+#     raise MojWlasnyWyjatek("a nie może być zerem")
+# else:
+#     print(a)
 
 

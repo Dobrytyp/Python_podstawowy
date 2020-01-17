@@ -3756,4 +3756,19 @@ import random
 #
 # print(try_raise(10, 0))
 
+# Zadanie
+# Napisz program, który obliczy pole trójkąta na podstawie podanych przez
+# użytkownika długości podstawy oraz wysokości, pod warunkiem, że obie
+# te liczby są dodatnie.
 
+pod_check = True
+while pod_check:
+    try:
+        a = int(input("podaj długośc podstawy trójkąta\n"))
+        pod_check = False
+    except TypeError:
+        None
+    except a < 0:
+        None
+wys_chek = True
+# while

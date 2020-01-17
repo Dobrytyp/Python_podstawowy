@@ -495,35 +495,35 @@ import math
 # testera i zabezpiecz przed wszelkimi błędami, które użytkownik może
 # celowo wprowadzić.
 
-# correct_waga = True
-# while correct_waga:
-#     try:
-#         waga = float(input("Podaj masę w Kilogramach\n"))
-#         if waga > 0:
-#             correct_waga = False
-#     except ValueError:
-#         None
-#
-# correct_wzrost = True
-# while correct_wzrost:
-#     try:
-#         wzrost = float(input("Podaj wzrost w centrymetrach\n"))
-#         wzrost = wzrost/100
-#         if wzrost > 0:
-#             correct_wzrost = False
-#     except ValueError:
-#         None
-#
-# bmi = waga / (wzrost*wzrost)
-#
-# if bmi < 18.5:
-#     print("masz niedowagę")
-# elif 18.5 <= bmi < 25:
-#     print("Ważysz prawdiłowo")
-# elif 25 <= bmi < 30:
-#     print("Masz nadwagę")
-# else:
-#     print("Jesteś otyły")
+correct_waga = True
+while correct_waga:
+    try:
+        waga = float(input("Podaj masę w Kilogramach\n"))
+        if waga > 0:
+            correct_waga = False
+    except ValueError:
+        None
+
+correct_wzrost = True
+while correct_wzrost:
+    try:
+        wzrost = float(input("Podaj wzrost w centrymetrach\n"))
+        wzrost = wzrost/100
+        if wzrost > 0:
+            correct_wzrost = False
+    except ValueError:
+        None
+
+bmi = waga / (wzrost*wzrost)
+
+if bmi < 18.5:
+    print("masz niedowagę")
+elif 18.5 <= bmi < 25:
+    print("Ważysz prawdiłowo")
+elif 25 <= bmi < 30:
+    print("Masz nadwagę")
+else:
+    print("Jesteś otyły")
 
 # Zadanie 3
 
@@ -532,7 +532,7 @@ import math
 # Stwórz 3 różne funkcje, które przyjmują jako argument listę, a zwracają
 # iloczyn wszystkich jej dodatnich elementów.
 
-# lista = [-2, 1, 2, 3, 4, 5]
+lista = [-2, 1, 2, 3, 4, 5]
 
 # def iloczyn(lista):         #done
 #     suma = 1
@@ -543,13 +543,15 @@ import math
 #
 # print(iloczyn(lista))
 
+
+
 # dalej nie ma
 
 # Zadanie 5                 #done
 # Stwórz funkcję, która przyjmuje listę napisów i zwraca ją w postaci
 # posortowanej, od najkrótszego do najdłuższego.
 
-lista_nap = ['droga boli', 'moja', 'mnie głowa']
-lista_nap.sort(key=len)
-print(lista_nap)
+# lista_nap = ['droga boli', 'moja', 'mnie głowa']
+# lista_nap.sort(key=len)
+# print(lista_nap)
 
