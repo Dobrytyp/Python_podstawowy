@@ -242,30 +242,94 @@ import time
 # say_something()
 
 # ------------------------------------
-
-def napis():
-    def wrapper():
-        print("Siema")
-
-    return wrapper
+# Stwórz funkcję wyświetlającą na ekranie dowolny napis, a następnie
+# dekorator, który będzie wykonywał tę funkcję n razy (gdzie n jest
+# parametrem przekazywanym do dekoratora).
 
 
-@napis
-def ile_razy(n):
-    var = napis * n
-    return var
-
-
-ile_razy()
-
-# def howmany(func):
-#     cache = {}
-#     def wrapper(*args, **kwargs):
-#         cache[func.__name__] = cache.get(func.__name__, 0) + 1
-#         print(f"Funkcja {func.__name__} została wywołana już {cache[func.__name__]} razy")
-#         return func(*args, **kwargs)
+# def n_times(n=1):
+#     def dec(funkcja):
+#         def wrapper():
+#             for x in range(n):
+#                 funkcja()
+#         return wrapper
+#     return dec
+#
+# def napis():
+#     def wrapper():
+#         return "Siema"
+#
 #     return wrapper
 #
-# @howmany
+#
+# @n_times(5)
 # def func():
-#     print("Ala ma Kota")
+#     print("ala Ma kota")
+#
+# func()
+
+#------------------------------------
+
+# Zadanie
+# Napisz dekorator, który będzie wymagał podania hasła przed właściwym
+# wywołaniem funkcji. Jeśli zostanie podane błędne hasło to niech będzie
+# wypisany komunikat o braku dostępu
+
+
+# To jest nie zrobione
+
+# def validate(password):
+#     def dec(funkcja):
+#         def wrapper():
+#             if password == "poziomka":
+#                 print("nie masz dostępu")
+#         return wrapper
+#     return dec
+#
+#
+# @validate("poziomka")
+# def func():
+#     print("ala ma kota")
+#
+# func("poziomka")
+
+
+#--------------------------------------------
+
+# Pliki CSV
+
+# Zadanie
+# Stwórz plik CSV, w którym zapiszesz informacje o tym, kto pracuje w
+# Twojej firmie i ile miesięcznie zarabia. Następnie odczytaj ten plik w
+# kodzie pythonowym (nazwa pliku niech będzie przekazywana przez
+# input), przyznaj każdemu 10% podwyżki i zapisz nową pensję jako
+# kolejną kolumnę w nowym pliku CSV
+
+import csv
+
+# nazwa_pliku = input("podaj nwazę pliku:\n")
+
+# with open(nazwa_pliku) as in_file:
+#     reader = csv.reader(in_file)
+#     for row in reader:
+#         print(row)
+
+# with open("plik2.csv", 'w') as out_file:
+#     writer = csv.writer(out_file)
+#     writer.writerow(["Anna kowalska", 2500])
+
+# with open('plik.csv', 'r') as f:
+#     reader = csv.reader(f, delimiter=";")
+#     your_list = list(reader)
+#
+# print(your_list)
+
+nazwa_pliku = input("Podaj nazwe pliku CSV\n")
+with open(nazwa_pliku) as in_file, open("pracownicy2.csv", 'w') as out_file:
+    reader= csv.reader(in_file, delimiter=";")
+    for idx, row in enumerate(reader):
+        if idx == 0:
+            row.append("pensja po podwyżce")
+        else:
+            row.append(int(row[-1]) * 1.1)
+        print(row)
