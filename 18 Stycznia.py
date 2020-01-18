@@ -308,7 +308,7 @@ import time
 import csv
 
 # nazwa_pliku = input("podaj nwazę pliku:\n")
-
+#
 # with open(nazwa_pliku) as in_file:
 #     reader = csv.reader(in_file)
 #     for row in reader:
@@ -324,12 +324,37 @@ import csv
 #
 # print(your_list)
 
-nazwa_pliku = input("Podaj nazwe pliku CSV\n")
-with open(nazwa_pliku) as in_file, open("pracownicy2.csv", 'w') as out_file:
-    reader= csv.reader(in_file, delimiter=";")
-    for idx, row in enumerate(reader):
-        if idx == 0:
-            row.append("pensja po podwyżce")
-        else:
-            row.append(int(row[-1]) * 1.1)
-        print(row)
+# nazwa_pliku = input("Podaj nazwe pliku CSV\n")
+# with open(nazwa_pliku) as in_file, open("pracownicy2.csv", 'w') as out_file:
+#     reader = csv.reader(in_file, delimiter=";")
+#     writer = csv.writer(out_file)
+#     for idx, row in enumerate(reader):
+#         if idx == 0:
+#             row.append("pensja po podwyżce")
+#         else:
+#             row.append(int(row[-1]) * 1.1)
+#         print(row)
+
+#---------------------------------------------------
+
+# Zadanie
+# Stwórz plik JSON, w którym zapiszesz informacje o tym, kto pracuje w
+# Twojej firmie i ile miesięcznie zarabia. Następnie odczytaj ten plik w
+# kodzie pythonowym (nazwa pliku niech będzie przekazywana przez
+# input), przyznaj każdemu 10% podwyżki i zapisz nową pensję jako
+# kolejną wartość w nowym pliku JSON.
+
+import json
+
+nazwa_pliku = input("Podaj nazwe pliku JSON\n")
+with open(nazwa_pliku) as in_file:
+    data = json.load(in_file)
+
+for pracownik in data:
+    pracownik["nowa_pensja"] = pracownik['pensja'] * 1.1
+
+with open("json2.json", 'w') as out_file:
+    json.dump(data, out_file, indent=2)
+
+
+
