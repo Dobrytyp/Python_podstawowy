@@ -490,49 +490,155 @@ import math
 # print("Ich suma to:", sum(lista))
 # print("Ich średnia to: ", (sum(lista)/len(lista)))
 
+
+# Albo
+
+# suma = 0
+# counter = 0
+#
+# while True:
+#     try:
+#         liczba = int(input("Podaj liczbę\n"))
+#         suma += liczba
+#         counter +=1
+#     except EOFError:                        # Ctrl+D kończy skrypt
+#         print(f"Count: {counter}")
+#         print(f"Suma: {suma}")
+#         print(f"średnia: {suma/counter}")
+#         break
+
+
 # Zadanie 2             # Zrobione
 # Stwórz znany już sobie kalkulator BMI, a następnie wczuj się w złośliwego
 # testera i zabezpiecz przed wszelkimi błędami, które użytkownik może
 # celowo wprowadzić.
 
-correct_waga = True
-while correct_waga:
-    try:
-        waga = float(input("Podaj masę w Kilogramach\n"))
-        if waga > 0:
-            correct_waga = False
-    except ValueError:
-        None
+# correct_waga = True
+# while correct_waga:
+#     try:
+#         waga = float(input("Podaj masę w Kilogramach\n"))
+#         if waga > 0:
+#             correct_waga = False
+#     except ValueError:
+#         None
+#
+# correct_wzrost = True
+# while correct_wzrost:
+#     try:
+#         wzrost = float(input("Podaj wzrost w centrymetrach\n"))
+#         wzrost = wzrost/100
+#         if wzrost > 0:
+#             correct_wzrost = False
+#     except ValueError:
+#         None
+#
+# bmi = waga / (wzrost*wzrost)
+#
+# if bmi < 18.5:
+#     print("masz niedowagę")
+# elif 18.5 <= bmi < 25:
+#     print("Ważysz prawdiłowo")
+# elif 25 <= bmi < 30:
+#     print("Masz nadwagę")
+# else:
+#     print("Jesteś otyły")
 
-correct_wzrost = True
-while correct_wzrost:
-    try:
-        wzrost = float(input("Podaj wzrost w centrymetrach\n"))
-        wzrost = wzrost/100
-        if wzrost > 0:
-            correct_wzrost = False
-    except ValueError:
-        None
+# Albo
 
-bmi = waga / (wzrost*wzrost)
+# class NegativeValueError(Exception):
+#     pass
+#
+# class ValueTooHighError(Exception):
+#     pass
+#
+# correct_wzrost = True
+# while correct_wzrost:
+#     try:
+#         masa = float(input("podaj masę\n"))
+#         wzrost = float(input("podaj wzrost\n"))
+#         if masa < 0 or wzrost < 0:
+#             raise NegativeValueError()
+#         if masa > 300 or wzrost > 2.51:
+#             raise  ValueTooHighError()
+#         correct_wzrost = False
+#     except ValueError:
+#         print("masa w kilogramach wzrost w metrach")
+#     except NegativeValueError:
+#         print("ma być nieujemna")
+#     except ValueTooHighError:
+#         print("wartości są zbyt duże")
+#
+# bmi = masa / wzrost **2
+# if bmi < 18.5:
+#     print("masz niedowagę")
+# elif 18.5 <= bmi < 25:
+#     print("Ważysz prawdiłowo")
+# elif 25 <= bmi < 30:
+#     print("Masz nadwagę")
+# else:
+#     print("Jesteś otyły")
 
-if bmi < 18.5:
-    print("masz niedowagę")
-elif 18.5 <= bmi < 25:
-    print("Ważysz prawdiłowo")
-elif 25 <= bmi < 30:
-    print("Masz nadwagę")
-else:
-    print("Jesteś otyły")
 
 # Zadanie 3
+
+# Stwórz klasę Pies z atrybutami imię oraz wiek. Następnie stwórz listę, w której przechowasz kilka instancji tej klasy.
+# Następnie, przy pomocy funkcji map przekształć listę tych psów w listę ich ludzkich lat
+
+# from math import log
+#
+# class Pies:
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
+
+    # def __str__(self):
+    #     return f"Pies {self.name} o wieku {self.age}"
+#
+# dog1 = Pies("Burek", 3)
+# dog2 = Pies("Puś", 12)
+# dog3 = Pies("Albar", 6)
+#
+# lst = [dog1, dog2, dog3]
+# print(lst)
+#
+# human_age = list(map(lambda x:  16 * log(x.age) + 31, lst))
+# print(human_age)
+
+
+# Albo
+
+# from math import log
+#
+# class Pies:
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
+#
+#     def konwertuj_wiek(self):
+#         return 16 * log(self.age) + 31
+#
+#     def __repr__(self):
+#         return f"Pies {self.name} o wieku {self.age}"
+#
+#
+# dog1 = Pies("Burek", 3)
+# dog2 = Pies("Puś", 12)
+# dog3 = Pies("Albar", 6)
+#
+# lst = [dog1, dog2, dog3]
+# print(lst)
+#
+# human_age = list(map(lambda x:  16 * log(x.age) + 31, lst))
+# print(human_age)
 
 
 # Zadanie 4
 # Stwórz 3 różne funkcje, które przyjmują jako argument listę, a zwracają
 # iloczyn wszystkich jej dodatnich elementów.
 
-lista = [-2, 1, 2, 3, 4, 5]
+# lista = [-2, 1, 2, 3, 4, 5]
+
+from functools import reduce
 
 # def iloczyn(lista):         #done
 #     suma = 1
@@ -543,6 +649,14 @@ lista = [-2, 1, 2, 3, 4, 5]
 #
 # print(iloczyn(lista))
 
+# def iloczyniloczyn_compr(lst):
+#     return prod[i for i in lista if i > 0]
+
+# def iloczyn_lambda(lista):
+#     lista = filter(lambda x: x > 0, lista)
+#     return reduce(lambda x, y: x * y, lista)
+
+
 
 
 # dalej nie ma
@@ -552,6 +666,30 @@ lista = [-2, 1, 2, 3, 4, 5]
 # posortowanej, od najkrótszego do najdłuższego.
 
 # lista_nap = ['droga boli', 'moja', 'mnie głowa']
-# lista_nap.sort(key=len)
-# print(lista_nap)
+
+
+# def sort_by_length(lista_nap):
+#     lista_nap.sort(key=len)
+#     return lista_nap
+#
+# print(sort_by_length(lista_nap))
+
+# Albo
+
+lista_nap = ['droga boli', 'moja', 'mnie głowa']
+#
+# def sort_by_length(lista_nap):
+#     return sorted(lista_nap, key=lambda x: len(x))
+
+# def dlugosc(napis):
+#     counter = 0
+#     for i in napis:
+#         counter += 1
+#     return counter
+#
+# def sort_by_length(lista_nap):
+#     return sorted(lista_nap, key=dlugosc)
+
+
+
 
