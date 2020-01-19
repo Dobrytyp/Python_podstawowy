@@ -152,7 +152,7 @@
 #     return fibonacci_recursive(n-2) + fibonacci_recursive(n-1)
 #
 # start =time.time()
-# resault = fibonacci_recursive(30)
+# resault = fibonacci_recursive(50)
 # print(f"{time.time() - start:.8f} seconds")
 # print(resault)
 
@@ -160,9 +160,9 @@
 
 # Rozwiązanie
 
-import time
-
-
+# import time
+#
+#
 # def optymalizuj(funkcja):
 #     cache = {}                # Pusty Słownik
 #     def wrapper(n):
@@ -181,7 +181,7 @@ import time
 #     return fibonacci_recursive(n - 2) + fibonacci_recursive(n - 1)
 #
 # start =time.time()
-# resault = fibonacci_recursive(500)
+# resault = fibonacci_recursive(300)
 # print(f"{time.time() - start:.8f} seconds")
 # print(resault)
 
@@ -238,7 +238,7 @@ import time
 # @run_only_between(7,21)                     # Tu zmieniamy warunki ktre były wyżej
 # def say_something():
 #     print("Hello!")
-
+#
 # say_something()
 
 # ------------------------------------
@@ -279,7 +279,7 @@ import time
 # To jest nie zrobione
 
 # def validate(password):
-#     def dec(funkcja):
+#     def dec(password):
 #         def wrapper():
 #             if password == "poziomka":
 #                 print("nie masz dostępu")
@@ -304,8 +304,6 @@ import time
 # kodzie pythonowym (nazwa pliku niech będzie przekazywana przez
 # input), przyznaj każdemu 10% podwyżki i zapisz nową pensję jako
 # kolejną kolumnę w nowym pliku CSV
-
-import csv
 
 # nazwa_pliku = input("podaj nwazę pliku:\n")
 #
@@ -344,17 +342,25 @@ import csv
 # input), przyznaj każdemu 10% podwyżki i zapisz nową pensję jako
 # kolejną wartość w nowym pliku JSON.
 
-import json
+# import json
+#
+# nazwa_pliku = input("Podaj nazwe pliku JSON\n")
+# with open(nazwa_pliku) as in_file:
+#     data = json.load(in_file)
+#
+# for pracownik in data:
+#     pracownik["nowa_pensja"] = pracownik['pensja'] * 1.1
+#
+# with open("json2.json", 'w') as out_file:
+#     json.dump(data, out_file, indent=2)
 
-nazwa_pliku = input("Podaj nazwe pliku JSON\n")
-with open(nazwa_pliku) as in_file:
-    data = json.load(in_file)
+#------------------------------------------------------------------
 
-for pracownik in data:
-    pracownik["nowa_pensja"] = pracownik['pensja'] * 1.1
+# PANDA
 
-with open("json2.json", 'w') as out_file:
-    json.dump(data, out_file, indent=2)
+import pandas as pd
 
-
+data = pd.read_csv("plik.csv")
+data['nowa pensja'] = data['pensja'] * 1.1
+print(data)
 

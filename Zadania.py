@@ -692,4 +692,3 @@ lista_nap = ['droga boli', 'moja', 'mnie głowa']
 
 
 
-
