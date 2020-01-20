@@ -1,15 +1,15 @@
-# Nie wydajna metoda
+"Nie wydajna metoda"
 
-
-from math import sqrt
-
+# from datetime import datetime
+# from math import sqrt
+#
 # def is_prime(n):
 #     for i in range(2, int(sqrt(n))+1):
 #         if n % i == 0:
 #             return False
 #     return True
-
-
+#
+#
 # def get_n_primes(n):
 #     primes = []
 #     i = 2
@@ -18,18 +18,21 @@ from math import sqrt
 #             primes.append(i)
 #         i += 1
 #     return primes
-#
-# lst = get_n_primes(10000)
+# var1 = datetime.now()
+# lst = get_n_primes(5000)
 # for i in lst:
 #     print(i)
 #     print(lst)  # sprawdż czym jest lst
+# var2 = datetime.now()
+# print(var2 - var1)
+
 
 
 # -----------------------------------------------------------
 
-# Usprawnienie          ITERATOR
+" Usprawnienie          ITERATOR"
 
-
+# from datetime import datetime
 # from math import sqrt
 #
 # def is_prime(n):
@@ -37,7 +40,7 @@ from math import sqrt
 #         if n % i == 0:
 #             return False
 #     return True
-
+#
 # class PrimeIterator:
 #     def __init__(self, n):
 #         self.n = n
@@ -56,15 +59,20 @@ from math import sqrt
 #             return self.number
 #         return self.__next__()
 #
-# lst = PrimeIterator(10000)
+# var1 = datetime.now()
+# lst = PrimeIterator(5000)
 # for i in lst:
 #     print(i)
-#     print(lst) # sprawdz teraz listę
+#     print(lst)
+# var2 = datetime.now()
+# print(var2 - var1)
+
 
 # ----------------------------------------
-# Da się  jeszcze łatwiej ! GENERATOR
+"Da się  jeszcze łatwiej ! GENERATOR"
 
 # from math import sqrt
+# from datetime import datetime
 #
 # def is_prime(n):
 #     for i in range(2, int(sqrt(n))+1):
@@ -81,11 +89,13 @@ from math import sqrt
 #             generated_numbers += 1
 #         number += 1
 #
-# lst = prime_generator(10000)
+# var1 = datetime.now()
+# lst = prime_generator(5000)
 # for i in lst:
 #     print(i)
 #     print(lst)
-
+# var2 = datetime.now()
+# print(var2 - var1)
 # ----------------------------------
 
 # Zadanie
@@ -368,10 +378,10 @@ from math import sqrt
 # dzień, miesiąc i rok.
 
 
-# `import re
+# import re
 #
 # data = "2019-01-19"
 #
 # pattern = r'(\d{4})-(\d{2})-(\d{2})'
 # year, month, day = re.search(pattern, data).groups()
-# print(day, month, year)`
+# print(day, month, year)

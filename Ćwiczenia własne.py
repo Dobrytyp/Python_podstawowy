@@ -3773,5 +3773,31 @@ import random
 # wys_chek = True
 # while
 
+#-----------------------------------------------------
+
+# capitals = dict()
+#
+# capitals["Poland"] = "Warsaw"
+# capitals["USA"] = "Washington"
+# capitals["Czechia"] = "Prague"
+#
+# countries = ["Poland", "USA", "Czechia"]
+# print(capitals)
+# print(countries)
+#
+# for country in countries:
+#     print("The capital of", country, "is", capitals[country])
+
+#-------------------------------------------------------
+
+# months = dict(zip(["Styczeń","Luty","marzec","Kwiecień","Maj","Czerwiec","Lipiec","Sierpień","Wrzesień","Pażdziernik","Listopad","Grudzień"], list(range(1, 13))))
+# print(months)
+
+#-------------------------------------------------------
+
+# Tekst jest podany w jednym wierszu. Dla każdego słowa tekstu policz liczbę jego wystąpień przed nim.
+# Słowo jest sekwencją znaków innych niż spacje. Dwa kolejne słowa są oddzielone jedną lub więcej spacjami. Zgodnie z tą definicją znaki interpunkcyjne są częścią słowa.
+
+
 
 
