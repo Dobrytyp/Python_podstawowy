@@ -33,7 +33,7 @@ class Konto:
         self.status = status
 
     def description(self):
-        return f"Witaj {imie_nazwisko}. Twoje konto jest {self.status} znajduje się na nim {self.stan} złotych"
+        return f"Witaj {self.imie_nazwisko}. Twoje konto jest {self.status} znajduje się na nim {self.stan} złotych"
 
     def stan_konta(self):
         return self.stan

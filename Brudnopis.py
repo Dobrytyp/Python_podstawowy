@@ -97,16 +97,4 @@ while quit1:
             print("Dziękujemy za skorzystanie z naszego systemu bankowości\n")
             sys.exit(0)
 
-#         wynagrodzenie = kwota * 140.26 / 100
-#         print("twoja kwota brutto to:", round(wynagrodzenie, 2))
-#     elif podaj == "n":
-#         kwota = float(input("Podaj wysokść wynagrrodzenia brutto\n"))
-#         wynagrodzenie = kwota * 71.3 / 100
-#         print("twoja kwota netto to:", round(wynagrodzenie, 2))
-#     elif podaj == "e":
-#         print("Dziękujemy za skorzystanie z naszego systemu bankowości\n")
-#         sys.exit(0)
-#     elif podaj == "r":
-#         break
-
 
