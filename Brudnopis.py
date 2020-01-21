@@ -48,7 +48,8 @@ while quit1:
 
     if quitprogram:
         sys.exit()
-    program = ''
+
+    program = ''                                        # Menu główne
     while program != "k" or program != "e" or program != "b" or program != "r":
         program = input("MENU GŁÓWNE\nZ jakiej funkcji chcesz skorzystać?\nKalkulator oprocentowania: (k)\nKalkulator Brutto - Netto ("
             "b)\nOferta kont (r)\nWyjście z systemu bankowości: (e)\n")

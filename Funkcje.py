@@ -7,6 +7,7 @@ def brutto_netto(kwota):
     wynagrodzenie = kwota * 71.3 / 100
     return print("Twoja kwota netto to:", round(wynagrodzenie, 2), "\n")
 
+
 def kalkulator_oprocentowania(stan_p, procent, okres, pytanie):
     miesiąc = okres * 12
     procent_m = procent / 12
@@ -24,6 +25,24 @@ def kalkulator_oprocentowania(stan_p, procent, okres, pytanie):
     elif pytanie == "d":
         wynik = stan_p * ((1 + (procent_d / 100)) ** dzień)
         return print("Twój kapitał po wskaznym okresie, wyniesie:", round(wynik, 2), "\n")
+
+
+def petla(password):
+    totatlcounter = ""
+    lower = "aąbcćdeęfghijklłmnńopqrstóuwxyzźż"
+    upper = lower.upper()
+    digits = "01234567890"
+    specials = "!@$%^&*"
+    for i in password:
+        if i in lower:
+            totatlcounter += "l"
+        elif i in upper:
+            totatlcounter += "u"
+        elif i in digits:
+            totatlcounter += "d"
+        elif i in specials:
+            totatlcounter += "s"
+    return totatlcounter
 
 
 class Konto:
@@ -45,19 +64,4 @@ class Konto:
         return self.imie_nazwisko, self.stan, self.status
 
 
-def petla(password):
-    totatlcounter = ""
-    lower = "aąbcćdeęfghijklłmnńopqrstóuwxyzźż"
-    upper = lower.upper()
-    digits = "01234567890"
-    specials = "!@$%^&*"
-    for i in password:
-        if i in lower:
-            totatlcounter += "l"
-        elif i in upper:
-            totatlcounter += "u"
-        elif i in digits:
-            totatlcounter += "d"
-        elif i in specials:
-            totatlcounter += "s"
-    return totatlcounter
+
