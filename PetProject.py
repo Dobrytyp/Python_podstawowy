@@ -90,7 +90,8 @@ while quit1:
     while program != "k" or program != "e" or program != "b" or program != "r":
         program = input("Z jakiej funkcji chcesz skorzystać?\nKalkulator oprocentowania: (k)\nKalkulator Brutto - Netto ("
                         "b)\nOferta kont (r)\nWyjście z systemu bankowości: (e)\n")
-        if program == "k":
+
+        if program == "k":                                              # Kalkulator oprocentowania
             stan_p = float(input("podaj stan poczatkwy konta\n"))
             procent = float(input("podaj oprocentowanie\n"))
             okres = float(input("ile lat będziez trzymał środki\n"))
@@ -108,27 +109,27 @@ while quit1:
 
             if pytanie == "m":
                 wynik = stan_p * ((1 + (procent_m / 100)) ** miesiąc)
-                print("Twój kapitał po wskaznym okresie, wyniesie:", wynik, "\n")
+                print("Twój kapitał po wskaznym okresie, wyniesie:", round(wynik, 2), "\n")
 
             elif pytanie == "r":
                 wynik = stan_p * ((1 + (procent / 100)) ** okres)
-                print("Twój kapitał po wskaznym okresie, wyniesie:", wynik, "\n")
+                print("Twój kapitał po wskaznym okresie, wyniesie:", round(wynik, 2), "\n")
 
             elif pytanie == "d":
                 wynik = stan_p * ((1 + (procent_d / 100)) ** dzień)
-                print("Twój kapitał po wskaznym okresie, wyniesie:", wynik, "\n")
-        elif program == "b":
+                print("Twój kapitał po wskaznym okresie, wyniesie:", round(wynik, 2), "\n")
+        elif program == "b":                            # Kalkulator Brutto/Netto
             podaj = ''
             while podaj != "b" or podaj != "n" or podaj != "e" or podaj != "r":
-                podaj = input("Co chcesz obliczyć? Brutto (b) czy netto 👎?\nPowrót do menu (r)\nZakończ program (e)\n ")
+                podaj = input("Co chcesz obliczyć? Brutto (b) czy netto (n)?\nPowrót do menu (r)\nZakończ program (e)\n ")
                 if podaj == "b":
                     kwota = float(input("Podaj wysokść wynagrrodzenia netto\n"))
                     wynagrodzenie = kwota * 140.26 / 100
-                    print("twoja kwota brutto to:", wynagrodzenie)
+                    print("twoja kwota brutto to:", round(wynagrodzenie, 2))
                 elif podaj == "n":
                     kwota = float(input("Podaj wysokść wynagrrodzenia brutto\n"))
                     wynagrodzenie = kwota * 71.3 / 100
-                    print("twoja kwota netto to:", wynagrodzenie)
+                    print("twoja kwota netto to:", round(wynagrodzenie, 2))
                 elif podaj == "e":
                     print("Dziękujemy za skorzystanie z naszego systemu bankowości\n")
                     sys.exit(0)
@@ -144,7 +145,8 @@ while quit1:
                 if podaj == "k":
                     user = Konto(imie_nazwisko, 0, "otwarte")
                     print(user.description())
-                    print(user.stats()[2])
+                    break
+                elif podaj == "r":
                     break
 
 
