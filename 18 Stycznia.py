@@ -36,23 +36,23 @@
 
 # ----------------------------------------
 
-# def funkcja():
-#     print(f"Ala ma kota")
-# #
-# def start_stop(funkcja):
-#     def wrapper():
-#         print("START")
-#         resault = funkcja()
-#         if resault is not None:
-#             print(resault)
-#         print("STOP")
-#     return wrapper
+def funkcja():
+    print(f"Ala ma kota")
 #
-# @start_stop
-# def funkcja():
-#     print(f"Ala ma kota")
-#
-# funkcja()
+def start_stop(funkcja):
+    def wrapper():
+        print("START")
+        resault = funkcja()
+        if resault is not None:
+            print(resault)
+        print("STOP")
+    return wrapper
+
+@start_stop
+def funkcja():
+    print(f"Ala ma kota")
+
+funkcja()
 
 # ------------------------------------------------
 #
@@ -358,9 +358,9 @@
 
 # PANDA
 
-import pandas as pd
-
-data = pd.read_csv("plik.csv")
-data['nowa pensja'] = data['pensja'] * 1.1
-print(data)
+# import pandas as pd
+#
+# data = pd.read_csv("plik.csv")
+# data['nowa pensja'] = data['pensja'] * 1.1
+# print(data)
 
