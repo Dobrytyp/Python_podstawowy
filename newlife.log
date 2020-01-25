@@ -1,0 +1,3 @@
+WARNING:root:Its a Warning
+ERROR:root:did you try to divide by zerio
+CRITICAL:root:internet is down
