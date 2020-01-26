@@ -3846,9 +3846,9 @@ import random
 #             return "Nie można dzielić przez zero"
 
 
-# Stworz prosty kalkulator obejmujący cztery podstawowe działania matemtyczne.
-# Działania kalkulatora mają opierać się na zdefiniowanych funkcjach, zapisanych w innym pliku.
-# Kalkulator ma przewidziec wszystkie nieprzewidziane działania użytkownika (Oprócz wyłączenia komputera :) )
+Stworz prosty kalkulator obejmujący cztery podstawowe działania matemtyczne.
+Działania kalkulatora mają opierać się na zdefiniowanych funkcjach, zapisanych w innym pliku.
+Kalkulator ma przewidziec wszystkie nieprzewidziane działania użytkownika (Oprócz wyłączenia komputera :) )
 
 from Calc_Func import dodawanie
 from Calc_Func import odejmowanie
