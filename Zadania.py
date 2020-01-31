@@ -210,6 +210,35 @@
 # print(dodaj_do_listy2(5))
 # print(dodaj_do_listy2(8))
 
+#======================================================
+# ZADANIA II
+
+# ZADANIE 1
+
+# Napisz funkcję, która sprawdzi, czy podany jako argument napis jest
+# palindromem (tj. czytany od przodu i wspak jest dokładnie taki sam, np.
+# „kajak”, „Madam”, „nurses run”).
+
+# word = input("Give a sentence\n")
+# word = word.replace(" ", "")
+# word = word.replace(",", "")
+# word = word.replace(".", "")
+# word = word.lower()
+# reverse = word[::-1]
+# if word == reverse:
+#     print("sentence is Palindrom")
+# else:
+#     print("this is not a palindrom")
+
+# ZADANIE 2
+
+# Napisz funkcję, która sprawdzi, czy podany jako argument napis jest
+# pangramem (tj. zawiera każdą literę alfabetu co najmniej raz, np. „The
+# quick brown fox jumps over the lazy dog”).
+
+word = input("Give a sentence\n")
+
+
 # ZADANIA 3
 
 # Zadanie 1

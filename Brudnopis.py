@@ -78,14 +78,15 @@
 # czy jest ono izogramem (słowo, w którym żadna litera się nie powtórzyła,
 # np. „skrzynia”)
 
-# word = input("podaj słowo\n")
-# list1 = []
-# for i in word:
-#     list1.append(i)
-#
-# set1 = set(list1)
-# if len(set1) == len(list1):
-#     print("ideogram")
-# else:
-#     print("nie ideogram")
+# Napisz funkcję, która sprawdzi, czy podany jako argument napis jest
+# palindromem (tj. czytany od przodu i wspak jest dokładnie taki sam, np.
+# „kajak”, „Madam”, „nurses run”).
 
+# word = input("Give a sentence\n")
+# word = word.replace(" ", "")
+# word = word.lower()
+# reverse = word[::-1]
+# if word == reverse:
+#     print("sentence is Palindrom")
+# else:
+#     print("this is not a palindrom")
