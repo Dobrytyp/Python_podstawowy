@@ -333,31 +333,31 @@
 # print(osoba1)
 #
 #
-# class Dog:
-#     def __init__(self, name, age):
-#         self.name = name
-#         self.age = age
-#
-#     def __str__(self):
-#         return f"{self.name} is a dog. {self.age} years old."
-#
-# class Labrador(Dog):
-#     def __init__(self, name, age):
-#         super().__init__(name, age)
-#         self.size = "big"
-#
-#     def make_sound(self):
-#         return "WOOOOOF!"
-#
-# class York(Dog):
-#     def __init__(self, name, age, size="small"):
-#         super().__init__(name, age)
-#         self.size = size
-#
-#     def make_sound(self):
-#         return "hau"
-#
-# dog1 = York("baron", 12, "small")
+class Dog:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def __str__(self):
+        return f"{self.name} is a dog. {self.age} years old."
+
+class Labrador(Dog):
+    def __init__(self, name, age):
+        super().__init__(name, age)
+        self.size = "big"
+
+    def make_sound(self):
+        return "WOOOOOF!"
+
+class York(Dog):
+    def __init__(self, name, age, size="small"):
+        super().__init__(name, age)
+        self.size = size
+
+    def make_sound(self):
+        return "hau"
+
+dog1 = York("baron", 12, "small")
 #
 
 # Zadanie stwórz klase osoba

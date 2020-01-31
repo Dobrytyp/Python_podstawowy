@@ -38,7 +38,7 @@
 
 # def funkcja():
 #     print(f"Ala ma kota")
-# #
+#
 # def start_stop(funkcja):
 #     def wrapper():
 #         print("START")
