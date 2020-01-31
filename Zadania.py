@@ -147,38 +147,40 @@
 # print(dupa)
 
 
-# # zadanie 9 Niby ok ale set usuwa duplikaty z list
-# list1 = [1, 2, 3, 4, 5, 5]
-# list2 = [2, 3, 4]
-# list3 = [5, 6, 7]
+# ZADANIE 9
+# Napisz program, w którym zdefiniujesz dwie listy, a następnie sprawdzisz,
+# czy pierwsza zawiera się w drugiej.
+
+# list1 = [1, 3, 5, 7]
+# list2 = [1, 3, 5, 9, 11]
+# licznik = 0
 #
-# list1.sort()
-# print(list1)
+# for i in list1:
+#     if i in list2:
+#         licznik += 1
 #
-# set1 = set(list1)
-# set2 = set(list2)
-# set3 = set(list3)
-# print(set1)
-#
-#
-# test1 = set1 & set2
-# if test1 == set2:
-#     print("Zbiór 2 zawiera się w zbiorze 1")
+# if len(list1) == licznik:
+#     print("Zawiera się")
 # else:
-#     print("Zbiór 2 nie zawiera się w zbiorze 1")
+#     print("Nie zawiera się")
 
 
 
 # #  Zadanie 10 ZROBIONE
-# var1  = input("Podaj swoje słowo\n")
-# list1 = list(var1)
-# set1 = set(var1) #zamienia na zbiór
-# list2 = list(set1) # ponownie tworzymy listę
-# if len(list1) == len(list2):
-#     print("twoje słowo to izogram")
-# else:
-#     print("twoje słowo nie jest ideogramem")
+# Napisz program, który poprosi użytkownika o podanie słowa i napisze,
+# czy jest ono izogramem (słowo, w którym żadna litera się nie powtórzyła,
+# np. „skrzynia”)
+
+# word = input("podaj słowo\n")
+# list1 = []
+# for i in word:
+#     list1.append(i)
 #
+# set1 = set(list1)
+# if len(set1) == len(list1):
+#     print("ideogram")
+# else:
+#     print("nie ideogram")
 
 
 # PYTANIE REKRUTACYJNE Sprawdź co się się dzieje
@@ -198,15 +200,15 @@
 
 # ========  Teraz jest ok bo zmienna dodaj_do_listy bedzie czyszczona
 
-# def dodaj_do_listy(element, lista=None):
+# def dodaj_do_listy2(element, lista=None):
 #     if lista == None:
 #         lista = []
 #     lista.append(element)
 #     return lista
 #
-# print(dodaj_do_listy(5, [1, 2, 3]))
-# print(dodaj_do_listy(5))
-# print(dodaj_do_listy(8))
+# print(dodaj_do_listy2(5, [1, 2, 3]))
+# print(dodaj_do_listy2(5))
+# print(dodaj_do_listy2(8))
 
 # ZADANIA 3
 

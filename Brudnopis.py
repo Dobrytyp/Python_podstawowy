@@ -74,3 +74,18 @@
 # Napisz program, w którym zdefiniujesz dwie listy, a następnie sprawdzisz,
 # czy pierwsza zawiera się w drugiej.
 
+# Napisz program, który poprosi użytkownika o podanie słowa i napisze,
+# czy jest ono izogramem (słowo, w którym żadna litera się nie powtórzyła,
+# np. „skrzynia”)
+
+# word = input("podaj słowo\n")
+# list1 = []
+# for i in word:
+#     list1.append(i)
+#
+# set1 = set(list1)
+# if len(set1) == len(list1):
+#     print("ideogram")
+# else:
+#     print("nie ideogram")
+
