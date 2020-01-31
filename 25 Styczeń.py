@@ -404,31 +404,31 @@ import argparse
 
 from math import sqrt
 
-class Wektor:
-    def __init__(self, x, y):
-        self.x = x
-        self.y = y
-
-    def dlugosc(self):
-        return sqrt(self.x ** 2 + self.y ** 2)
-
-
-    def __str__(self):
-        return f"Wektor({self.x},{self.y} o dłgugości {self.dlugosc()})"
-
-    def __eq__(self, other):                               # (Nowa metoda)
-        return self.x == other.x and self.y == other.y
-
-    def __add__(self, other):
-        return Wektor(self.x + other.x, self.y + other.y)
-
-    def _
-
-if __name__ == "__main__":
-    w1 = Wektor(1, 3)
-    w2 = Wektor(2, 5)
-    w3 = Wektor(4, 3)
-
-    assert str(w3) == "wektor (4, 3) o długości 5.0"
-    assert w1 + w2 == Wektor(3,8)
-    assert  w3.dlugosc() == 5.0
+# class Wektor:
+#     def __init__(self, x, y):
+#         self.x = x
+#         self.y = y
+#
+#     def dlugosc(self):
+#         return sqrt(self.x ** 2 + self.y ** 2)
+#
+#
+#     def __str__(self):
+#         return f"Wektor({self.x},{self.y} o dłgugości {self.dlugosc()})"
+#
+#     def __eq__(self, other):                               # (Nowa metoda)
+#         return self.x == other.x and self.y == other.y
+#
+#     def __add__(self, other):
+#         return Wektor(self.x + other.x, self.y + other.y)
+#
+#     def _
+#
+# if __name__ == "__main__":
+#     w1 = Wektor(1, 3)
+#     w2 = Wektor(2, 5)
+#     w3 = Wektor(4, 3)
+#
+#     assert str(w3) == "wektor (4, 3) o długości 5.0"
+#     assert w1 + w2 == Wektor(3,8)
+#     assert  w3.dlugosc() == 5.0

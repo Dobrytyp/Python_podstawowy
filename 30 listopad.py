@@ -77,13 +77,13 @@
 
 # zadanie 2 6 losowych niepowtarzających się cyfr od 1 do 50
 
-from random import randint
-lista = []
-while len(lista) < 6: # ma przerwać kiedy będzie miał 6 elementów
-    liczba = randint(1, 50)  # zakres liczb losowych
-    if not liczba in lista: # żeby się nie powtarzały
-        lista.append(liczba)
-print(lista)
+# from random import randint
+# lista = []
+# while len(lista) < 6: # ma przerwać kiedy będzie miał 6 elementów
+#     liczba = randint(1, 50)  # zakres liczb losowych
+#     if not liczba in lista: # żeby się nie powtarzały
+#         lista.append(liczba)
+# print(lista)
 
 # Albo z Continue zamiast not
 

@@ -68,7 +68,7 @@
 
 
 # #  zadanie 4   ZROBIONE
-# list1 = [2, 8, 122, 44, 87, 250, 1164]
+# list1 = [50, 8, 122, 44, 87, 250, 1164]
 # var = list1[0]
 # position = 0
 #
@@ -98,6 +98,54 @@
 # print(cyfra)
 
 #======================================================
+# ZADANIE 6
+# Napisz program, który pobierze 5 słów od użytkownika, a następnie
+# wypisze najdłuższe z nich.
+
+# lista = []
+# for i in range(5):
+#     var = input()
+#     lista.append(var)
+#
+# wynik = ''
+# for i in lista:
+#     if len(wynik) < len(i):
+#         wynik = i
+#
+# print(wynik)
+
+#======================================================
+# ZADANIE 7
+# Napisz program, który obliczy liczbę małych i wielkich liter w ciągu.
+
+# word = input("Podaj zdanie\n")
+# small ="abcdefghijklmnoprstuwyz"
+# capital = small.upper()
+#
+# counter_s = 0
+# counter_c = 0
+#
+# for i in word:
+#     if i in small:
+#         counter_s += 1
+#     elif i in capital:
+#         counter_c += 1
+#
+# print(counter_s)
+# print(counter_c)
+
+# ZADANIE 8
+# Pobierz od użytkownika wartość n, a następnie stwórz słownik, którego
+# elementy dla i < n będą postaci: (i, i2)
+
+# n = int(input())
+# dupa = {}
+#
+# for i in range(1, n):
+#     dupa[i] = [i*i]
+#
+# print(dupa)
+
 
 # # zadanie 9 Niby ok ale set usuwa duplikaty z list
 # list1 = [1, 2, 3, 4, 5, 5]
@@ -676,7 +724,7 @@ from functools import reduce
 
 # Albo
 
-lista_nap = ['droga boli', 'moja', 'mnie głowa']
+# lista_nap = ['droga boli', 'moja', 'mnie głowa']
 #
 # def sort_by_length(lista_nap):
 #     return sorted(lista_nap, key=lambda x: len(x))
@@ -690,5 +738,66 @@ lista_nap = ['droga boli', 'moja', 'mnie głowa']
 # def sort_by_length(lista_nap):
 #     return sorted(lista_nap, key=dlugosc)
 
+# Zadania na 25.01
+
+# Zadanie 3
 
 
+# def generator(n, m):
+#     lista = []
+#     for i in range(n*m):
+#         if i % m != 0:
+#             lista.append(i)
+#         elif len(lista) == n:
+#             break
+#
+#     yield lista           # yield jest zamiast return
+#
+# for i in generator(10, 3):
+#     print(i)
+
+
+
+# def tradycyjnie(n, m):
+#     lista = []
+#     for i in range(n*m):
+#         if i % m != 0:
+#             lista.append(i)
+#         elif len(lista) == n:
+#             break
+#
+#     return lista
+#
+# print(tradycyjnie(10, 3))
+
+# Nie umiem
+
+
+
+
+# class Iterator:
+#     def __init__(self, n, m):
+#         self.n = n
+#         self.m = m
+#         self.o = 1
+#         self.list = []
+#
+#     def __iter__(self):
+#         return self
+#
+#     def __next__(self):
+#         if self.n == len(self.list):
+#             raise StopIteration
+#         else:
+#             if self.o % self.m != 0:
+#                 self.list.append(self.o)
+#                 self.o += 1
+#             elif self.o % self.m == 0:
+#                 self.o += 1
+#
+#         return self.list
+#
+#
+# test = Iterator(10, 3)
+# for i in test:
+#     print(i)

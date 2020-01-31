@@ -358,9 +358,10 @@
 
 # PANDA
 
-import pandas as pd
+# import pandas as pd
+#
+# data = pd.read_csv("plik.csv")
+# data['nowa pensja'] = data['pensja'] * 1.1
+# print(data)
 
-data = pd.read_csv("plik.csv")
-data['nowa pensja'] = data['pensja'] * 1.1
-print(data)
-
+import cython

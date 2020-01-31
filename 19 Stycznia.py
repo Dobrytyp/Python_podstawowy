@@ -18,13 +18,11 @@
 #             primes.append(i)
 #         i += 1
 #     return primes
-# var1 = datetime.now()
+#
 # lst = get_n_primes(5000)
 # for i in lst:
 #     print(i)
 #     print(lst)  # sprawdż czym jest lst
-# var2 = datetime.now()
-# print(var2 - var1)
 
 
 
@@ -32,7 +30,7 @@
 
 " Usprawnienie          ITERATOR"
 
-# from datetime import datetime
+from datetime import datetime
 # from math import sqrt
 #
 # def is_prime(n):
@@ -59,43 +57,39 @@
 #             return self.number
 #         return self.__next__()
 #
-# var1 = datetime.now()
-# lst = PrimeIterator(5000)
 # for i in lst:
 #     print(i)
 #     print(lst)
-# var2 = datetime.now()
-# print(var2 - var1)
+
 
 
 # ----------------------------------------
 "Da się  jeszcze łatwiej ! GENERATOR"
 
-# from math import sqrt
-# from datetime import datetime
-#
-# def is_prime(n):
-#     for i in range(2, int(sqrt(n))+1):
-#         if n % i == 0:
-#             return False
-#     return True
-#
-# def prime_generator(n):
-#     number = 2
-#     generated_numbers = 0
-#     while generated_numbers != n:
-#         if is_prime(number):
-#             yield number
-#             generated_numbers += 1
-#         number += 1
-#
-# var1 = datetime.now()
-# lst = prime_generator(5000)
-# for i in lst:
-#     print(i)
-#     print(lst)
-# var2 = datetime.now()
-# print(var2 - var1)
+from math import sqrt
+from datetime import datetime
+
+def is_prime(n):
+    for i in range(2, int(sqrt(n))+1):
+        if n % i == 0:
+            return False
+    return True
+
+def prime_generator(n):
+    number = 2
+    generated_numbers = 0
+    while generated_numbers != n:
+        if is_prime(number):
+            yield number
+            generated_numbers += 1
+        number += 1
+
+
+lst = prime_generator(5000)
+for i in lst:
+    print(i)
+    print(lst)
+
 # ----------------------------------
 
 # Zadanie
@@ -141,14 +135,14 @@
 # Albo z peetlą While
 
 # def sum_generator2(n):
-# #     suma = 0
-# #     i = 1
-# #     while i != n + 1:
-# #         suma += i
-# #         i += 1
-# #         yield suma
-# # for i in sum_generator2(10):
-# #     print(i)
+#     suma = 0
+#     i = 1
+#     while i != n + 1:
+#         suma += i
+#         i += 1
+#         yield suma
+# for i in sum_generator2(10):
+#     print(i)
 
 # ---------------------------------------
 
@@ -196,7 +190,7 @@
 #     x = 1
 #     while x <= n:
 #         yield x ** 2
-#         x+= 1
+#         x += 1
 #
 # for i in Kwadrat_Generator2(10):
 #     print(i)

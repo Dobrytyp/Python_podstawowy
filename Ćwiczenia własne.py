@@ -640,14 +640,14 @@ napis = "phyton"
 
 # dict_1 = {"Eliza":30, "Maciej":34, "Tomasz":23, "Iwona":58}
 #
-# print(dict_1["Eliza"]) # sprawdzam wiek elizy
-# dict_1['Tata'] = "nie pamiętam" # tak dodaejmy element do słownika
+# print(dict_1["Eliza"])                # sprawdzam wiek elizy
+# dict_1['Tata'] = "nie pamiętam"       # tak dodajemy element do słownika
 # print(dict_1)
-# del dict_1["Tata"] # usuwa klucz ze słownika
+# del dict_1["Tata"]                    # usuwa klucz ze słownika
 # print(dict_1)
 #
-# print(dict_1["Kupa"]) # jeżeli wywołamy klucz którego nie ma wywali nam błąd, zamiast tego używamy get
-# print(dict_1.get("Brat")) # funkcja .get() sprawdza czy dany klucz istnieje, bez wywalania błedu
+# print(dict_1["Kupa"])                 # jeżeli wywołamy klucz którego nie ma wywali nam błąd, zamiast tego używamy get
+# print(dict_1.get("Brat"))             # funkcja .get() sprawdza czy dany klucz istnieje, bez wywalania błedu
 
 # dict_2 = {} # {} tworzy nam pusty słownik
 #
@@ -3798,21 +3798,21 @@ import random
 # Tekst jest podany w jednym wierszu. Dla każdego słowa tekstu policz liczbę jego wystąpień przed nim.
 # Słowo jest sekwencją znaków innych niż spacje. Dwa kolejne słowa są oddzielone jedną lub więcej spacjami. Zgodnie z tą definicją znaki interpunkcyjne są częścią słowa.
 
-from Funkcje import brutto_netto
-from Funkcje import netto_brutto
-import sys
-
-podaj = ''
-while podaj != "b" or podaj != "n" or podaj != "e" or podaj != "r":
-    podaj = input("Co chcesz obliczyć?\nBrutto (b)\nnetto (n)\nPowrót do menu (r)\nZakończ program (e)\n")
-    if podaj == "r":
-        break
-    kwota = float(input("Podaj wysokść wynagrrodzenia\n"))
-    if podaj == "b":
-        netto_brutto(kwota)
-    elif podaj == "n":
-        brutto_netto(kwota)
-    elif podaj == "e":
-        print("Dziękujemy za skorzystanie z naszego systemu bankowości\n")
-        sys.exit(0)
-
+# from Funkcje import brutto_netto
+# from Funkcje import netto_brutto
+# import sys
+#
+# podaj = ''
+# while podaj != "b" or podaj != "n" or podaj != "e" or podaj != "r":
+#     podaj = input("Co chcesz obliczyć?\nBrutto (b)\nnetto (n)\nPowrót do menu (r)\nZakończ program (e)\n")
+#     if podaj == "r":
+#         break
+#     kwota = float(input("Podaj wysokść wynagrrodzenia\n"))
+#     if podaj == "b":
+#         netto_brutto(kwota)
+#     elif podaj == "n":
+#         brutto_netto(kwota)
+#     elif podaj == "e":
+#         print("Dziękujemy za skorzystanie z naszego systemu bankowości\n")
+#         sys.exit(0)
+#
