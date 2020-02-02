@@ -137,27 +137,27 @@
 # zadanie 5
 # Napisz funkcję, która obliczy wartość zadanego elementu ciągu Fibonacciego rekurencyjnie i iteracyjnie.
 
-# def fibonacci_recursive(n):   # sposób rekurencyjny
-#     if n == 0:
-#         return 0
-#     elif n == 1:
-#         return 1
-#     else:
-#         return fibonacci_recursive(n-2) + fibonacci_recursive(n-1)
-#
-# print(fibonacci_recursive(5))
-# print(fibonacci_recursive(19))
+def fibonacci_recursive(n):   # sposób rekurencyjny
+    if n == 0:
+        return 0
+    elif n == 1:
+        return 1
+    else:
+        return fibonacci_recursive(n-2) + fibonacci_recursive(n-1)
+
+print(fibonacci_recursive(5))
+print(fibonacci_recursive(19))
 
 # albo
 
-# def fibonacci_iterative(n):
-#     fibonacci = [0, 1]
-#     for i in range(2, n+1):
-#         fibonacci.append(fibonacci[i-2]) + fibonacci[i-1])
-#     return fibonacci[n]
-#
-# print(fibonacci_iterative(5))
-# print(fibonacci_iterative(19))
+def fibonacci_iterative(n):
+    fibonacci = [0, 1]
+    for i in range(2, n+1):
+        fibonacci.append(fibonacci[i-2] + fibonacci[i-1])
+    return fibonacci[n]
+
+print(fibonacci_iterative(5))
+print(fibonacci_iterative(19))
 #
 
 # zadanie 6
@@ -180,23 +180,23 @@
 # czy posiadasz taki produkt w tej ilości na stanie, a na koniec zwróć informację o cenie do zapłaty.
 
 # sklep = {
-# #     "bułka": {
-# #         "cena" : 1.5,
-# #         "ilość" : 300
-# #     }
-# #     "chleb" : {
-# #         "cena" : 3,
-# #         "ilość" : 200
-# #     }
-# #     "rogalik": {
-# #         "cena" : 10,
-# #         "ilość" : 3
-# #     }
-# # }
-# #
-# # produkt = input("czego chcesz?\n")
-# # ]if -rodukt in sklep:
-# #     ilość = int(input)
+#     "bułka": {
+#         "cena" : 1.5,
+#         "ilość" : 300
+#     }
+#     "chleb" : {
+#         "cena" : 3,
+#         "ilość" : 200
+#     }
+#     "rogalik": {
+#         "cena" : 10,
+#         "ilość" : 3
+#     }
+# }
+#
+# produkt = input("czego chcesz?\n")
+# ]if -rodukt in sklep:
+#     ilość = int(input)
 
 # Zadanie 8
 # Napisz funkcję, która zwróci 5 najczęstszych słów z dzieła Mickiewicza https://pastebin.com/raw/aAHeW5Pt
@@ -378,11 +378,11 @@
 # a = os.system("dir")
 # print(a)
 # print(type(a))
-#
-#
-#
-# # !!!!!!!!!!!!!!!
-#
+# #
+# #
+# #
+# # # !!!!!!!!!!!!!!!
+# #
 # from subprocess import Popen, PIPE # Co to kurwa jest?
 #
 # a = Popen(["dir"], stdout=PIPE, stderr=PIPE).communicate()

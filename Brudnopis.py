@@ -90,3 +90,16 @@
 #     print("sentence is Palindrom")
 # else:
 #     print("this is not a palindrom")
+
+# Stwórz klasę reprezentującą koło o danym promieniu z metodami do obliczania jego pola powierzchni i obwodu.
+# Odpowiednią stałą zaimportuj z zewnętrznego modułu.
+
+
+
+# Zadanie 8.
+# Napisz funkcję, która zwróci 5 najczęstszych słów z dzieła Mickiewicza
+# https://pastebin.com/raw/aAHeW5Pt
+# Ćwiczymy odczytywanie z pliku
+
+f = open("mick.txt", "r")
+print(f.read())

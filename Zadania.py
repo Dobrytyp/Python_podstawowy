@@ -230,14 +230,168 @@
 # else:
 #     print("this is not a palindrom")
 
+#-----------------------------------------------------------
+
 # ZADANIE 2
 
 # Napisz funkcję, która sprawdzi, czy podany jako argument napis jest
 # pangramem (tj. zawiera każdą literę alfabetu co najmniej raz, np. „The
 # quick brown fox jumps over the lazy dog”).
 
-word = input("Give a sentence\n")
+# word = input("Give a sentence\n")
+# word = word.lower()
+# word = word.replace(" ", "")
+#
+# lista_word = []
+# lista = []
+#
+# alphabet = "abcdefghijklmnopqrstuvwxyz"
+#
+# for i in alphabet:
+#     lista.append(i)
+# lista = set(lista)
+#
+# for i in word:
+#     lista_word.append(i)
+# lista_word.sort()
+# lista_word = set(lista_word)
+#
+# if lista == lista_word:
+#     print("pangram")
+# else:
+#     print("nie pangram")
 
+#----------------------------------------------
+
+# ZADANIE 3.
+#
+# Napisz funkcję, która zamieni liczbę w zapisie rzymskim na dziesiętny.
+
+        #NIE SKONCZONE#
+
+#-----------------------------------------------
+
+# ZADANIE 4
+
+# Napisz funkcję, która sprawdzi, czy podana liczba jest doskonała (tj. jest
+# sumą swoich dzielników właściwych, np. 6 = 1 + 2 + 3).
+
+# number = int(input("podaj liczbę\n"))
+# dzielniki = []
+# for i in range(1, number):
+#     if number % i == 0:
+#         dzielniki.append(i)
+#
+# if sum(dzielniki) == number:
+#     print("liczba jest doskonała")
+# else:
+#     print("liczba nie jest doskonała")
+
+#------------------------------------------------
+
+# ZADANIE 5
+
+# Napisz funkcję, która obliczy wartość zadanego elementu ciągu
+# Fibonacciego rekurencyjnie i iteracyjnie
+# # Fn = F(n - 1)+F(n-2)
+
+# def fibonacci_recursive(n):   # sposób rekurencyjny
+#     if n == 0:
+#         return 0
+#     elif n == 1:
+#         return 1
+#     else:
+#         return fibonacci_recursive(n-2) + fibonacci_recursive(n-1)
+#
+# print(fibonacci_recursive(5))
+# print(fibonacci_recursive(19))
+#
+# # albo
+#
+# def fibonacci_iterative(n):
+#     fibonacci = [0, 1]
+#     for i in range(2, n+1):
+#         fibonacci.append(fibonacci[i-2] + fibonacci[i-1])
+#     return fibonacci[n]
+#
+# print(fibonacci_iterative(5))
+# print(fibonacci_iterative(19))
+
+
+
+#---------------------------------------------------
+
+# ZADANIE 6
+
+# Napisz funkcję, która sprawdzi, czy rok podany jako argument jest
+# przestępny.
+
+# rok = int(input())
+#
+# if rok % 4 == 0 and rok % 100 != 0:
+#     print("Rok przestępny")
+# elif rok % 400 == 0:
+#     print("Rok przestępny")
+# else:
+#     print("Rok zwykły")
+
+#---------------------------------------------------
+
+# ZADANIE 7
+
+# Wyobraź sobie, że obsługujesz sklep. Wszystkie produkty, które posiadasz w magazynie, wraz z ich cenami oraz dostępną
+# liczbą przechowujesz w słowniku (hint: zagnieżdżonym słowniku :D).
+# Pozwól użytkownikowi podać nazwę produktu, który chce nabyć oraz liczbę sztuk, następnie sprawdź,
+# czy posiadasz taki produkt w tej ilości na stanie, a na koniec zwróć informację o cenie do zapłaty.
+
+    #NIE SKONCZONE
+
+#---------------------------------------------------
+
+# ZADANIE 8
+
+# Napisz funkcję, która zwróci 5 najczęstszych słów z dzieła Mickiewicza
+# https://pastebin.com/raw/aAHeW5Pt
+# Ćwiczymy odczytywanie z pliku
+
+#---------------------------------------------------
+
+# ZADANIE 9
+
+# Stwórz klasę reprezentującą koło o danym promieniu z metodami do obliczania jego pola powierzchni i obwodu.
+# Odpowiednią stałą zaimportuj z zewnętrznego modułu.
+
+# from math import pi
+#
+# class Kolo:
+#     def __init__(self,r):
+#         self.r = r
+#
+#     def pole(self):
+#         return f"Pole twojego koła wynosi: {pi * self.r * self.r} "
+#
+#     def obwod(self):
+#         return f"Pole twojego koła wynosi: {2 * pi * self.r} "
+#
+# kolo1 = Kolo(10)
+#
+# print(kolo1.pole())
+# print(kolo1.obwod())
+
+#----------------------------------------------------
+
+# ZADANIE 10
+
+# Zamodeluj działanie koszyka w Allegro (nie, nie zapłacili mi za reklamę :<). Potrzebujemy klasę Produkt,
+# która będzie posiadała argumenty takie jak: nazwa oraz cena oraz umożliwiała wypisanie produktu na ekran.
+# Dodatkowo, chcemy posiadać klasę Koszyk, która będzie przechowywała dodawane przez użytkownika produkty
+# wraz z ich licznością w słowniku oraz umożliwiała usunięcie wszystkiego z koszyka, pokazania jego zawartości,
+# obliczenie łącznej wartości dotychczasowych produktów z koszyka, dodanie nowego produktu do niego
+# (czyli dodanie lub zwiększenie ilości)oraz usunięcie.
+
+        # NIE ZROBIONE#
+
+#=====================================================================================
 
 # ZADANIA 3
 
@@ -334,6 +488,7 @@ word = input("Give a sentence\n")
 
 
 # Zadanie  ZROBIONE
+
 # Napisz funkcję która sprawdzi, czy dana liczba jest liczbą narcystyczną
 # (n-cyfrowa liczba naturalna która jest sumą swoich cyfr podniesionych do
 # potęgi n)
