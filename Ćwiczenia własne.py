@@ -3816,3 +3816,16 @@ import random
 #         print("Dziękujemy za skorzystanie z naszego systemu bankowości\n")
 #         sys.exit(0)
 #
+
+# f = open("pliczek.txt", "a")
+# f.write("Siema szumon.\n"
+#         "Umiem pisać w oddzielnych linijkach.\n"
+#         "Ekstra nie?")
+
+with open("pliczek.txt", "r") as elem:
+        print(elem.read())
+
+
+
+
+

@@ -572,6 +572,16 @@
 # f = open("plik2.txt", "w")
 # f.write("Python is cool")
 
+# r - odczyt
+# r+ - odczyt i zapis
+# w - zapis
+# a - dopisywanie
+
+
+# Przykłąd odczytywania
+
+with open("pliczek.txt", "r") as elem:
+    print(elem.read())
 # TU DOKOŃCZ
 
 

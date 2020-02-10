@@ -189,7 +189,7 @@
 # f = open("C:\\Users\eliza\Documents\\nova.txt", "w")
 # f.write("python is cool\n"
 #         "python is cool\n"
-# #         "python is cool\n")
+#         "python is cool\n")
 #
 # f = open("C:\\Users\eliza\Documents\\nova.txt", 'r') as zmienna:
 # lista = zmienna.readlines()
