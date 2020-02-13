@@ -577,11 +577,36 @@
 # w - zapis
 # a - dopisywanie
 
+# Przykłąd zapisywania
+
+# f = open("pliczek.txt", "a")
+# f.write("Siema szumon.\n"
+#         "Umiem pisać w oddzielnych linijkach.\n"
+#         "Ekstra nie?")
+
 
 # Przykłąd odczytywania
 
-with open("pliczek.txt", "r") as elem:
-    print(elem.read())
+# with open("pliczek.txt", "r") as elem:
+#     print(elem.read())
+
+# Przykłąd zapisania liczb do listy
+
+# f = open("pliczek.txt", "a")
+# f.write("3\n"
+#         "5\n"
+#         "7\n"
+#         "11\n")
+#
+# lista = []
+#
+# f=open('pliczek.txt',"r")
+# for line in f:
+#         lista.append(int(line.strip('\n')))
+# print(lista)
+
+
+
 # TU DOKOŃCZ
 
 

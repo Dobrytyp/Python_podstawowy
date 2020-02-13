@@ -232,6 +232,7 @@
 
 
 # Operacje na
+from lib2to3.pgen2.grammar import line
 from random import randint
 
 napis = "phyton"
@@ -3817,14 +3818,18 @@ import random
 #         sys.exit(0)
 #
 
-# f = open("pliczek.txt", "a")
-# f.write("Siema szumon.\n"
-#         "Umiem pisać w oddzielnych linijkach.\n"
-#         "Ekstra nie?")
+f = open("pliczek.txt", "a")
+f.write("3\n"
+        "5\n"
+        "7\n"
+        "11\n")
 
-with open("pliczek.txt", "r") as elem:
-        print(elem.read())
+lista = []
 
+f=open('pliczek.txt',"r")
+for line in f:
+        lista.append(int(line.strip('\n')))
+print(lista)
 
 
 
