@@ -185,6 +185,12 @@
 # list8 = list(zip(list6, list7))     # list(zip()) tworzy krotki w parach
 # print(list8)
 
+a = [1, 2, 3]                         # Listy można konkatenować (dodować do siebie)
+b = [4, 5]
+c = a + b
+
+d = b * 3                             # listy można powielać
+
 # print("asd" in [1, 2, "asd", 3, True, 4.5])     # sprawdzamy czy element jest na liście (True)
 # print(-52.1 in [1, 2, "asd", 3, True, 4.5])     # sprawdzamy czy element jest na liście (False)
 # print(-52.1 not in [1, 2, "asd", 3, True, 4.5]) # sprawdzamy czy element nie jest na liście (True)
